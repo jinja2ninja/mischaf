@@ -1,7 +1,7 @@
 ---
 title: "Vault SSH Certs that aren't a pain to use"
 date: 2023-02-15T21:21:06-08:00
-draft: true
+draft: false
 ---
 
 ## Background
