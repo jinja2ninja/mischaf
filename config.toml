@@ -1,95 +1,115 @@
 baseURL = "http://www.mischaf.com"
 title = "Mischa Friegang"
-theme = "hugo-coder"
-languageCode = "en"
+theme = "hugo-theme-techdoc"
+
+hasCJKLanguage = true
+metaDataFormat = "yaml"
+
 defaultContentLanguage = "en"
-paginate = 20
-pygmentsStyle = "api"
-pygmentsCodeFences = true
-pygmentsCodeFencesGuessSyntax = true
-enableEmoji = true
-# Enable Disqus comments
-# disqusShortname = "yourdiscussshortname"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
 
 [params]
-author = "Mischa Friegang"
-description = "Mischa's Personal Website"
-keywords = "blog"
-info = ["Adventurer", "Nerd"]
-avatarURL = "images/mischa.jpg"
-#gravatar = "mischatravis10@gmail.com"
-hideFooter = false
-hideCredits = false
-hideCopyright = false
-since = 2019
+
+    # Source Code repository section
+    description = "Adventurer. Nerd."
+    github_repository = "https://github.com/jinja2ninja/mischaf"
+
+    # Documentation repository section
+    # documentation repository (set edit link to documentation repository)
+    github_doc_repository = "https://github.com/thingsym/hugo-theme-techdoc"
+    github_doc_repository_path = ""
+
+    # Analytic section
+    google_analytics_id = "" # Your Google Analytics tracking id
+    tag_manager_container_id = "" # Your Google Tag Manager container id
+    google_site_verification = "" # Your Google Site Verification for Search Console
+
+    # Open Graph and Twitter Cards settings section
+    # Open Graph settings for each page are set on the front matter.
+    # See https://gohugo.io/templates/internal/#open-graph
+    # See https://gohugo.io/templates/internal/#twitter-cards
+    title = "Hugo Techdoc Theme"
+    images = ["images/og-image.png"] # Open graph images are placed in `static/images`
+
+    # Theme settings section
+    # Theme color
+    # See color value reference https://developer.mozilla.org/en-US/docs/Web/CSS/color
+    custom_font_color = ""
+    custom_background_color = ""
+
+    # Documentation Menu section
+    # Menu style settings
+    menu_style = "open-menu" # "open-menu" or "slide-menu" or "" blank is as no sidebar
+
+    # Date format
+    dateformat = "" # default "2 Jan 2006"
+    # See the format reference https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+
+    # path name excluded from documentation menu
+    menu_exclusion = [
+        "archives",
+        "archive",
+        "blog",
+        "entry",
+        "post",
+        "posts",
+    ]
+
+    # Algolia site search section
+    # See https://www.algolia.com/doc/
+    algolia_search_enable = true
+    algolia_indexName = "hugo-demo-techdoc"
+    algolia_appId = "7W4SAN4PLK"
+    algolia_apiKey = "cbf12a63ff72d9c5dc0c10c195cf9128" # Search-Only API Key
+
+# Global menu section
+# See https://gohugo.io/content-management/menus/
+[menu]
+    [[menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
+        identifier = 'home'
+        pre = "<i class='fa fa-heart'></i>&nbsp;"
+
+# Markup configure section
+# See https://gohugo.io/getting-started/configuration-markup/
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark.renderer]
+        unsafe= true
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
+        ordered = false
+
+[outputs]
+    home = ["HTML", "RSS", "Algolia"]
+
+# Algolia Search configure section
+[outputFormats.Algolia]
+    baseName = "algolia"
+    mediaType = "application/json"
+    isPlainText = true
+    notAlternative = true
+
+[params.algolia]
+    vars = [
+        "title",
+        "summary",
+        "content",
+        "date",
+        "publishdate",
+        "description",
+        "permalink",
+        "keywords",
+        "lastmod",
+    ]
+    params = [
+        "tags",
+        "categories",
+    ]
 
 
-colorScheme = "auto"
-# Hide the toggle button, along with the associated vertical divider
-hideColorSchemeToggle = false
-# Series see also post count
-maxSeeAlsoItems = 5
-# Enable Twemoji
-enableTwemoji = false
-# Custom CSS
-customCSS = []
-# Custom SCSS
-customSCSS = []
-# Custom JS
-customJS = []
 
-# If you want to implement a Content-Security-Policy, add this section
-[params.csp]
-childsrc = ["'self'"]
-fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
-formaction = ["'self'"]
-framesrc = ["'self'"]
-imgsrc = ["'self'", "https://m1sc.net", "https://s3.us-west-1.wasabisys.com/"]
-objectsrc = ["'none'"]
-stylesrc = [
-  "'self'",
-  "'unsafe-inline'",
-  "https://fonts.googleapis.com/",
-  "https://cdn.jsdelivr.net/"
-]
-scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com"]
-prefetchsrc = ["'self'"]
-# connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
-connectsrc = ["'self'", "https://www.google-analytics.com",]
-
-[taxonomies]
-category = "categories"
-series = "series"
-tag = "tags"
-author = "authors"
-
-[[params.social]]
-name = "Github"
-icon = "fa fa-github"
-weight = 1
-url = "https://github.com/jinja2ninja/"
-
-
-
-#[[params.social]]
-#name = "LinkedIn"
-#icon = "fa fa-linkedin"
-#weight = 4
-#url = "https://www.linkedin.com/in/mischa-friegang-943274215/"
-
-
-[languages.en]
-languageName = ":us:"
-
-[[languages.en.menu.main]]
-name = "About"
-weight = 1
-url = "about/"
-
-[[languages.en.menu.main]]
-name = "Blog"
-weight = 2
-url = "posts/"
-
-[markup.goldmark.renderer]
-unsafe= true

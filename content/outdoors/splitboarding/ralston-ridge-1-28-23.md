@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2023-02-10T15:52:47-07:00
-title = "Mt Ralston Ridge 1-28-23"
+title = "Mt Ralston Ridge Splitboarding"
 description = ""
 slug = ""
 authors = []
@@ -17,10 +17,12 @@ series = []
 
 This was my second tour of the year. I got a bit of a late start, but I had a busy start of the season dealing with the insane amount of rain I got at home. Thankfully that translates to a huge amount of snow in the mountains. I had enjoyed some awesome, waist deep powder on Waterhouse the weekend before, but I knew that the soft snow was going to be harder and harder to find. I also had to be in Oakland that night, so I wanted something relatively quick. Therefore I opted for some good old fashioned corn snow on the south face of Ralston.
 
+
 ![Ralston Ridge from Highway 50](https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/PXL_20230122_210948915.jpg)
 
-<figcaption><b>Recon shot of the Ralston Ridge I got the previous weekend</b></figcaption>  
+**Recon shot of the Ralston Ridge I got the previous weekend**
 
+---
 
 I packed up my truck the night before, and was on the road by 5:30AM or so. Typically I've always been able to park at the Camp Sacramento sign and skin up from there. With all of the snow this year, I wasn't able to park there, so I snagged a pull out a mile or so east of there, in one of the areas that seemed to get hit the hardest by the Caldor fire.
 

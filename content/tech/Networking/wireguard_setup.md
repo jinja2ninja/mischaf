@@ -1,9 +1,10 @@
 ---
-title: "My Wireguard CGNAT Traversal Setup"
+title: "CGNAT Traversal with Wireguard"
 date: 2021-08-28T11:47:13-07:00
 draft: false
 ---
 
+<b> ** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS</b>
 
 Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I'm able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works.
 One of said limitations of using a Verizon LTE connection is Verizon's CGNAT. This is Verizon's way of continuing to use it's finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn't the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy.
