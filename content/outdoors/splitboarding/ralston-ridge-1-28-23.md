@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2023-02-10T15:52:47-07:00
-title = "Mt Ralston Ridge Splitboarding"
+title = "Mt Ralston Ridge"
 description = ""
 slug = ""
 authors = []
@@ -54,7 +54,7 @@ I was able to skin up about 500 vertical feet or so before deciding it was time 
   ![Sierra At Tahoe](https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/ralston-1-28-23%20(12).jpg)
     <figcaption><b>Sierra at Tahoe's West Bowl</b></figcaption>
 
-I stopped for a quick snack near the top of a big rock face you can see from highway 50. The snow seemed to be warming up pretty quickly, so I decided I'd tour another 20 minutes to half an hour, and then start my descent. The summit was tempting, but not really steep enough for a smooth snowboard descent. From my high point I snapped a few pictures, and switched my splitboard over to ride mode. I contemplated which way to descend, going more to the west seemed a bit safer, but the snow over there was not very smooth due to all of the wind it gets. I love Ralston, but I've noticed over the years that the southwest side gets hammered by wind funneled up through the highway 50 corridor, which can often make for suboptimal riding conditions. I pondered for a minute or 2, and assessed that dropping into the more southeast side probably wasn't too risky. The snow seemed pretty consolidated as it gets quite a bit of sun on it, and it also wasn't abnormally warm for a January morning.
+I stopped for a quick snack near the top of a big rock face you can see from highway 50. The snow seemed to be warming up pretty quickly, so I decided I'd tour another 20 minutes to half an hour, and then start my descent. The summit was tempting, but not really steep enough for a smooth snowboard descent. I've been up Ralston more times than I can count, but this point on the ridge was new to me. From my high point I snapped a few pictures, and switched my splitboard over to ride mode. I contemplated which way to descend, going more to the west seemed a bit safer, but the snow over there was not very smooth due to all of the wind it gets. I love Ralston, but I've noticed over the years that the southwest side gets hammered by wind funneled up through the highway 50 corridor, which can often make for suboptimal riding conditions. I pondered for a minute or 2, and assessed that dropping into the more southeast side probably wasn't too risky. The snow seemed pretty consolidated as it gets quite a bit of sun on it, and it also wasn't abnormally warm for a January morning.
 
 ![Mt Ralston Ridge](https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/ralston-1-28-23%20(16).jpg)
   <figcaption><b>The view looking northeast from my high point</b></figcaption>
