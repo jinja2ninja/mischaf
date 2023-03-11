@@ -1,4 +1,4 @@
-baseURL = "http://www.mischaf.com"
+baseURL = "https://www.mischaf.com"
 title = "Mischa Friegang"
 theme = "hugo-theme-techdoc"
 
