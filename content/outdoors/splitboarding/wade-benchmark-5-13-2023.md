@@ -1,6 +1,6 @@
 +++
 draft = false
-date = 2023-05-14T15:52:47-07:00
+date = 2023-05-14T06:52:47-07:00
 title = "Wade Benchmark"
 description = ""
 slug = ""
