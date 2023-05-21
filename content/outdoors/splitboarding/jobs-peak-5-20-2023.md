@@ -73,6 +73,7 @@ After leaving the creek, I made a wrong turn and somehow almost took the wrong d
 
 ## Route
 \* Only ascent route is shown as I turned off gps to save battery on the return \*
+
 ![My route](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/route.jpg)
 
 [GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/jobs-5-20-23.gpx)
