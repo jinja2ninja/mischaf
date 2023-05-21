@@ -70,3 +70,9 @@ The next few miles were relatively uneventful, but I did start to notice I was r
 After leaving the creek, I made a wrong turn and somehow almost took the wrong drainage all the way down to hope valley, several miles below where I was parked. Realizing my mistake, I had to trudge back uphill for about a quarter mile. I had made it this far without using skins, and really didn't want to put them on now. So I made extra switchbacks, and the slushy snow somehow allowed me to barely eek out some uphill travel without skins. Eventually I got back on the road, and enjoyed being able to glide back down to the car with minimal stops. Down towards the bottom, it got a bit patchy, but I made it back to the car around 1:30PM. I was wet and tired, but beyond happy to see the car. All told, it was about a 15 mile round trip. Right as I made it to the car, I started hearing the first thunder I heard all day, perfect timing.
 ![Storm clouds forming near the end](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/PXL_20230520_200145071.jpg)
 **Storm clouds forming near the end**
+
+## Route
+\* Only ascent route is shown as I turned off gps to save battery on the return \*
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/route.jpg)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/jobs-5-20-23.gpx)
