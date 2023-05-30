@@ -1,6 +1,6 @@
 +++
 aliases = ["posts", "articles", "blog", "showcase", "docs"]
-title = "Splitboarding"
+title = "Outdoor Trip Reports"
 author = "Mischa Friegang"
 tags = ["index"]
 +++
