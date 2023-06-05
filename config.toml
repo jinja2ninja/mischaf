@@ -1,6 +1,6 @@
 baseURL = "https://www.mischaf.com"
 title = "Mischa Friegang"
-theme = "hugo-theme-techdoc"
+theme = "relearn"
 
 hasCJKLanguage = true
 metaDataFormat = "yaml"
@@ -85,7 +85,7 @@ enableMissingTranslationPlaceholders = false
         ordered = false
 
 [outputs]
-    home = ["HTML", "RSS", "Algolia"]
+  home = ["HTML", "RSS", "SEARCH"]
 
 # Algolia Search configure section
 [outputFormats.Algolia]
