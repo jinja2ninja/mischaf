@@ -1,7 +1,7 @@
 +++
 draft = false
 date = 2023-04-08T15:52:47-07:00
-title = "Rubicon Peak"
+title = "OGUL #22 - Rubicon Peak"
 description = ""
 slug = ""
 authors = []
@@ -12,7 +12,7 @@ series = []
 +++
 
 
-# Rubicon Peak - April 8th, 2023
+# April 8th, 2023
 
 My goal this winter has simply been to log as many days as possible on my splitboard. It brings me joy regardless of the conditions, a day out splitboarding is a good day. That said, I've also been (very) slowly chipping away at the [Tahoe Ogul Peak List](https://www.tahoeogul.org/), and Rubicon was one of the closer ones that I hadn't ticked off yet. In addition, the conditions lined up in a way that the snow would probably still be decent there.
 

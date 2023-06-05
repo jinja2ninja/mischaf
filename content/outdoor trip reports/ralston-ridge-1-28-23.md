@@ -13,7 +13,7 @@ series = []
 
 
 
-# Mt Ralston Ridge - 1/28/2023
+# 1/28/2023
 
 This was my second tour of the year. I got a bit of a late start, but I had a busy start of the season dealing with the insane amount of rain I got at home. Thankfully that translates to a huge amount of snow in the mountains. I had enjoyed some awesome, waist deep powder on Waterhouse the weekend before, but I knew that the soft snow was going to be harder and harder to find. I also had to be in Oakland that night, so I wanted something relatively quick. Therefore I opted for some good old fashioned corn snow on the south face of Ralston.
 

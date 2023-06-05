@@ -1,7 +1,7 @@
 +++
 draft = false
 date = 2023-05-14T06:52:47-07:00
-title = "Wade Benchmark"
+title = "OGUL #23 - Wade Benchmark"
 description = ""
 slug = ""
 authors = []
@@ -10,7 +10,7 @@ categories = []
 externalLink = ""
 series = []
 +++
-# Wade Benchmark - May 13th, 2023
+##  May 13th, 2023
 
 I woke up early again for this one, we had enjoyed a nice dip in temps, along with some precipitation the previous week. I even got in a rare May pow day the previous Sunday. Looking at the forecast though, it was pretty clear that this Saturday was set to be significantly hotter. I wanted to knock another OGUL peak off, and initially had planned to go climb Mt Rose. I left the house around 3:15AM, and while driving over Echo Summit got the idea to knock Wade off instead of Rose, and save the hour of driving. I wasn't entirely sure that the trailhead would be thawed out, but I had a feeling it likely would be.
 

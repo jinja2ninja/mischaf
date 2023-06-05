@@ -1,7 +1,7 @@
 +++
 draft = false
 date = 2023-05-21T07:30:00-07:00
-title = "Job's Peak"
+title = "OGUL #24 - Job's Peak"
 description = ""
 slug = ""
 authors = []
@@ -11,7 +11,7 @@ externalLink = ""
 series = []
 +++
 
-# Job's Peak - May 20th, 2023
+## May 20th, 2023
 
 My alarm woke me up from a weird dream at 2:40AM. I can't recall the specifics of it at this point, but I do recall there being some weird tribal music, kind of similar to the "Survivor" theme song. I hadn't slept that well, and had a moderately painful lump in my throat the week leading up. Despite my discomfort, I had been dreaming about this peak all week. I did my morning routine as quietly as possible, and left my comfortable bed, wife and dog behind. I love them dearly, but this is more than they want to do in a day.
 
