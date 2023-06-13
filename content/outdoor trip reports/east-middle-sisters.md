@@ -193,7 +193,7 @@ gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_225844314.MP.jpg
 ---
 
-# May 27th, 2023
+## May 27th, 2023
  I took off work a few hours early at 3PM Friday, and already had mostly loaded my truck up for 3 days of camping. I had a few odds and ends to handle after, but was on the road by 3:30PM or so. I stopped to get gas and a few road snacks in Placerville, and was soon headed up highway 50. Somewhere shortly before Kyburz, it started to rain pretty hard. I stopped at the Silverfork store and moved a few things from my truck bed that weren't waterproof into the cab. I made a quick stop in Gardnerville for some Jack in the Box Tacos, and then headed down 395. 
  
 
