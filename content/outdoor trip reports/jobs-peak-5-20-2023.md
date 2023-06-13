@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-05-21T07:30:00-07:00
-title: "OGUL #24 - Job's Peak"
+title: "OGUL #25 - Job's Peak"
 description: ""
 slug: ""
 authors: []
