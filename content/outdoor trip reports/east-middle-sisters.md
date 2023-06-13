@@ -194,13 +194,11 @@ gallery_images:
 ---
 
 ## May 27th, 2023
- I took off work a few hours early at 3PM Friday, and already had mostly loaded my truck up for 3 days of camping. I had a few odds and ends to handle after, but was on the road by 3:30PM or so. I stopped to get gas and a few road snacks in Placerville, and was soon headed up highway 50. Somewhere shortly before Kyburz, it started to rain pretty hard. I stopped at the Silverfork store and moved a few things from my truck bed that weren't waterproof into the cab. I made a quick stop in Gardnerville for some Jack in the Box Tacos, and then headed down 395. 
+I took off work a few hours early at 3PM Friday, and already had mostly loaded my truck up for 3 days of camping. I had a few odds and ends to handle after, but was on the road by 3:30PM or so. I stopped to get gas and a few road snacks in Placerville, and was soon headed up highway 50. Somewhere shortly before Kyburz, it started to rain pretty hard. I stopped at the Silverfork store and moved a few things from my truck bed that weren't waterproof into the cab. I made a quick stop in Gardnerville for some Jack in the Box Tacos, and then headed down 395. 
  
-
-
- Shortly before Topaz Lake, I took a left onto highway 208 for the first time. The rain was still coming down here, but not nearly as hard, it was more of a sprinkle. Before I knew it, 208 turned into 338 and I was heading south. Highway 338 reminded me a lot of 395 to the west, just with slightly different scenery. The mountains of Nevada were drying out, but most were still capped with some snow. Not long after I made it to Risue Road, which led to my campsite. Risue Road is pretty nice for a dirt forest service road, but there were a few mud crossings in the first half mile or so that I wouldn't have wanted to try in a passenger car.
+Shortly before Topaz Lake, I took a left onto highway 208 for the first time, having continued south every other time I've driven by. The rain was still coming down here, but not nearly as hard, it was more of a sprinkle. Before I knew it, 208 turned into 338 and I was heading south. Highway 338 reminded me a lot of 395 to the west, just with slightly different scenery. The mountains of Nevada were drying out, but most were still capped with some snow. Not long after I made it to Risue Road, which led to my campsite. Risue Road is pretty nice for a dirt forest service road, but there were a few mud crossings in the first half mile or so that I wouldn't have wanted to try in a passenger car.
  
- I followed Risue road for a few miles, and soon opened my CalTopo app to get an idea of where the side road I wanted to take was. I turned onto the side road, and was greeted with some pretty thick brush on either side of the road that added some nice pinstripes to my truck. It kind of makes me cringe, but I didn't get my truck to look pretty. The road didn't go on for too long, and I was at the corral I had read about online soon. I had thought based on maps that there was perhaps a possibility of going further than the corral, but the road was completely overgrown and perhaps only 3 feet wide beyond there. I parked my truck and set up my tent in a light rain, and took a few minutes to walk around the area to check it out. It had a very cool rustic feel to it. I stayed up long enough to see the sun start to set, and was in bed before 9PM. 
+I followed Risue road for a few miles, and soon opened my CalTopo app to get an idea of where the side road I wanted to take was. I turned onto the side road, and was greeted with some pretty thick brush on either side of the road that added some nice pinstripes to my truck. It kind of makes me cringe, but I didn't get my truck to look pretty. The road didn't go on for too long, and I was at the corral I had read about online soon. I had thought based on maps that there was perhaps a possibility of going further than the corral, but the road was completely overgrown and perhaps only 3 feet wide beyond there. I parked my truck and set up my tent in a light rain, and took a few minutes to walk around the area to check it out. It had a very cool rustic feel to it. I stayed up long enough to see the sun start to set, and was in bed before 9PM. 
  
  ![Sunset by the Corral](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_121452001.jpg?classes=shadow)
 **Sunset by the Corral**
@@ -208,9 +206,7 @@ gallery_images:
 ![Sunrise by the Corral](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_124522348.jpg?classes=shadow)
 **Sunrise by the Corral**
 
-
-
- I got up the next morning around 5, and had my stuff packed for the day and was ready to go by 5:45. The sunrise over the valley was pretty spectacular. I set off up the road, and it opened up more after a few hundred feet. Not that it would have mattered, the ruts were deeper than I'd want to risk in my stock Frontier. I walked perhaps a half mile up the road before deciding to cut straight up to the ridge. This was fairly steep, but not too difficult.
+I got up the next morning around 5, and had my stuff packed for the day and was ready to go by 5:45. The sunrise over the valley was pretty spectacular. I set off up the road, and it opened up more after a few hundred feet. Not that it would have mattered, the ruts were deeper than I'd want to risk in my stock Frontier. I walked perhaps a half mile up the road before deciding to cut straight up to the ridge. This was fairly steep, but not too difficult.
  
 ![The brief section of road I walked](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_124847948.jpg?classes=shadow)
 **The brief section of road I walked**
@@ -221,7 +217,7 @@ gallery_images:
 ![Looking back towards my campsite](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_131530111.jpg?classes=shadow)
 **Looking back towards my campsite**
 
- After 20 minutes or so, I made it to the first bench on the ridge where I could see the mountain above me better. It seemed like I could see the summit, and that it wasn't all that far away. I was wrong, the ridge ended up having quite a few false summits. I made it to the the top of this one around 7:30, sticking to the west side to stay out of the snow. I was greeted with a higher point I'd need to go around or over that still wasn't the summit.
+After 20 minutes or so, I made it to the first bench on the ridge where I could see the mountain above me better. It seemed like I could see the summit, and that it wasn't all that far away. I was wrong, the ridge ended up having quite a few false summits. I made it to the the top of this one around 7:30, sticking to the west side to stay out of the snow. I was greeted with a higher point I'd need to go around or over that still wasn't the summit.
  
  ![The view up towards the false summit](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_131737101.jpg?classes=shadow)
 **The view up towards the false summit**
@@ -230,7 +226,7 @@ gallery_images:
 ![Some wildflowers I saw around 9000 feet on the ridge](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_132353725.PORTRAIT.jpg?classes=shadow)
 **Some wildflowers I saw around 9000 feet on the ridge**
 
- I opted to go around it the best it could staying to the west to avoid a large snowfield. From there, the ridge veered to the east, but I could see that it just dropped back down and continued along towards the true summit. I decided to try to maintain my current elevation and stick to the west side. This involved a bit of scrambling, and some loose talus in places, but seemed to save me some effort in the long run. On the still shady west side, the rain from the previous night seemed to have frozen, which made the granite slick, and definitely slowed me down a bit. Thankfully my patience paid off, and I didn't end up slipping and getting injured.
+I opted to go around it the best it could staying to the west to avoid a large snowfield. From there, the ridge veered to the east, but I could see that it just dropped back down and continued along towards the true summit. I decided to try to maintain my current elevation and stick to the west side. This involved a bit of scrambling, and some loose talus in places, but seemed to save me some effort in the long run. On the still shady west side, the rain from the previous night seemed to have frozen, which made the granite slick, and definitely slowed me down a bit. Thankfully my patience paid off, and I didn't end up slipping and getting injured.
  
 
 
@@ -247,7 +243,7 @@ I soon came to the final section of the ridge up to the true summit, and had to 
 ![The last finger of snow blocking my progress](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_152118708.jpg?classes=shadow)
 **The last finger of snow blocking my progress**
 
- The rest of the climb from here was easy, just hopping up medium sized granite, and soon I was on top of East Sister. The view was pretty nice, and I made the first entry in the register since June of 2022. Apparently this isn't a very popular mountain. I spent maybe 10-15 minutes enjoying the view and a small snack before continuing along the ridge towards Middle Sister. I had read that it was a bushwhack on the side I was coming down, but bushwhacks are always easier downhill, so I was glad to have that on my side. I spent a minute or 2 where the rock met the bushes, and decided on a path down. 
+The rest of the climb from here was easy, just hopping up medium sized granite, and soon I was on top of East Sister. The view was pretty nice, and I made the first entry in the register since June of 2022. Apparently this isn't a very popular mountain. I spent maybe 10-15 minutes enjoying the view and a small snack before continuing along the ridge towards Middle Sister. I had read that it was a bushwhack on the side I was coming down, but bushwhacks are always easier downhill, so I was glad to have that on my side. I spent a minute or 2 where the rock met the bushes, and decided on a path down. 
  
 ![Summit Panorama](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_160931035.PANO.jpg?classes=shadow)
 **Summit Panorama**
