@@ -9,6 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
+weight: 33
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_143426483.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_145335055.jpg
@@ -206,4 +207,4 @@ I was faced with 2 options: take the normal route down, and have to deal with cr
 At the bottom of the steep trail, I popped out onto the road, right across from where a group of people were camped. 3 dogs came charging at me, but their owner called them back, and they didn't seem too aggressive. The owner apologized, and I continued down the road. Not far up from there was the spot I had planned to park at originally, which was now vacant. I stopped here for another 10-15 minutes and ate the rest of my lunch after dipping my feet in the water. From here it was another 1.5 miles or so back up the road, which was quite pleasant compared to what I had just been through. My truck was waiting for me just as I had left it on the lonely little side road. I was running low on clean water, and decided to pack up and head into Bridgeport to get more. This would put me a bit closer to my next day's objective depending on where I camped. I ended up finding a nice spot right near the Sonora Pass junction, and enjoyed a nice early bedtime that night.
 
 ## Image Gallery
-{{< image-gallery >}}
+[Link to Image Gallery](../galleries/black-mountain-desert-creek-gallery/)

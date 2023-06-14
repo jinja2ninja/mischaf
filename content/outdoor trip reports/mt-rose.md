@@ -9,6 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
+weight: 31
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/rose-6-3-23/PXL_20230603_122043307.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/rose-6-3-23/PXL_20230603_121039065.jpg
@@ -142,4 +143,4 @@ Once I got near the bottom of the ridge, I started checking my CalTopo app to se
 I found the bushwhack to be more aggravating being fully awake, and with softer snow. I was punching through a lot more, but trying my best to still make good time. My 10AM deadline was looking tighter by the moment. I found the log crossing, and once again made the sketchy walk across the slippery Aspen. After crossing, I had about a quarter mile of thick Aspen and soft snow. Thankfully I had the advantage of daylight this time, so I was able to at least see ahead a bit. After some thrashing about, I started hearing music in the distance and figured it must be someone on the highway. As I got closer, I recognized the song as "The Spins" by Mac Miller, one of my favorites from senior year of high school. The music ended up being the people camped out, who were now fully awake and enjoying the day. I waved as I passed by their camp, and was at the truck right at 9:56AM with wet feet, but otherwise feeling great.
 
 ## Image Gallery
-{{< image-gallery >}}
+[Link to Image Gallery](../galleries/mt-rose-gallery/)

@@ -9,6 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
+weight: 36
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/PXL_20230513_122530815.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/PXL_20230513_162111404.PANO.jpg
@@ -83,4 +84,4 @@ I can see why this isn't a super popular peak to hike, its not very prominent, a
 [GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/wade0513.gpx)
 
 ## Image Gallery
-{{< image-gallery >}}
+[Link to Image Gallery](../galleries/wade-benchmark-gallery/)

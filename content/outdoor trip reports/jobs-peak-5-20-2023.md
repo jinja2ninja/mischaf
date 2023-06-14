@@ -9,6 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
+weight: 35
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/PXL_20230520_121006097.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/PXL_20230520_121417238.jpg
@@ -114,4 +115,4 @@ After leaving the creek, I made a wrong turn and somehow almost took the wrong d
 [GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/jobs-5-20-23.gpx)
 
 ## Image Gallery
-{{< image-gallery >}}
+[Link to Image Gallery](../galleries/jobs-gallery/)

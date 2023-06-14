@@ -92,4 +92,4 @@ I drove back to highway 50, and stopped off at Sierra at Tahoe for a few hours o
 **Pyramid Peak in the distance from the Nob Hill Chair at Sierra**
 
 ## Image Gallery
-{{< image-gallery >}}
+[Link to Image Gallery](../galleries/rubicon-peak-gallery/)

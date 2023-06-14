@@ -1,9 +1,7 @@
 ---
 draft: false
-_build:
-  list: false
-date: 2023-05-14T06:52:47-07:00
-title: "Test"
+date: 2023-06-011T12:39:00-07:00
+title: "OGUL #28 - Desert Creek Peak"
 description: ""
 slug: ""
 authors: []
@@ -11,7 +9,8 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-test: "thisisatest"
+_build:
+  list: false
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_143426483.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_145335055.jpg
@@ -117,22 +116,16 @@ gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_212836810.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_212841057.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_212842453.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_220029965.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_220257286.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_220258514.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230528_220300035.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_003143064.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_005012433.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_005028284.MP.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_005029528.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_010120884.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_010123921.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_010913822.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/PXL_20230529_013843243.jpg
-
-
 ---
+
 ## May 28th, 2023
 
-## Image Gallery
 {{< image-gallery >}}
