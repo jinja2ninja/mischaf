@@ -4,6 +4,7 @@ date: 2021-08-26T18:59:55-07:00
 lastmod: 2023-02-14T07:15:55-07:00
 draft: false
 ---
+# Welcome!
 This website is a place for me to blog(occasionally) about things that interest me, and hopefully share them with people who are interested in them. Things like doing stuff outside or on computers, maybe something else if I can think of it. 
 
 I've been working on the [Tahoe Ogul Peak List](https://www.tahoeogul.org/) Since roughly 2014, and have recently made a goal of finishing it before I turn 30. That means I'll need to knock out 40 peaks in just about a year. I plan to document all of them [here](outdoor-trip-reports/) going forward, so stay tuned!
