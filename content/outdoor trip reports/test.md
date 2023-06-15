@@ -135,4 +135,4 @@ gallery_images:
 ## May 28th, 2023
 
 ## Image Gallery
-{{< image-gallery >}}
+{{< image-gallery-new >}}
