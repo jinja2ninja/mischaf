@@ -185,6 +185,9 @@ gallery_images:
 ---
 
 ## May 29th, 2023
+
+<a href="../galleries/mt-siegel-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+
 I woke up at my campsite near Sonora Pass right around 4:40AM. It was 20 minutes before my alarm, but the desert birds had started their morning routine already. This was my third morning out there, and I knew that this meant the sun was coming up soon. I felt rested so I forced myself out of my down quilt, and started packing my truck up. I quickly broke camp and threw everything in my truck, on the road towards Gardnerville shortly after 5. The drive went by quickly, and I went straight to the Walmart there to grab some food for my excursion. 
 
 After leaving Walmart, I headed down Lone Pine Canyon Road, figuring I'd go as far as I felt comfortable going with my truck. There are various reports on this road on peakbagger.com, with varying accounts of how difficult the road is. One person suggested airing down your tires a few miles in (not really an option without a compressor), and others claimed to have made it to the Galena Saddle, just shy of the peak in stock 4runners and Tacomas. The road was just a normal dirt road for the first few miles. but around the area where the person suggested airing down it had a ton of rocks on the road. I understood why he suggested that, but wasn't too worried about my tires yet. I made one fairly deep creek crossing, and encountered some pretty deep mud and ruts along the next few miles. At one point, I bottomed my truck out on a big rock, which made me wince pretty hard. I got out and checked the underside of my truck, and nothing seemed damaged, so I kept going. Eventually the mud got more consistent, as well as the deep ruts that required you to straddle to avoid getting stuck. I told myself I'd use the next good pullout to park and just walk from there.
@@ -236,5 +239,7 @@ I got down to the road and found that it was actually a group of 4 or 5 off road
 ![Washed out road on the way back to the truck](https://s3.us-west-1.wasabisys.com/web-assets/siegel-5-29-23/PXL_20230529_184756226.jpg?classes=shadow)
 **Washed out road on the way back to the truck**
 
-## Image Gallery
-[Link to Image Gallery](../galleries/mt-siegel-gallery/)
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/siegel-5-29-23/mt_siegel_route.jpg?classes=shadow)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/siegel-5-29-23/mt_siegel_route.gpx)

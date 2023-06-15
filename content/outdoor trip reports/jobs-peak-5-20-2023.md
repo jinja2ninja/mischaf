@@ -49,6 +49,8 @@ gallery_images:
 
 ## May 20th, 2023
 
+<a href="../galleries/jobs-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+
 My alarm woke me up from a weird dream at 2:40AM. I can't recall the specifics of it at this point, but I do recall there being some weird tribal music, kind of similar to the "Survivor" theme song. I hadn't slept that well, and had a moderately painful lump in my throat the week leading up. Despite my discomfort, I had been dreaming about this peak all week. I did my morning routine as quietly as possible, and left my comfortable bed, wife and dog behind. I love them dearly, but this is more than they want to do in a day.
 
 I made a quick stop at Speedway in Placerville, and the 3AM tweakers were as active as they ever are. I grabbed a red bull, and some mini chocolate donuts to get my day started. I jammed up highway 50, and was at the trailhead around 4:40. After testing out the snow conditions and getting my gear ready, I was on the trail at 4:50. The trailhead was dry, but the snow started just a few feet behind the locked gate. I had my skis in an a-frame attached to my backpack, and opted to walk in my trail runners for as long as I could before switching over. I was a bit worried as the overnight temps were pretty high the night before, but I found the snow to still be supportive enough for walking. 
@@ -113,6 +115,3 @@ After leaving the creek, I made a wrong turn and somehow almost took the wrong d
 ![My route](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/route.jpg?classes=shadow)
 
 [GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/jobs-5-20-23.gpx)
-
-## Image Gallery
-[Link to Image Gallery](../galleries/jobs-gallery/)

@@ -41,6 +41,8 @@ gallery_images:
 
 # April 8th, 2023
 
+<a href="../galleries/rubicon-peak-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+
 My goal this winter has simply been to log as many days as possible on my splitboard. It brings me joy regardless of the conditions, a day out splitboarding is a good day. That said, I've also been (very) slowly chipping away at the [Tahoe Ogul Peak List](https://www.tahoeogul.org/), and Rubicon was one of the closer ones that I hadn't ticked off yet. In addition, the conditions lined up in a way that the snow would probably still be decent there.
 
 I wanted to get an earlyish start, so I set my alarm for 4am Saturday morning. I say earlyish, because 2:45am is usually when my "early" alarm for mountain adventures usually goes off. It hurts, but watching the sunrise from a mountain is always worth it. Plus I usually don't feel too tired once I get a Yerba Mate or a Redbull in me. I was out the door by 4:30 or so, I can't recall exactly but that seems accurate. Made a quick stop at the Pollock Pines Safeway for some snacks (a terrible grocery store, but it's on the way and open 24 hours).
@@ -90,6 +92,3 @@ I drove back to highway 50, and stopped off at Sierra at Tahoe for a few hours o
 
 ![Pyramid Peak in the distance from the Nob Hill Chair at Sierra](https://s3.us-west-1.wasabisys.com/web-assets/rubicon-4-18-23/PXL_20230408_175000488.jpg?classes=shadow)
 **Pyramid Peak in the distance from the Nob Hill Chair at Sierra**
-
-## Image Gallery
-[Link to Image Gallery](../galleries/rubicon-peak-gallery/)

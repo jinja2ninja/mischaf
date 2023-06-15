@@ -5,7 +5,7 @@ lastmod: 2023-02-15T06:31:00-00:00
 draft: false
 ---
 
-# Hashicorp Vault
+## Hashicorp Vault
 
 I have spent quite a bit of time over the past 6 months setting up Hashicorp Vault at work. Its been a fun experience, and I have learned a lot. I'm always a fan of running whatever I run at work in my homelab, and Vault has really proven to be a useful tool. Recently, I've been playing around with Kubernetes again, and figured Vault would be a great place to store my Kubernetes secrets. In this post, I'll try to outline how I set up Vault on my cluster, and how I use it with other apps on the cluster.
 

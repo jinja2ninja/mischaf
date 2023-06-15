@@ -128,6 +128,8 @@ gallery_images:
 ---
 ## May 28th, 2023
 
+<a href="../galleries/black-mountain-desert-creek-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+
 I let myself sleep in until around 6 after doing East and Middle Sisters the day before. I figured Desert Creek Peak would be a relatively easy day in comparison. I packed all of my stuff into my truck, and drove down to where I had seen Desert Creek the day before. There ended up being some people camped here, so I decided I'd find some other place to park my truck. I had seen a side spur road about a mile south on my topo map, so decided to check that out. This road was near the base of Black Mountain, and I figured I could link the ridges between the 2 up. I had read a Bob Burd trip report about him doing both, but my memories were pretty fuzzy about the details. I didn't have any service so I figured I'd just use my topo maps and wing it. I made it a decent ways up the spur road, and found a nice place to park my truck for the day. This was well off the beaten path, so I was pretty confident nobody would mess with my stuff. I loaded my day pack up, and was off shortly on my way. 
 
 There was no trail, but the route was fairly obvious. I aimed between 2 small bumps below Black Mountain, and hung a left(heading north) once I got between them. Up until this point, I was just walking through nice evenly spaced Pinyon Pines with the occasional bit of Sage here or there. After hanging the left, I was faced with a big thicket of Mountain Mahogany, which had been the hardest part of the day before coming down East Sister.I made my way through this, aiming for the ridge of Black Mountain ahead. After the thicket, I went downhill a short way to a fairly clear opening that led up the the slope of the mountain.
@@ -206,5 +208,8 @@ I was faced with 2 options: take the normal route down, and have to deal with cr
 
 At the bottom of the steep trail, I popped out onto the road, right across from where a group of people were camped. 3 dogs came charging at me, but their owner called them back, and they didn't seem too aggressive. The owner apologized, and I continued down the road. Not far up from there was the spot I had planned to park at originally, which was now vacant. I stopped here for another 10-15 minutes and ate the rest of my lunch after dipping my feet in the water. From here it was another 1.5 miles or so back up the road, which was quite pleasant compared to what I had just been through. My truck was waiting for me just as I had left it on the lonely little side road. I was running low on clean water, and decided to pack up and head into Bridgeport to get more. This would put me a bit closer to my next day's objective depending on where I camped. I ended up finding a nice spot right near the Sonora Pass junction, and enjoyed a nice early bedtime that night.
 
-## Image Gallery
-[Link to Image Gallery](../galleries/black-mountain-desert-creek-gallery/)
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/desert_creek_route.jpg?classes=shadow)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/desert-creek-5-28-23/desert-creek.gpx)
+

@@ -89,6 +89,8 @@ gallery_images:
 ---
 ## June 3rd, 2023
 
+<a href="../galleries/mt-rose-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+
 My alarm went off at an ungodly 2AM on this fine Saturday morning. I had 2 parties to go to later that day, the first being at noon. I stubbornly refused to give up on bagging another Ogul this weekend, and Mt Rose seemed to make the most sense given a lot of factors (mostly snow and estimated time to the summit). I rolled out of bed, and made the long sleepy drive up to Mt Rose Summit via highway 80. I'm a big proponent of the alpine start, but what sucks about driving at 2AM is that you can't see any of the scenery. Regardless, I made it to the trailhead and was walking by 4:48AM. I didn't have a ton of info on the route, but understood there was a bridge somewhere over Galena Creek, and that I'd just need to aim for the east ridge. Easy stuff on paper.
 
 A hundred feet or so from leaving the truck, I stumbled upon a BBQ, chairs and a cooler, and not long after, a person sleeping in a hammock. I have no idea if I woke them up or not, but I tried my best not to. From there, I cut down towards the creek to see if I could find the bridge. I never did find it, and ended up bushwhacking my way upstream through thickets of young aspen and soft snow, not terribly fun. I was on the lookout for either the bridge, or a way to get across. Eventually I found a somewhat sketchy but solid looking log to cross. It was a downed aspen, quite wet in places, and had a tangle of branches just strong enough to push me around. I did my best to use the branches to plant my poles on for balance, and survived the crossing without falling in. After that I made my way up the hill a bit, and eventually stumbled upon a faint trail. I followed the trail for a bit, eventually getting to the point where I could see the south facing side of the ridge. It was mostly dried out, and I decided I would ditch my splitboard here. I had brought it as more of a tool than a recreational device, and it appeared I had a good chance to just make it in my trail runners. 
@@ -142,5 +144,8 @@ Once I got near the bottom of the ridge, I started checking my CalTopo app to se
 
 I found the bushwhack to be more aggravating being fully awake, and with softer snow. I was punching through a lot more, but trying my best to still make good time. My 10AM deadline was looking tighter by the moment. I found the log crossing, and once again made the sketchy walk across the slippery Aspen. After crossing, I had about a quarter mile of thick Aspen and soft snow. Thankfully I had the advantage of daylight this time, so I was able to at least see ahead a bit. After some thrashing about, I started hearing music in the distance and figured it must be someone on the highway. As I got closer, I recognized the song as "The Spins" by Mac Miller, one of my favorites from senior year of high school. The music ended up being the people camped out, who were now fully awake and enjoying the day. I waved as I passed by their camp, and was at the truck right at 9:56AM with wet feet, but otherwise feeling great.
 
-## Image Gallery
-[Link to Image Gallery](../galleries/mt-rose-gallery/)
+
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/rose-6-3-23/mt_rose_route.jpg?classes=shadow)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/rose-6-3-23/mt_rose.gpx)

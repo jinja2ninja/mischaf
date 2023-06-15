@@ -195,6 +195,9 @@ gallery_images:
 ---
 
 ## May 27th, 2023
+
+<a href="../galleries/east-middle-sisters-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+
 I took off work a few hours early at 3PM Friday, and already had mostly loaded my truck up for 3 days of camping. I had a few odds and ends to handle after, but was on the road by 3:30PM or so. I stopped to get gas and a few road snacks in Placerville, and was soon headed up highway 50. Somewhere shortly before Kyburz, it started to rain pretty hard. I stopped at the Silverfork store and moved a few things from my truck bed that weren't waterproof into the cab. I made a quick stop in Gardnerville for some Jack in the Box Tacos, and then headed down 395. 
  
 Shortly before Topaz Lake, I took a left onto highway 208 for the first time, having continued south every other time I've driven by. The rain was still coming down here, but not nearly as hard, it was more of a sprinkle. Before I knew it, 208 turned into 338 and I was heading south. Highway 338 reminded me a lot of 395 to the west, just with slightly different scenery. The mountains of Nevada were drying out, but most were still capped with some snow. Not long after I made it to Risue Road, which led to my campsite. Risue Road is pretty nice for a dirt forest service road, but there were a few mud crossings in the first half mile or so that I wouldn't have wanted to try in a passenger car.
@@ -322,5 +325,8 @@ The rest of the climb from here was easy, just hopping up medium sized granite, 
 ![The sisters from my campsite](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_225844314.MP.jpg?classes=shadow)
 **The sisters from my campsite**
 
-## Image Gallery
-[Link to Image Gallery](../galleries/east-middle-sisters-gallery/)
+## Route
+*Route is approximate, I didn't record a proper GPX track*
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/east_middle_sister_route.jpg?classes=shadow)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/east_middle_sister.gpx)

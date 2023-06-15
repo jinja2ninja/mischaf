@@ -27,7 +27,7 @@ gallery_images:
 ---
 ##  May 13th, 2023
 
-
+<a href="../galleries/wade-benchmark-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
 I woke up early again for this one, we had enjoyed a nice dip in temps, along with some precipitation the previous week. I even got in a rare May pow day the previous Sunday. Looking at the forecast though, it was pretty clear that this Saturday was set to be significantly hotter. I wanted to knock another OGUL peak off, and initially had planned to go climb Mt Rose. I left the house around 3:15AM, and while driving over Echo Summit got the idea to knock Wade off instead of Rose, and save the hour of driving. I wasn't entirely sure that the trailhead would be thawed out, but I had a feeling it likely would be.
 
@@ -82,6 +82,3 @@ I can see why this isn't a super popular peak to hike, its not very prominent, a
 ![My route](https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/wade_route.jpg?classes=shadow)
 **My route**
 [GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/wade0513.gpx)
-
-## Image Gallery
-[Link to Image Gallery](../galleries/wade-benchmark-gallery/)
