@@ -75,13 +75,6 @@ We traversed a bit closer to the peaklet on the way out, and made our way back d
 ![George leading the way back](https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_175827873.jpg?classes=shadow)
 **George leading the way back**
 
-
-<video width="270" height="600" controls>
-  <source src=https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_182716047.TS.mp4 type="video/mp4">
-</video>
-
-**Some of us enjoyed the creek more than others**
-
 We stopped in Sierraville for some Mexican food on the way home, unfortunately they don't have a dog menu, but George was fast asleep in the back seat. Instead of taking 395 through Reno, we opted for highway 89 back to Truckee, which neither of us had ever driven before. The drive was quite pleasant, everything was still very green. In Truckee, we made one last stop at the Donner Memorial State Park, we had a Poppy Pass and figured it was worth checking out for a few minutes. The drive home from there was uneventful, and we made it back with plenty of daylight to spare. Not bad for an impromptu Friday night camping trip.
 
 ![The lupines were in full force on the drive out](https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_191546673.jpg?classes=shadow)
