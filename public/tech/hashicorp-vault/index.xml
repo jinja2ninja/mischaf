@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hashicorp Vault on Mischa Friegang</title>
+    <link>https://www.mischaf.com/tech/hashicorp-vault/index.html</link>
+    <description>Recent content in Hashicorp Vault on Mischa Friegang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Feb 2023 21:21:06 -0800</lastBuildDate><atom:link href="https://www.mischaf.com/tech/hashicorp-vault/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vault SSH Cert Management</title>
+      <link>https://www.mischaf.com/tech/hashicorp-vault/vault_ssh_certs/index.html</link>
+      <pubDate>Wed, 15 Feb 2023 21:21:06 -0800</pubDate>
+      <guid>https://www.mischaf.com/tech/hashicorp-vault/vault_ssh_certs/index.html</guid>
+      <description>Background There are quite a few ways you can authenticate over SSH, I&amp;rsquo;ll outline what seem to be the most popular ones:
+Probably the most common is to just use a password, this is neither enjoyable for the user, nor is it the most secure way to do things. If you have password auth enabled on a public facing server, its going to get hammered with attempts from bots all day.</description>
+    </item>
+    <item>
+      <title>Vault on Kubernetes</title>
+      <link>https://www.mischaf.com/tech/hashicorp-vault/vault_kubernetes/index.html</link>
+      <pubDate>Tue, 14 Feb 2023 07:20:31 -0800</pubDate>
+      <guid>https://www.mischaf.com/tech/hashicorp-vault/vault_kubernetes/index.html</guid>
+      <description>Hashicorp Vault I have spent quite a bit of time over the past 6 months setting up Hashicorp Vault at work. Its been a fun experience, and I have learned a lot. I&amp;rsquo;m always a fan of running whatever I run at work in my homelab, and Vault has really proven to be a useful tool. Recently, I&amp;rsquo;ve been playing around with Kubernetes again, and figured Vault would be a great place to store my Kubernetes secrets.</description>
+    </item>
+  </channel>
+</rss>

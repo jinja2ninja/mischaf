@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network on Mischa Friegang</title>
+    <link>https://www.mischaf.com/tech/networking/index.html</link>
+    <description>Recent content in Network on Mischa Friegang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 28 Aug 2021 11:47:13 -0700</lastBuildDate><atom:link href="https://www.mischaf.com/tech/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CGNAT Traversal with Wireguard</title>
+      <link>https://www.mischaf.com/tech/networking/wireguard_setup/index.html</link>
+      <pubDate>Sat, 28 Aug 2021 11:47:13 -0700</pubDate>
+      <guid>https://www.mischaf.com/tech/networking/wireguard_setup/index.html</guid>
+      <description>** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
+Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs.</description>
+    </item>
+  </channel>
+</rss>

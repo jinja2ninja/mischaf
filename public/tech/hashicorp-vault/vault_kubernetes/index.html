@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.110.0">
+    <meta name="generator" content="Relearn 5.16.2">
+    <meta name="description" content="Adventurer. Nerd.">
+    <title>Vault on Kubernetes :: Mischa Friegang</title>
+    <link href="/images/favicon.png?1687873148" rel="icon" type="image/png">
+    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
+    <link href="/css/fontawesome-all.min.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687873148" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1687873148" rel="stylesheet">
+    <link href="/css/auto-complete.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687873148" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1687873148" rel="stylesheet">
+    <link href="/css/fonts.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687873148" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1687873148" rel="stylesheet">
+    <link href="/css/theme-dark-blue.css?1687873148" rel="stylesheet" id="variant-style">
+    <link href="/css/variant.css?1687873148" rel="stylesheet">
+    <link href="/css/print.css?1687873148" rel="stylesheet" media="print">
+    <link href="/css/ie.css?1687873148" rel="stylesheet">
+    <script src="/js/url.js?1687873148"></script>
+    <script src="/js/variant.js?1687873148"></script>
+    <script>
+      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
+      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
+      window.index_js_url="/index.search.js";
+      var root_url="/";
+      var baseUri=root_url.replace(/\/$/, '');
+      // translations
+      window.T_Copy_to_clipboard = 'Copy to clipboard';
+      window.T_Copied_to_clipboard = 'Copied to clipboard!';
+      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
+      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
+      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
+      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
+      // some further base stuff
+      var baseUriFull='https:\/\/www.mischaf.com/';
+      window.variants && variants.init( [ 'dark-blue' ] );
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/tech/hashicorp-vault/vault_kubernetes/index.html">
+    <div id="body" class="default-animation">
+      <div id="sidebar-overlay"></div>
+      <div id="toc-overlay"></div>
+      <nav id="topbar" class="highlightable">
+        <div>
+          <div class="navigation">
+            <a class="nav nav-next topbar-link" href="/tech/networking/index.html" title="Network (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
+          </div>
+          <div class="navigation">
+            <a class="nav nav-prev topbar-link" href="/tech/hashicorp-vault/vault_ssh_certs/index.html" title="Vault SSH Cert Management (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
+          </div>
+          <div id="breadcrumbs">
+            <span id="sidebar-toggle-span">
+              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
+            </span>
+            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
+            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">About</span></a><meta itemprop="position" content="1"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tech/index.html"><span itemprop="name">Tech</span></a><meta itemprop="position" content="2"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tech/hashicorp-vault/index.html"><span itemprop="name">Hashicorp Vault</span></a><meta itemprop="position" content="3"> &gt; </li>
+              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Vault on Kubernetes</span><meta itemprop="position" content="4"></li>
+            </ol>
+          </div>
+          <div class="default-animation progress">
+            <div class="toc-wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#hashicorp-vault">Hashicorp Vault</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#helm-chart">Helm Chart</a>
+      <ul>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#ingressroute">Ingressroute</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main id="body-inner" class="highlightable default" tabindex="-1">
+        <div class="flex-block-wrapper">
+          <article class="default">
+            <header class="headline">
+            </header>
+<h1 id="vault-on-kubernetes">Vault on Kubernetes</h1>
+
+<h2 id="hashicorp-vault">Hashicorp Vault</h2>
+<p>I have spent quite a bit of time over the past 6 months setting up Hashicorp Vault at work. Its been a fun experience, and I have learned a lot. I&rsquo;m always a fan of running whatever I run at work in my homelab, and Vault has really proven to be a useful tool. Recently, I&rsquo;ve been playing around with Kubernetes again, and figured Vault would be a great place to store my Kubernetes secrets. In this post, I&rsquo;ll try to outline how I set up Vault on my cluster, and how I use it with other apps on the cluster.</p>
+<hr>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>
+<p>I opted to use AWS KMS to unseal the Vault, this requires creating a KMS key on AWS first. You don&rsquo;t need to do this if you&rsquo;re fine manually
+unsealing the vault. To me this is worth the cost of slightly less than a dollar a month. I&rsquo;m not going to get into the weeds about how to create a
+KMS key. You basically just need the key, and an IAM role and credentials. There are plenty of good guides out there like <a href="https://blogs.halodoc.io/vault-auto-unseal-via-aws-kms/" target="_blank">this one</a>.</p>
+</li>
+<li>
+<p>A cluster you have control over (obviously). I&rsquo;m running a 5 node k3s cluster, I used <a href="https://github.com/techno-tim/k3s-ansible" target="_blank">this repo</a> as a jumping off point to deploy it with Ansible.</p>
+</li>
+<li>
+<p><a href="https://helm.sh/docs/intro/install/" target="_blank">Helm</a> installed on your machine that can control your cluster.</p>
+</li>
+</ul>
+<hr>
+<h2 id="helm-chart">Helm Chart</h2>
+<p>Now that we have a cluster and an (optional) KMS key, we can get to deploying the Valut. I opted to use the Helm chart provided by Hashicorp, this is by far the easiest way I have come across to install apps in Kubernetes, and seems to be the industry favorite.</p>
+<p>The fist step was to install the Helm repo and update Helm&rsquo;s repos</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>helm repo add hashicorp https://helm.releases.hashicorp.com <span style="color:#f92672">&amp;&amp;</span> helm repo update
+</span></span></code></pre></div><p>Now we need to create some Kubernetes secrets for our AWS KMS config. This may seem a bit confusing, as we are creating the Vault to store secrets in, but we don&rsquo;t have that yet, so a Kubernetes secret will work for now.</p>
+<p>First we need to base64 encode the secrets. I did this from WSL on my laptop, any Linux machine will do, and there is probably a way to do it on Windows and MacOS. To encode a string, use the following syntax (make sure to use the <code>-n</code> flag for echo, or it will include a newline character and really mess up your day) <code>echo -n &lt;yourStringHere&gt; | base64</code>
+Encode each of the values in the yaml snippet shown below, and create a file like it named <code>secret.yaml</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Secret</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">type</span>: <span style="color:#ae81ff">Opaque</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">data</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">AWS_REGION</span>: <span style="color:#ae81ff">&lt;base64 here&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">AWS_SECRET_ACCESS_KEY</span>: <span style="color:#ae81ff">&lt;base64 here&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">AWS_ACCESS_KEY_ID</span>: <span style="color:#ae81ff">&lt;base64 here&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">VAULT_AWSKMS_SEAL_KEY_ID</span>: <span style="color:#ae81ff">&lt;base64 here&gt;</span>
+</span></span></code></pre></div><p>With that out of the way, we can create our <code>values.yaml</code>. I chose to do an HA setup with raft storage, but you can use standalone if you don&rsquo;t want the extra overhead. You can find a good overview of what to use in your values.yaml on <a href="https://developer.hashicorp.com/vault/docs/platform/k8s/helm/configuration" target="_blank">Hashicorp&rsquo;s Website</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">global</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">server</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">extraSecretEnvironmentVars</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">envName</span>: <span style="color:#ae81ff">AWS_REGION</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretName</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretKey</span>: <span style="color:#ae81ff">AWS_REGION</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">envName</span>: <span style="color:#ae81ff">AWS_ACCESS_KEY_ID</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretName</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretKey</span>: <span style="color:#ae81ff">AWS_ACCESS_KEY_ID</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">envName</span>: <span style="color:#ae81ff">AWS_SECRET_ACCESS_KEY</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretName</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretKey</span>: <span style="color:#ae81ff">AWS_SECRET_ACCESS_KEY</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">envName</span>: <span style="color:#ae81ff">VAULT_AWSKMS_SEAL_KEY_ID</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretName</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">secretKey</span>: <span style="color:#ae81ff">VAULT_AWSKMS_SEAL_KEY_ID</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">dev</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">standalone</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ha</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">config</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      ui = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      listener &#34;tcp&#34; {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        tls_disable = 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        address = &#34;[::]:8200&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        cluster_address = &#34;[::]:8201&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      seal &#34;awskms&#34; {}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      service_registration &#34;kubernetes&#34; {}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      storage &#34;raft&#34; {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        path = &#34;/vault/data&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      }</span>      
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">raft</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">enabled</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">setNodeId</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">config</span>: |<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        ui = true
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        listener &#34;tcp&#34; {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          tls_disable = 1
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          address = &#34;[::]:8200&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          cluster_address = &#34;[::]:8201&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        }
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        seal &#34;awskms&#34; {}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        service_registration &#34;kubernetes&#34; {}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        storage &#34;raft&#34; {
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">          path = &#34;/vault/data&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        }</span>        
+</span></span></code></pre></div><p>Now we can install it with <code>helm upgrade --install vault hashicorp/vault -f values.yaml -n vault</code></p>
+<p>Once the containers are created (check with kubectl -n vault get pods), exec into the first node and init the cluster <code>kubectl -n vault exec -ti vault-0 -- vault operator init</code></p>
+<p>Join the second node <code>kubectl  -n vault exec -ti vault-1 -- vault operator raft join http://vault-0.vault-internal:8200</code></p>
+<p>And the third node <code>kubectl  -n vault exec -ti vault-2 -- vault operator raft join http://vault-0.vault-internal:8200</code></p>
+<p>You should now have a running 3 node Vault cluster in Kubernetes. Nice work! It still needs a TLS cert and ingress created to access the Vault. For my certs, I use CertManager, and for ingress, I use Traefik. I won&rsquo;t get into the weeds about how those are set up in this post, but I will leave some yaml snippets of them below. Happy Vaulting!</p>
+<h3 id="certificate">Certificate</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">cert-manager.io/v1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Certificate</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">mischaf-us-prod</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">secretName</span>: <span style="color:#ae81ff">mischaf-us-production-tls</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">issuerRef</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#ae81ff">letsencrypt-production</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">ClusterIssuer</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">commonName</span>: <span style="color:#e6db74">&#34;vault.mischaf.us&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">dnsNames</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#e6db74">&#34;vault.mischaf.us&#34;</span>
+</span></span></code></pre></div><h3 id="ingressroute">Ingressroute</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">apiVersion</span>: <span style="color:#ae81ff">traefik.containo.us/v1alpha1</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">kind</span>: <span style="color:#ae81ff">IngressRoute</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">metadata</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">vault-gui</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">annotations</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kubernetes.io/ingress.class</span>: <span style="color:#ae81ff">traefik-external</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">spec</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">entryPoints</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">websecure</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">routes</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">match</span>: <span style="color:#ae81ff">Host(`vault.mischaf.us`)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">kind</span>: <span style="color:#ae81ff">Rule</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">vault-active</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">port</span>: <span style="color:#ae81ff">8200</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">namespace</span>: <span style="color:#ae81ff">vault</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tls</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">secretName</span>: <span style="color:#ae81ff">mischaf-us-production-tls</span>
+</span></span></code></pre></div><hr>
+
+            <footer class="footline">
+
+            </footer>
+          </article>
+        </div>
+      </main>
+    </div>
+    <aside id="sidebar" class="default-animation">
+      <div id="header-wrapper" class="default-animation">
+        <div id="header" class="default-animation">
+<img src="https://s3.us-west-1.wasabisys.com/web-assets/mischa_ralston.jpg"></img>
+        </div>
+        <div class="searchbox default-animation">
+          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
+          <label class="a11y-only" for="search-by">Search</label>
+          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        </div>
+        <script>
+          var contentLangs=['en'];
+        </script>
+        <script src="/js/auto-complete.js?1687873148" defer></script>
+        <script src="/js/lunr/lunr.min.js?1687873148" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1687873148" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1687873148" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1687873148" defer></script>
+        <script src="/js/search.js?1687873148" defer></script>
+      </div>
+      <div id="homelinks" class="default-animation">
+        <ul>
+          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
+        </ul>
+      </div>
+      <div id="content-wrapper" class="highlightable">
+        <ul class="topics enlarge morespace">
+          <li data-nav-id="/outdoor-trip-reports/index.html" class=""><a class="padding" href="/outdoor-trip-reports/index.html">Outdoor Trip Reports</a><ul id="subsections-e306dad2b5277718a5bb960f0232a982" class="morespace">
+          <li data-nav-id="/outdoor-trip-reports/mt-rose/index.html" class=""><a class="padding" href="/outdoor-trip-reports/mt-rose/index.html">OGUL #30 - Mt Rose</a></li>
+          <li data-nav-id="/outdoor-trip-reports/mt_siegel/index.html" class=""><a class="padding" href="/outdoor-trip-reports/mt_siegel/index.html">OGUL #29 - Mt Siegel</a></li>
+          <li data-nav-id="/outdoor-trip-reports/black-mountain-desert-creek/index.html" class=""><a class="padding" href="/outdoor-trip-reports/black-mountain-desert-creek/index.html">OGUL #28 - Desert Creek Peak</a></li>
+          <li data-nav-id="/outdoor-trip-reports/east-middle-sisters/index.html" class=""><a class="padding" href="/outdoor-trip-reports/east-middle-sisters/index.html">OGUL #26 and #27 - East and Middle Sister</a></li>
+          <li data-nav-id="/outdoor-trip-reports/jobs-peak-5-20-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/jobs-peak-5-20-2023/index.html">OGUL #25 - Job&#39;s Peak</a></li>
+          <li data-nav-id="/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html">OGUL #24 - Wade Benchmark</a></li>
+          <li data-nav-id="/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html">OGUL #23 - Rubicon Peak</a></li>
+          <li data-nav-id="/outdoor-trip-reports/ralston-ridge-1-28-23/index.html" class=""><a class="padding" href="/outdoor-trip-reports/ralston-ridge-1-28-23/index.html">Mt Ralston Ridge</a></li>
+          <li data-nav-id="/outdoor-trip-reports/desolation_north_lakes_tour/index.html" class=""><a class="padding" href="/outdoor-trip-reports/desolation_north_lakes_tour/index.html">Desolation Wilderness North Lakes Tour</a></li></ul></li>
+          <li data-nav-id="/tech/index.html" class="parent "><a class="padding" href="/tech/index.html">Tech</a><ul id="subsections-43fa384ae01ca11365a601e3cd261ecf" class="morespace">
+          <li data-nav-id="/tech/hashicorp-vault/index.html" class="parent alwaysopen"><a class="padding" href="/tech/hashicorp-vault/index.html">Hashicorp Vault</a><ul id="subsections-45c74b42e162ec5fdf5319474cb993fc" class="morespace">
+          <li data-nav-id="/tech/hashicorp-vault/vault_ssh_certs/index.html" class=""><a class="padding" href="/tech/hashicorp-vault/vault_ssh_certs/index.html">Vault SSH Cert Management</a></li>
+          <li data-nav-id="/tech/hashicorp-vault/vault_kubernetes/index.html" class="active"><a class="padding" href="/tech/hashicorp-vault/vault_kubernetes/index.html">Vault on Kubernetes</a></li></ul></li>
+          <li data-nav-id="/tech/networking/index.html" class="alwaysopen"><a class="padding" href="/tech/networking/index.html">Network</a><ul id="subsections-305d407a667d31c34f28b56ef835d2b4" class="morespace">
+          <li data-nav-id="/tech/networking/wireguard_setup/index.html" class=""><a class="padding" href="/tech/networking/wireguard_setup/index.html">CGNAT Traversal with Wireguard</a></li></ul></li></ul></li>
+        </ul>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
+        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
+        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
+          <ul>
+            <li id="select-language-container" class="footerLangSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-language fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-language">Language</label>
+                  <select id="select-language" onchange="location = baseUri + this.value;">
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+            </li>
+            <li id="select-variant-container" class="footerVariantSwitch">
+              <div class="padding select-container">
+                <i class="fas fa-paint-brush fa-fw"></i>
+                <span>&nbsp;</span>
+                <div class="select-style">
+                  <label class="a11y-only" for="select-variant">Theme</label>
+                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
+                    <option id="dark-blue" value="dark-blue" selected>Dark Blue</option>
+                  </select>
+                </div>
+                <div class="select-clear"></div>
+              </div>
+              <script>window.variants && variants.markSelectedVariant();</script>
+            </li>
+            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+          </ul>
+        </div>
+        <div id="footer" class="footerFooter showFooter">
+	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        </div>
+      </div>
+    </aside>
+    <script src="/js/clipboard.min.js?1687873148" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1687873148" defer></script>
+    <script src="/js/theme.js?1687873148" defer></script>
+  </body>
+</html>
