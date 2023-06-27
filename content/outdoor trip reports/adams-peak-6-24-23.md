@@ -14,7 +14,6 @@ weight: 30
 # June 24th, 2023
 <a href="../galleries/adams-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
-
 I planned this trip on a whim the Thursday before we went. Adams Peak is the furthest north of any peak on the OGUL list. I've been trying to knock out some of the furthest ones so I can eventually just have ones near Tahoe left, plus a lot of options are still unavailable to me after the insane winter we had. I wanted to go for a quick overnight camping trip with my wife and my dog, and Adams seemed to check all of the prerequisite boxes, so I took off work a few hours early Friday, and we started the drive up. 
 
 We drove up through Reno, and stopped at the In N Out Burger there for dinner. We got George a pup patty (a plain unsalted patty), and made sure to give it to him in small pieces so that he'd actually savor it and not just demolish it in 3 seconds. All 3 of us enjoyed the meal, and continued up north on 395, a stretch of road I've never been on. We drove for another half hour or so, and stopped at the Red Rocks trailhead, where I had read there were some dispersed camping areas. We found a decent spot to camp, and took the short walk up to the Red Rocks themselves. After spending a bit enjoying the cool formations, we walked back down to the truck, and decided to move it up the road a bit closer to camp for the night.
@@ -74,6 +73,12 @@ We traversed a bit closer to the peaklet on the way out, and made our way back d
 
 ![George leading the way back](https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_175827873.jpg?classes=shadow)
 **George leading the way back**
+
+<video width="270" height="600" controls>
+  <source src=https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_182716047.TS.mp4 type="video/mp4">
+</video>
+
+**Some of us enjoyed the creek more than others**
 
 We stopped in Sierraville for some Mexican food on the way home, unfortunately they don't have a dog menu, but George was fast asleep in the back seat. Instead of taking 395 through Reno, we opted for highway 89 back to Truckee, which neither of us had ever driven before. The drive was quite pleasant, everything was still very green. In Truckee, we made one last stop at the Donner Memorial State Park, we had a Poppy Pass and figured it was worth checking out for a few minutes. The drive home from there was uneventful, and we made it back with plenty of daylight to spare. Not bad for an impromptu Friday night camping trip.
 
