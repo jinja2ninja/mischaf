@@ -1,0 +1,129 @@
+---
+draft: false
+date: 2023-06-04T12:39:00-07:00
+title: "OGUL #32 and #33 - Mt Patterson and Wheeler Peak"
+description: ""
+slug: ""
+authors: []
+tags: []
+categories: []
+externalLink: ""
+series: []
+weight: 32
+_build:
+  list: false
+gallery_images:
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_125338106.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_135909109.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_140616396.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_140619449.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_140620571.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_141518407.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_141622115.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_141623089.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_143322420.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_145249721.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_145752582.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_152845860.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_152847297.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_152848636.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_152850214.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_155006388.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_155008225.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_155009164.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_155010615.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_155011986.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_155013394.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_160649002.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_160649805.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_160650891.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_160908866.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_160911540.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163226474.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163227852.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163228995.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163233232.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163233993.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163234681.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163235249.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163746890.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_163748509.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_165530709.PANO.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_172559013.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_172602516.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_174928990.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_174930684.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_174931973.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_174932721.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_174942889.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_174943710.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180150419.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180152205.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180153540.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180155993.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180526103.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180527079.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180529225.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180530927.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180532874.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180535032.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180537480.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180538640.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_180909828.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_181614360.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_181910854.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_181912561.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_181915891.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_181923104.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_181924337.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_181947864.PANO.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_182149551.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_182547981.PORTRAIT.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_183128597.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_183129904.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_185836864.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_185839273.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_190252732.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_190253814.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_191647522.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_191650462.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_191652703.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_192057732.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_192806203.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_192807055.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_192809299.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_193527161.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_193535279.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_195553857.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_195555379.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_195557007.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_203251876.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_203253353.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_203818058.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_203819777.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204302157.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204304560.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204305111.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204409371.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204413176.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204550429.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204955060.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_204955842.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_205256177.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_205257893.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_205901662.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_205903933.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_213212353.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_213214787.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_214039617.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_215219284.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_215220227.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_220703498.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_220704663.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230702_225622180.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230703_025116353.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/patterson-wheeler-7-2-23/PXL_20230703_025128720.jpg
+---
+## July 2nd, 2023
+
+{{< image-gallery >}}
