@@ -68,12 +68,9 @@ gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/da-ek-dow-go-et-the-nipple-7-4-23/PXL_20230704_220635266.jpg
 ---
 
-
-
+## July 4th, 2023
 
 <a href="../galleries/da-ek-dow-go-et-the-nipple-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
-
-
 
 For our second stop on our peakbagging road trip, we camped on the side of Blue Lakes Road. Being the third of July, I was a bit pessimistic about finding a good place to camp, but we did end up finding a great place right by some running water. We woke up around 5 on the 4th and geared up for the day. We weren’t entirely sure about the snow, so we ended up bringing snowshoes just in case (we would later regret this decision).
 
