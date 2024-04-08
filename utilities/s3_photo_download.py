@@ -1,3 +1,8 @@
+"""
+This script is used to download all of the pictures in an s3 bucket from a certain date. I then use these to select photos for a trip report.
+The date is specified by the "date_string", which in the case of my Google Pixel photos, looks something like "PXL_20220101"
+A full example with all of the arguments looks like `python3 s3_photo_download.py 'https://s3.us-west-1.wasabisys.com'  <bucket name> <bucket subdirectory name> 20230707 '/home/mischa/web-assets'`
+"""
 import boto3
 from botocore.client import Config
 import sys
@@ -11,10 +16,11 @@ bucket_name = sys.argv[2]
 subdirectory_name = f"{sys.argv[3]}"
 date_string = sys.argv[4]
 search_string = f"{subdirectory_name}/PXL_{date_string}"
-session = boto3.session.Session()
 target_directory = sys.argv[5]
-print(search_string)
-# Create an S3 client with the session
+session = boto3.session.Session()
+
+
+
 s3_client = session.client(
     service_name='s3',
     aws_access_key_id=access_key,
@@ -30,9 +36,8 @@ def get_object_list():
   page_iterator = paginator.paginate(Bucket=bucket_name, Prefix=search_string)
   objects_list = []
   for page in page_iterator:
-      if 'Contents' in page:  # Check if there are objects in the page
+      if 'Contents' in page:
           for obj in page['Contents']:
-              #print(obj['Key'])
               objects_list.append(obj['Key'])
           return objects_list
       else:
