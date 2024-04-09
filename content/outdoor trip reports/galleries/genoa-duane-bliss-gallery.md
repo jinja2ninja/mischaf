@@ -86,6 +86,6 @@ gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/genoa-duane-bliss-7-5-23/PXL_20230705_211942753.jpg
 ---
 
-## July 7th, 2023
+## July 5th, 2023
 
 {{< image-gallery >}}
