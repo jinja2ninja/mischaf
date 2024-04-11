@@ -10,7 +10,7 @@ categories: []
 externalLink: ""
 series: []
 gallery_images:
-
+weight: 22
 ---
 ## July 6th, 2023
 
