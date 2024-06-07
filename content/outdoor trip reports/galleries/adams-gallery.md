@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-06-026T07:01:00-07:00
-title: "OGUL #31 - Adams Peak"
+title: "Ogul #31 - Adams Peak"
 description: ""
 slug: ""
 authors: []

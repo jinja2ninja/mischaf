@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-05-14T06:52:47-07:00
-title: "OGUL #24 - Wade Benchmark"
+title: "Ogul #24 - Wade Benchmark"
 description: ""
 slug: ""
 authors: []
@@ -29,7 +29,7 @@ gallery_images:
 
 <a href="../galleries/wade-benchmark-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
-I woke up early again for this one, we had enjoyed a nice dip in temps, along with some precipitation the previous week. I even got in a rare May pow day the previous Sunday. Looking at the forecast though, it was pretty clear that this Saturday was set to be significantly hotter. I wanted to knock another OGUL peak off, and initially had planned to go climb Mt Rose. I left the house around 3:15AM, and while driving over Echo Summit got the idea to knock Wade off instead of Rose, and save the hour of driving. I wasn't entirely sure that the trailhead would be thawed out, but I had a feeling it likely would be.
+I woke up early again for this one, we had enjoyed a nice dip in temps, along with some precipitation the previous week. I even got in a rare May pow day the previous Sunday. Looking at the forecast though, it was pretty clear that this Saturday was set to be significantly hotter. I wanted to knock another Ogul peak off, and initially had planned to go climb Mt Rose. I left the house around 3:15AM, and while driving over Echo Summit got the idea to knock Wade off instead of Rose, and save the hour of driving. I wasn't entirely sure that the trailhead would be thawed out, but I had a feeling it likely would be.
 
 Sure enough, when I got there the parking area was well thawed out. I parked the truck, strapped my skis in an a frame on my backpack, and set out to find the trailhead in the dark, it was around 5:15AM. I found the trail after a few minutes of stumbling around in the dark, and was soon making my way up some steep switchbacks. The trail immediately felt more like the Eastern Sierra than the Tahoe area. It was steep and rocky with plants that reminded me more of the desert than what you typically see in Tahoe. The switchbacks didn't last too long, and soon they opened up into a route that goes directly up Horsethief Canyon. According to some research, it got its name because of the "horse thieves" who would steal horses from emigrants in Woodfords Canyon, and take them up Horsethief canyon to graze its meadows. 
 ![The rocky switchbacks near the start](https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/PXL_20230513_122530815.jpg?classes=shadow)
@@ -76,7 +76,7 @@ I crossed the creek a bit southeast of where I had crossed in the morning, but s
 **One last view of Hawkins peak and the before descending**
 
 
-I can see why this isn't a super popular peak to hike, its not very prominent, and there are a ton of other cooler looking peaks nearby to draw you away. That said, I'm glad this was on the OGUL list as it forced me to go have a really nice tranquil day in the woods. I didn't see another soul while I was out there, and the scenery was fantastic in more than one way. Definitely give this peak a try if you're looking for a nice easy ski and some solitude. 
+I can see why this isn't a super popular peak to hike, its not very prominent, and there are a ton of other cooler looking peaks nearby to draw you away. That said, I'm glad this was on the Ogul list as it forced me to go have a really nice tranquil day in the woods. I didn't see another soul while I was out there, and the scenery was fantastic in more than one way. Definitely give this peak a try if you're looking for a nice easy ski and some solitude. 
 
 ## Route
 ![My route](https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/wade_route.jpg?classes=shadow)

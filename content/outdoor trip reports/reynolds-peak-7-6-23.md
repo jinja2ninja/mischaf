@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-04-08T15:52:47-07:00
-title: "OGUL #38 - Reynolds Peak"
+title: "Ogul #38 - Reynolds Peak"
 description: ""
 slug: ""
 authors: []

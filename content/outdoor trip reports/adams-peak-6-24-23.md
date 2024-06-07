@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-06-026T07:01:00-07:00
-title: "OGUL #31 - Adams Peak"
+title: "Ogul #31 - Adams Peak"
 description: ""
 slug: ""
 authors: []
@@ -15,7 +15,7 @@ weight: 30
 <a href="../galleries/adams-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
 
-I planned this trip on a whim the Thursday before we went. Adams Peak is the furthest north of any peak on the OGUL list. I've been trying to knock out some of the furthest ones so I can eventually just have ones near Tahoe left, plus a lot of options are still unavailable to me after the insane winter we had. I wanted to go for a quick overnight camping trip with my wife and my dog, and Adams seemed to check all of the prerequisite boxes, so I took off work a few hours early Friday, and we started the drive up. 
+I planned this trip on a whim the Thursday before we went. Adams Peak is the furthest north of any peak on the Ogul list. I've been trying to knock out some of the furthest ones so I can eventually just have ones near Tahoe left, plus a lot of options are still unavailable to me after the insane winter we had. I wanted to go for a quick overnight camping trip with my wife and my dog, and Adams seemed to check all of the prerequisite boxes, so I took off work a few hours early Friday, and we started the drive up. 
 
 We drove up through Reno, and stopped at the In N Out Burger there for dinner. We got George a pup patty (a plain unsalted patty), and made sure to give it to him in small pieces so that he'd actually savor it and not just demolish it in 3 seconds. All 3 of us enjoyed the meal, and continued up north on 395, a stretch of road I've never been on. We drove for another half hour or so, and stopped at the Red Rocks trailhead, where I had read there were some dispersed camping areas. We found a decent spot to camp, and took the short walk up to the Red Rocks themselves. After spending a bit enjoying the cool formations, we walked back down to the truck, and decided to move it up the road a bit closer to camp for the night.
 
@@ -51,12 +51,12 @@ Before long, we crossed another, smaller creek separating Adams and its northern
 ![Summit Panorama](https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_171904437.PANO.jpg?classes=shadow)
 **Summit Panorama**
 
-Looking to the east, it seemed that the subpeak in that direction might be slightly higher. I had done very little research, but knew that, according to the forest service topo map I had loaded, this was the peak. The USGS marker and nifty aluminum summit register seemed to confirm this. When I returned home, I learned that the east summit may indeed be a few feet higher. The OGUL list seems to indicate that the west summit is what counts for the list, but I'll still likely come back and ski it just because it bothers me to not stand at the "true" summit. It sounds like the peak was declared incorrectly at some point, and those USGS markers aren't easy to move.
+Looking to the east, it seemed that the subpeak in that direction might be slightly higher. I had done very little research, but knew that, according to the forest service topo map I had loaded, this was the peak. The USGS marker and nifty aluminum summit register seemed to confirm this. When I returned home, I learned that the east summit may indeed be a few feet higher. The Ogul list seems to indicate that the west summit is what counts for the list, but I'll still likely come back and ski it just because it bothers me to not stand at the "true" summit. It sounds like the peak was declared incorrectly at some point, and those USGS markers aren't easy to move.
 
 ![Summit Marker](https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_172057703.jpg?classes=shadow)
 **Summit Marker**
 
-The register dated back to 1972, and seemed to be made of cast aluminum. I had never seen this design before but it seemed to be quite sturdy and weather resistant. We both signed the register, and took some pictures. We had nowhere important to be, so we spent a good 20 minutes on top enjoying some snacks and the views. Lassen was visible to the north, as well as Honey Lake. I couldn't really determine what many of the other visible peaks were from the unfamiliar area, but Caltop's viewshed layer told me that the tops of some other OGULs (Mt Rose and Siegel) were visible to the south. 
+The register dated back to 1972, and seemed to be made of cast aluminum. I had never seen this design before but it seemed to be quite sturdy and weather resistant. We both signed the register, and took some pictures. We had nowhere important to be, so we spent a good 20 minutes on top enjoying some snacks and the views. Lassen was visible to the north, as well as Honey Lake. I couldn't really determine what many of the other visible peaks were from the unfamiliar area, but Caltop's viewshed layer told me that the tops of some other Oguls (Mt Rose and Siegel) were visible to the south. 
 
 ![Me and George on top, the summit register is in my hand](https://s3.us-west-1.wasabisys.com/web-assets/adams-6-24-23/PXL_20230624_172033879.jpg?classes=shadow)
 **Me and George on top, the summit register is in my hand**

@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-04-08T15:52:47-07:00
-title: "OGUL #36 and 37 - Genoa Peak and Duane Bliss Peak"
+title: "Ogul #36 and 37 - Genoa Peak and Duane Bliss Peak"
 description: ""
 slug: ""
 authors: []

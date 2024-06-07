@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-06-04T12:39:00-07:00
-title: "OGUL #29 - Mt Siegel"
+title: "Ogul #29 - Mt Siegel"
 description: ""
 slug: ""
 authors: []

@@ -1,0 +1,141 @@
+---
+draft: false
+date: 2023-05-21T07:30:00-07:00
+title: "Ogul #50 - Highland Peak"
+description: ""
+slug: ""
+authors: []
+tags: []
+categories: []
+externalLink: ""
+series: []
+weight: 35
+_build:
+  list: false
+gallery_images:
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201333169.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201331939.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201330829.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201329901.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201326612.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_200410827.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_194250599.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_193851307.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_193805641.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_193800201.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_193522715.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_193521754.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_192850371.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_193431832.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_191922632.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_192402598.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_191146938.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_191145225.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_185514648.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_185510850.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_183349656.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_183354159.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_183047370.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_183348129.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_180925234.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_180923969.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174730323.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174632661.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174507920.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174507320.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174506041.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174505002.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174503921.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174502880.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174501792.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174500237.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174458679.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174457525.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174430969.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174332639.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174321292.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174257251.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174219733.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_174207990.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_173040969.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_172854824.PANO.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_172823234.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_172814157.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_172821380.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_172433928.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_171949197.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_171730795.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_171730795.RESTORED.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_170356189.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_171003538.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_170020631.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_165950306.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_165650731.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_165649316.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_165430246.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_163456265.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_162623797.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161841449.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_162621339.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161838930.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161833057.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161836496.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161835121.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161141514.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161136992.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161138730.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161118853.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_161118853.RESTORED.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_153744290.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_153742967.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_153740115.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_152040423.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_151805412.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_151759084.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_150044096.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_150047273.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_144343888.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_145411007.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_143815980.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_142527277.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_142516518.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_141757290.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_140046715.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_140044511.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_135449161.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_135447973.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_135444398.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_135442787.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_135301296.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_134824731.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_134821040.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_132746717.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_133135660.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_131833398.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_132530813.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_131829804.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_130731637.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_130654305.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_123606091.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_123605143.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_123604038.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_120147423.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_205345537.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_120145801.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_205343705.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_205342836.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_205339576.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_203341427.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_204813735.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201943075.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201939869.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201937608.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/highland-6-2-24/PXL_20240602_201834125.jpg
+---
+
+## June 2nd, 2024
+
+{{< image-gallery >}}
+
+
+

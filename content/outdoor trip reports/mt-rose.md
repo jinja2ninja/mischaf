@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-06-04T12:39:00-07:00
-title: "OGUL #30 - Mt Rose"
+title: "Ogul #30 - Mt Rose"
 description: ""
 slug: ""
 authors: []

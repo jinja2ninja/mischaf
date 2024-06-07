@@ -2,7 +2,7 @@
 ---
 draft: false
 date: 2023-06-04T12:39:00-07:00
-title: "OGUL #26 and #27 - East and Middle Sister"
+title: "Ogul #26 and #27 - East and Middle Sister"
 description: ""
 slug: ""
 authors: []
