@@ -204,7 +204,7 @@ Shortly before Topaz Lake, I took a left onto highway 208 for the first time, ha
  
 I followed Risue road for a few miles, and soon opened my CalTopo app to get an idea of where the side road I wanted to take was. I turned onto the side road, and was greeted with some pretty thick brush on either side of the road that added some nice pinstripes to my truck. It kind of makes me cringe, but I didn't get my truck to look pretty. The road didn't go on for too long, and I was at the corral I had read about online soon. I had thought based on maps that there was perhaps a possibility of going further than the corral, but the road was completely overgrown and perhaps only 3 feet wide beyond there. I parked my truck and set up my tent in a light rain, and took a few minutes to walk around the area to check it out. It had a very cool rustic feel to it. I stayed up long enough to see the sun start to set, and was in bed before 9PM. 
  
- ![Sunset by the Corral](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_121452001.jpg?classes=shadow)
+![Sunset by the Corral](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_121452001.jpg?classes=shadow)
 **Sunset by the Corral**
 
 ![Sunrise by the Corral](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_124522348.jpg?classes=shadow)

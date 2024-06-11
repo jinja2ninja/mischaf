@@ -59,3 +59,8 @@ The return trip was fairly uneventful and easy. We made pretty good time, but we
 
 ![The field of Mule's Ears](https://s3.us-west-1.wasabisys.com/web-assets/mildred-8-13-23/PXL_20230813_215311161.jpg?classes=shadow)
 **The field of Mule's Ears**
+
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/mildred-8-13-23/mildred_route.jpg?classes=shadow)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/mildred-8-13-23/mildred-8-13-23.gpx)

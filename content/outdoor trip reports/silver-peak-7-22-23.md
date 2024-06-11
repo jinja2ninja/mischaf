@@ -15,12 +15,12 @@ weight: 19
 
 <a href="../galleries/silver-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
-I met Chris in Placerville, and we carpooled up to Ebett's Pass, arriving around 7:30AM. Instead of going all the way to the pass, we parked a few turns east of it, at the Noble Lake Trailhead. We knew it was going to be somewhat hot, and definitely a struggle to get up based on what we had read about this route. Silver Peak is also an interesting Ogul peak in that the slightly lower southwest summit is the Ogul Peak, but not the high point.
+I met Chris in Placerville, and we carpooled up to Ebbett's Pass, arriving around 7:30AM. Instead of going all the way to the pass, we parked a few turns east of it, at the Noble Lake Trailhead. We knew it was going to be somewhat hot, and definitely a struggle to get up based on what we had read about this route. Silver Peak is also an interesting Ogul peak in that the slightly lower southwest summit is the Ogul Peak, but not the high point.
 
 ![Silver Peak from the Trailhead](https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_143608407.jpg?classes=shadow)
 **Silver Peak from the Trailhead**
 
-We got started and the first few miles of the trail were pretty pleasant. Nicely forested, and mostly flat. After a mile or 2, we came across a pretty massive avalanche path that had created a huge mess of a stand of trees. Considering the size of the trees it knocked over, this seemed to be a fairly rarely powerful avalanche for the area. We navigated our way through the carnage, and soon were at Noble Creek, which we forded with out shoes off.
+We got started and the first few miles of the trail were pretty pleasant. Nicely forested, and mostly flat. After a mile or 2, we came across a pretty massive avalanche path that had created a huge mess of a stand of trees. Considering the size of the trees it knocked over, this seemed to be a fairly rarely powerful avalanche for the area. We navigated our way through the carnage, and soon were at Noble Creek, which we forded with our shoes off.
 
 ![Avalanche destruction](https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_145735787.jpg?classes=shadow)
 **Avalanche destruction**

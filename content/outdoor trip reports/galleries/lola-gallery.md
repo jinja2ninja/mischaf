@@ -1,7 +1,7 @@
 ---
 draft: false
 date: 2023-05-14T06:52:47-07:00
-title: "Ogul #41 - Silver Peak - Southwest Summit"
+title: "Ogul #44 - Mt Lola"
 description: ""
 slug: ""
 authors: []
@@ -13,78 +13,83 @@ weight: 36
 _build:
   list: false
 gallery_images:
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_143601287.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_143608407.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_143609611.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_145724462.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_145735787.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_150637409.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_152435981.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_153739074.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_153741591.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_154834668.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_155322846.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_155323792.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_160124886.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_162741730.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_162742905.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_164250692.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_165930642.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_165938390.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_165939099.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_171629340.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_171635661.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_171918551.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_173850213.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_173854016.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_174342713.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_180011025.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_180014327.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_180243827.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_182150706.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_191150119.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_192142324.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_192637890.PANO.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_192931786.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_193301139.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_193701298.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_194617637.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_194618972.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_194621345.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_194623836.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_194629169.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_194630470.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_194631641.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_195908542.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_200443391.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_200946980.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_202158757.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203041905.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203122504.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203123464.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203125383.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203127520.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203129204.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203131349.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203133432.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203155786.PANO.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_203435207.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_204813459.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_204815668.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_211255435.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_211258261.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_215050358.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_215052517.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_215055122.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_215303913.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_221823009.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_222821765.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_222823058.MP.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_224742626.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_230723497.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/silver-7-22-23/PXL_20230722_230726255.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_200046936.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_200045705.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_200042444.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_195220076.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190504378.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190501982.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190459373.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190457475.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190443538.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190436585.PORTRAIT.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190428949.PORTRAIT.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190424972.PORTRAIT.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190418985.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190417684.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190301871.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190300699.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190259096.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_190256934.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_185924068.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_185919946.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_185136533.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_185134610.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_182348122.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_180243596.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_180241261.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_180238016.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174825791.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174410533.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174405087.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174401384.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174400364.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174356730.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174343191.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174341973.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_174329498.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_173106240.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_173102104.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_173059788.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_172355418.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_172354356.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_172213171.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_172212142.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_172130910.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171932681.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171740390.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171505213.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171504162.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171501884.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171309111.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171205349.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_171116398.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_170721249.PORTRAIT.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_170718167.PORTRAIT.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_170713103.PORTRAIT.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_170644762.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_165510068.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_164825952.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_164426879.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_163808816.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_163146474.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_162119110.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_162117984.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_160756779.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_160754735.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_155552924.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_155234234.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_154620498.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_152724268.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_152723303.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_152243575.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_152242494.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_151343104.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_151340196.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_150915782.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/lola-8-20-23/PXL_20230820_141123502.jpg
 ---
-##  May 13th, 2023
+##  August 20th, 2023
 
 {{< image-gallery >}}
 

@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 date: 2023-05-21T07:30:00-07:00
 title: "Ogul #42 - Black Buttes"
 description: ""
@@ -48,3 +48,9 @@ As I made my way down, I struck up a quick conversation with some folks over on 
 **George eagerly leading the way back**
 
 The walk back was somewhat long, but mostly uneventful. Before too long, we were back at the trailhead and ready to head back into civilization.
+
+
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/black-buttes-7-29-23/black-buttes_route.jpg?classes=shadow)
+**My route**
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/black-buttes-7-29-23/black_buttes-7-29-23.gpx)
