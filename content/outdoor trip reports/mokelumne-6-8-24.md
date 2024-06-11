@@ -74,7 +74,7 @@ Once back on trail, it was pretty easy going for the most part back to the secon
 ![A better shot of the second lake. It almost looked clean enough for a swim](https://s3.us-west-1.wasabisys.com/web-assets/mokelumne-6-8-24/PXL_20240608_193915222.jpg?classes=shadow)
 **A better shot of the second lake. It almost looked clean enough for a swim**
 
-![Looking back across Tanglefoot Canyon. I wasn't looking forward to going back up]https://s3.us-west-1.wasabisys.com/web-assets/mokelumne-6-8-24/PXL_20240608_210508496.jpg?classes=shadow)
+![Looking back across Tanglefoot Canyon. I wasn't looking forward to going back up](https://s3.us-west-1.wasabisys.com/web-assets/mokelumne-6-8-24/PXL_20240608_210508496.jpg?classes=shadow)
 **Looking back across Tanglefoot Canyon. I wasn't looking forward to going back up**
 
 The rest of the trip down was pretty easy and uneventful. the afternoon had warmed up a bit, but thankfully not too badly. Wetting my sun hoodie had gotten me through the uphill section in the sun, and it was all easy going from there. I successfully avoided the shin destroyer metal stakes, and was back at the truck around 2:45PM.  
