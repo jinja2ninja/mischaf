@@ -47,3 +47,8 @@ The walk back down was pretty quick and easy, I showed off my glissading skills 
 **Looking down the way we came up**
 
 On the way home, we stopped and checked out Downieville. The entire town was full of mountain bikers and tourists. It’s cool to see an old gold rush town like that figure out a niche and manage to still have a pretty vibrant economy for where it is. After Downieville, we stopped again on the side of 49 to go swim in the Downie River. It was a lot of driving, but a very pleasant day out exploring Northern California. 
+
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/sierra-buttes-7-8-23/sierra-buttes-route.jpg?classes=shadow)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/sierra-buttes-7-8-23/sierra-buttes-7-8-23.gpx)

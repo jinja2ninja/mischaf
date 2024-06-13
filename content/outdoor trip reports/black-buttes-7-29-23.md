@@ -13,6 +13,8 @@ weight: 18
 ---
 ## July 29th, 2023
 
+<a href="../galleries/black-buttes-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+
 My wife and dog joined me on this fine Saturday, we made the bumpy drive out to the Grouse Ridge trailhead. It wasn't terrible, but definitely was slow going and quite dusty and bumpy. When we arrived, there were quite a few more cars than I had expected, turns out there's a campground out there thats fairly popular. There was even a Honda Civic that had somehow managed to pull a trailer out there. Mad respect to that guy, he either knows a better route, or is quite the skilled driver.
 
 ![Great views near the trailhead](https://s3.us-west-1.wasabisys.com/web-assets/black-buttes-7-29-23/PXL_20230729_155451910.MP.jpg?classes=shadow)

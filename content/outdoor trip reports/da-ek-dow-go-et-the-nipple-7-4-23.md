@@ -137,3 +137,8 @@ The walk down was steep, but mostly easy. We had to cross another steep and expo
 ![Heading back down towards Blue Lakes Road](https://s3.us-west-1.wasabisys.com/web-assets/da-ek-dow-go-et-the-nipple-7-4-23/PXL_20230704_212432350.jpg?classes=shadow)
 **Heading back down towards Blue Lakes Road**
 
+
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/da-ek-dow-go-et-the-nipple-7-4-23/da-ek-dow-go-et-the-nipple-route.jpg?classes=shadow)
+**My route**
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/da-ek-dow-go-et-the-nipple-7-4-23/da-ek-dow-go-et-the-nipple-7-4-23.gpx)

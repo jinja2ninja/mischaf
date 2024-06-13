@@ -80,3 +80,9 @@ I made good time back towards Ebbett’s pass, stopping only to figure out where
 
 ![Still lots of snow in the trees for July](https://s3.us-west-1.wasabisys.com/web-assets/reynolds-7-6-23/PXL_20230706_203632216.jpg?classes=shadow)
 **Still lots of snow in the trees for July**
+
+
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/reynolds-7-6-23/reynolds-route.jpg?classes=shadow)
+**My route**
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/reynolds-7-6-23/reynolds-7-6-23.gpx)

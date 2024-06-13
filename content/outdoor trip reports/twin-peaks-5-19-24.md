@@ -49,7 +49,7 @@ Pretty soon I crested the ridge, and the final rock pyramid of the Eastern Twin 
 
 I hung out for a few minutes, took some pictures, and did all the other things I normally do at the top of a mountain before heading back down to my stuff. Once back at my backpack, I pulled out my foam sitting pad and enjoyed some cold leftover pizza. The purple potato pizza from Slice House in Folsom is a great, albeit unconventional pizza. I didn't linger too long, as the snow was already softer than I had wanted it to be. There didn't seem to be a good refreeze, which typically is the time of year I give up on skiing and snowboarding near Tahoe. I switched into my ski boots, clicked in, and started to ski down. 
 
-![Looking back at Twin Peaks after skiing a bit](https://s3.us-west-1.wasabisys.com/web-assets/twin-peaks-5-19-24/PXL_20240519_174551704.PANO.jpg?classes=shadow)
+![Looking back at Twin Peaks after skiing a bit](https://s3.us-west-1.wasabisys.com/web-assets/twin-peaks-5-19-24/PXL_20240519_190018183.jpg?classes=shadow)
 **Looking back at Twin Peaks after skiing a bit**
 
 The skiing wasn't fantastic, but not terrible either. There were some fun, fairly open sections below Twin Peaks, although that very quickly ended, and I was back at the flat section. I skate skied as far as I could before putting skins on to get back up towards Stanford Rock. The skin up wasn't too bad, I stuck more to the proper ridge this time and made pretty good time. I dropped my skis where the snow ended, perhaps 50 feet south of Stanford Rock. I found a very nice pair of benches there, as well as a summit register. I took a few minutes to sit down on the bench (when in Rome...), and signed the register. 
