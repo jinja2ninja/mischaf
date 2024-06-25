@@ -1,0 +1,117 @@
+---
+draft: false
+date: 2024-06-25T06:34:35
+title: "Ogul #55 and 56 - Needle Peak and Lyon Peak"
+description: ""
+slug: ""
+authors: []
+tags: []
+categories: []
+externalLink: ""
+series: []
+_build:
+  list: false
+gallery_images:
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_170323380.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_170324864.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_170618819.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_171301977.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_171735523.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_173941245.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_174215088.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_175310891.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_175312886.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_180514742.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_181633676.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_181637638.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_185004619.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_185008298.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_190437341.PANO.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_190518365.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_190525908.MP.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_191044440.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_191712956.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_192427394.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_192429551.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193023780.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193025123.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193025871.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193414332.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193414833.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193819855.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_194432875.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195112938.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195539421.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195551311.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195620127.PANO.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195830182.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195902648.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195907982.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195909290.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195910948.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195912514.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195914142.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195915740.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195917287.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195918815.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195920361.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195921975.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195923450.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195925036.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_200822008.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_201303474.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_201544869.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_202037999.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_202039237.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_202040463.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_202615510.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_202617651.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_202911926.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_202912697.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203532544.PANO.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203538534.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203540336.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203541926.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203543695.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203545799.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203547566.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203549145.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203550890.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203552502.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203554117.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203555692.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203557257.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203606441.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_203607540.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_205422965.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_210425408.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_210427475.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_210428584.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_211726343.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_213849357.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_213851201.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_213852069.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_213853004.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_213853942.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_215701368.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_222305586.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_222307760.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_222309113.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_222310027.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_222311291.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_222312351.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_224843180.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_224844838.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_224847510.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_224848545.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_230549083.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_230551808.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_232252837.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_232255416.jpg
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/needle-lyon_route.gpx
+  - https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/needle-lyon_route.jpg
+---
+
+## June 23rd, 2024
+
+{{< image-gallery >}}
