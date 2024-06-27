@@ -43,7 +43,7 @@ From the Emigrant Road plaque, we were able to get back onto a trail and make mu
 
 I was on top of Granite Chief in just a few short minutes, where I found 3 other hikers. 2 of them were an older couple, who asked if I could take their picture, and then returned the favor for me. I signed the register, and was soon ready to head for Needle Peak. The older gentleman gave me some info, as he'd done that route a few times before. He mentioned a trail down below the ridge that offered easier going than the ridge proper, but would require gaining the elevation again. Looking at my maps, I think he must be referring to the Tevis Cup Trail. I opted to stay on the ridge, as I find that to just be more fun.
 
-![Granite Chief Summit Panorama](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_185004619.jpg?classes=shadow)
+![Granite Chief Summit Panorama](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_190437341.PANO.jpg?classes=shadow)
 **Granite Chief Summit Panorama**
 
 ![A rare photo of myself on the peak](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_190518365.MP.jpg?classes=shadow)
@@ -51,7 +51,7 @@ I was on top of Granite Chief in just a few short minutes, where I found 3 other
 
 The ridge down from Granite Chief wasn't too bad, although there was a decent bit of rock hopping. Once I got below the rocks, the route weaved in and out of some trees, before leading to a small class 3 section that could be avoided to the west, but I chose to just scramble up it. The route then went up another hump in the ridge, where I stopped to transfer some water into the smaller bottle I carry on my shoulder strap. From there, it was just down a bit and then back up towards Needle.
 
-![Looking towards Needle and Lyon Peaks](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_185004619.jpg?classes=shadow)
+![Looking towards Needle and Lyon Peaks](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_191044440.jpg?classes=shadow)
 **Looking towards Needle and Lyon Peaks**
 
 ![Mt Mildred to the West](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193025871.jpg?classes=shadow)
@@ -62,7 +62,7 @@ The ridge down from Granite Chief wasn't too bad, although there was a decent bi
 
 I made my way towards Needle Peak, and ended up bypassing the steeper section on the west side of the ridge. I found a nice looking route on that side, and took it up to a small shelf just below the summit block. Another short scramble and I was atop my 55th Ogul Peak. I didn't want to leave my Dad waiting for too long, so I snapped a few pictures, enjoyed the view for a few minutes, and was on my way towards Lyon Peak.
 
-![Needle Peak Benchmark](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_193414332.jpg?classes=shadow)
+![Needle Peak Benchmark](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195539421.jpg?classes=shadow)
 **Needle Peak Benchmark**
 
 ![Needle Peak Summit Panorama](https://s3.us-west-1.wasabisys.com/web-assets/needle-lyon-6-23-24/PXL_20240623_195620127.PANO.jpg?classes=shadow)

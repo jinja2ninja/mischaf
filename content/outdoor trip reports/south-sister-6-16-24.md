@@ -86,6 +86,6 @@ The walk down from the mining area was pretty easy. We made it down to the saddl
 **Back at the saddle**
 
 ## Route
-![My route](https://s3.us-west-1.wasabisys.com/web-assets/south-sister-6-16-24/south-sister_route.png?classes=shadow)
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/south-sister-6-16-24/south-sister-route.jpg?classes=shadow)
 
 [GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/south-sister-6-16-24/south-sister_route_route.gpx)
