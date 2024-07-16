@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 7
+weight: 12
 ---
 
 <a href="../galleries/devils-peak-snow-mountain-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>

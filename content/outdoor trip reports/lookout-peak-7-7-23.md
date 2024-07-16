@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 21
+weight: 26
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/PXL_20230520_121006097.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/PXL_20230520_121417238.jpg
@@ -87,3 +87,8 @@ I more or less followed my route back down at first, but ended up veering more t
 
 ![My less snow filled route down](https://s3.us-west-1.wasabisys.com/web-assets/lookout-peak-7-7-23/PXL_20230707_164531827.jpg?classes=shadow)
 **My less snow filled route down**
+
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/lookout-peak-7-7-23/lookout-peak-route.jpg?classes=shadow)
+
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/lookout-peak-7-7-23/lookout-peak-7-7-23.gpx)

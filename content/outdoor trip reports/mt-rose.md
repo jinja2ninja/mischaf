@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 31
+weight: 32
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/rose-6-3-23/PXL_20230603_122043307.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/rose-6-3-23/PXL_20230603_121039065.jpg

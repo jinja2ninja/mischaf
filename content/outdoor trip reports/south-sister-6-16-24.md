@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 8
+weight: 13
 ---
 
 <a href="../galleries/south-sister-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>

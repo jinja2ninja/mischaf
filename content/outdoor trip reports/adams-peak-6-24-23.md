@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 30
+weight: 31
 ---
 # June 24th, 2023
 <a href="../galleries/adams-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>

@@ -10,7 +10,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 34
+weight: 35
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230526_231437646.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230526_231439909.MP.jpg

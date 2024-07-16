@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 36
+weight: 37
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/PXL_20230513_122530815.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/wade-5-13-23/PXL_20230513_162111404.PANO.jpg

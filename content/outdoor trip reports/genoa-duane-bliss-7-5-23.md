@@ -10,7 +10,7 @@ categories: []
 externalLink: ""
 series: []
 gallery_images:
-weight: 23
+weight: 28
 ---
 ## July 5th, 2023
 
@@ -54,3 +54,7 @@ From here, it was only a few easy miles back to the truck. We managed to crank t
 ![Wildflowers near the Spooner Summit Trailhead](https://s3.us-west-1.wasabisys.com/web-assets/genoa-duane-bliss-7-5-23/PXL_20230705_210333521.jpg?classes=shadow)
 **Wildflowers near the Spooner Summit Trailhead**
 
+## Route
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/genoa-duane-bliss-7-5-23/genoa-duane-bliss-route.jpg?classes=shadow)
+**My route**
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/genoa-duane-bliss-7-5-23/genoa-duane-bliss-7-5-23.gpx)

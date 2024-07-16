@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 35
+weight: 36
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/PXL_20230520_121006097.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/jobs-5-20-23/PXL_20230520_121417238.jpg

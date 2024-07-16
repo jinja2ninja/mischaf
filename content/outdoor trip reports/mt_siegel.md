@@ -9,7 +9,7 @@ tags: []
 categories: []
 externalLink: ""
 series: []
-weight: 32
+weight: 33
 gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/siegel-5-29-23/PXL_20230529_142247097.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/siegel-5-29-23/PXL_20230529_143045093.jpg
