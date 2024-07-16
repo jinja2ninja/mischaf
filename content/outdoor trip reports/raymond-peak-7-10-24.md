@@ -11,7 +11,7 @@ externalLink: ""
 series: []
 weight: 5
 ---
-July 10th, 2024
+## July 10th, 2024
 <a href="../galleries/raymond-peak-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
 After a night at one of my favorite campsites along Blue Lakes Road, I set off at a leisurely time of 7:30 or so towards the trailhead. The drive was fairly short, putting me at the "trailhead" around 7:45. I was using the forest service topo map as my guide, which didn't quite lead me to the proper trailhead at Wet Meadow Reservoir, but I figured it was close enough. I parked my truck, and started walking up the muddy road to find where the actual PCT crossed. 

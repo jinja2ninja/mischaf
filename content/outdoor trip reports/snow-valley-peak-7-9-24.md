@@ -11,7 +11,7 @@ externalLink: ""
 series: []
 weight: 6
 ---
-July 9th, 2024
+## July 9th, 2024
 <a href="../galleries/snow-valley-peak-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
 Due to the blisters I had acquired on Anderson Peak and Tinker Knob, I had spent the previous day at home. I was planning to spend this day at home as well, but changed my mind around midday. The plan then morphed into me showing up at the trailhead around 3PM, and enjoying a nice twilight hike. My plan came to fruition, and I arrived at nearly precisely 3PM. The July heatwave was still very much a thing, and I was already sweating by the time I had put on my shoes and saddled up my backpack. 
@@ -33,4 +33,4 @@ The return trip was easy and far more pleasant than the way up. The heat of the 
 ## Route
 ![My route](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/snow-valley-peak_route.png?classes=shadow)
 
-[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/snow-valley-peak_route_route.gpx)
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/snow-valley-peak_route.gpx)

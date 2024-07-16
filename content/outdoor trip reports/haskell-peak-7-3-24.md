@@ -11,7 +11,7 @@ externalLink: ""
 series: []
 weight: 10
 ---
-July 3rd, 2024
+## July 3rd, 2024
 <a href="../galleries/haskell-peak-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
 I worked on this day, but was able to shift my schedule up an hour, so that we could leave around 4pm that afternoon. The plan was to drive up to the Haskell Peak Trailhead, and quickly bag the peak before sundown. My wife and dog joined me on the drive up, but I would go solo on the hike. The plan worked out about as well as one could hope, and we were on the road by 4:15 or so. We made good time up highways 80 and 89, and were oat the trailhead by about 7:20PM. I grabbed my pretty minimal backpack, and set off within 10 minutes of arriving. I couldn't quite figure out where the trailhead was, so ended up cutting across some bushes for about a hundred yards before joining up with it.

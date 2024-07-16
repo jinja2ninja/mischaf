@@ -11,7 +11,7 @@ externalLink: ""
 series: []
 weight: 7
 ---
-July 7th, 2024
+## July 7th, 2024
 <a href="../galleries/english-mountain-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
 Chris and I had a good time the night before hanging out at our campsite. We had finally tracked down the allusive alcoholic Arizona Iced Teas, which we drank to our hearts content. My alarm went off at 5AM, and I was a bit tired from the night's festivities, but I quickly loaded my truck up and set off for English Mountain, doing my best not to be too loud as Chris was still sleeping. I found some service along Bowman Lake road, and used that opportunity to set a destination in Google Maps. I saw that it was 17 miles down the road, but that Google said it would be over an hour. At this point, I knew I had some rough driving ahead of me. In hindsight, taking highway 89 to Jackson Meadows would have been a much more pleasant drive. The road indeed took over an hour, and required some moderate 4 wheeling at one point, I definitely would not try this road without at least a high clearance vehicle, and not with 2 wheel drive.
