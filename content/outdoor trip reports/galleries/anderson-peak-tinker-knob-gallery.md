@@ -64,7 +64,6 @@ gallery_images:
   - https://s3.us-west-1.wasabisys.com/web-assets/anderson-peak-tinker-knob-7-6-24/PXL_20240706_175811551.MP.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/anderson-peak-tinker-knob-7-6-24/PXL_20240706_175842764.PANO.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/anderson-peak-tinker-knob-7-6-24/PXL_20240706_175847810.jpg
-  - https://s3.us-west-1.wasabisys.com/web-assets/anderson-peak-tinker-knob-7-6-24/PXL_20240706_175848992.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/anderson-peak-tinker-knob-7-6-24/PXL_20240706_175850039.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/anderson-peak-tinker-knob-7-6-24/PXL_20240706_175851174.jpg
   - https://s3.us-west-1.wasabisys.com/web-assets/anderson-peak-tinker-knob-7-6-24/PXL_20240706_175852437.jpg
