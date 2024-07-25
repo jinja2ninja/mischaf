@@ -1,7 +1,7 @@
 ---
 draft: false
 date: {{ timestamp }}
-title: "{{ title }}"
+title: "{{ peak_name }}, {{ peak_elevation }}"
 description: ""
 slug: ""
 authors: []
@@ -11,13 +11,13 @@ externalLink: ""
 series: []
 weight: {{ weight }}
 ---
-{{ long_date }}
-<a href="../galleries/{{ short_name }}-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
+## {{ long_date }}
+<a href="../galleries/{{ peak_name }}-gallery/"><font size="4"><b>Full Image Gallery</b></font></a>
 
 {{ report_text }}
 
 
 ## Route
-![My route](https://s3.us-west-1.wasabisys.com/web-assets/{{ short_name }}-{{ short_date }}/{{ short_name }}_route.png?classes=shadow)
+![My route](https://s3.us-west-1.wasabisys.com/web-assets/{{ peak_name }}-{{ short_date }}/{{ peak_name }}_route.png?classes=shadow)
 
-[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/{{ short_name }}-{{ short_date }}/{{ short_name }}_route_route.gpx)
+[GPX Track Download](https://s3.us-west-1.wasabisys.com/web-assets/{{ peak_name }}-{{ short_date }}/{{ peak_name }}_route.gpx)

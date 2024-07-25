@@ -18,15 +18,39 @@ Due to the blisters I had acquired on Anderson Peak and Tinker Knob, I had spent
 
 Crossing highway 50 was probably one of the most difficult parts of the day, I spent what felt like an eternity waiting for an opening in the endless lines of cars coming both ways. Finally, I found a small enough break in traffic to run across the road. I made it across without getting flattened, and was happy to be getting away fom the highway. The first few miles were quite hot, but the forest provided enough shade to make it tolerable. I passed one TRT hiker, but other than that found quite a bit of solitude on the trail. It's graded nicely, and although it gains some elevation, it never feels too tough.
 
+![The trailhead on the north side of highway 50](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240709_221001038.jpg?classes=shadow)
+**The trailhead on the north side of highway 50**
+
 The route to Snow Valley doesn't offer a lot in the way of views for quite some time, this was fine with me, I was content putting my nose to the grindstone and just knocking out some miles. After 4 miles, the trail comes to a junction with a sign labelled "campground" pointing to the west. My best guess is that this leads to Marlette Lake, but I could be wrong about that, and can't be bothered to do the research. From here, the trail winds around to the west a bit, and starts to make some more significant elevation gain. 
+
+![Easy miles closer to the trailhead](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240709_230150850.jpg?classes=shadow)
+**Easy miles closer to the trailhead**
 
 After wrapping around to the east, it cuts back to the west, and then back to the north. Around here, the trail starts traversing the side of Snow Valley Peak, and the once viewless hike suddenly opens up to one of the finer views of Tahoe I've ever seen. The forest opens up into fields of sage and wildflowers, which were quite fragrant and pleasant on this hot summer day. 
 
+![Tahoe comes into view](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240709_235242612.jpg?classes=shadow)
+**Tahoe comes into view**
+
+![The trail nearing the summit](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240710_001550356.MP.jpg?classes=shadow)
+**The trail nearing the summit**
+
 After close to a mile of this, I was more or less directly below the summit by a few hundred feet. I saw on the map that the trail eventually links up with a dirt road that leads to the summit, but I figured there was no point in adding mileage when I was this close. I cut directly up towards the ridge, stopping for shade a few times next to the few sparse trees that are in the area. Shortly after, I was on the ridge proper just a few hundred feet below the summit. In the distance I could see what was either a cell tower, or some dead trees. I was disappointed to find the former at the summit, but the views more than made up for it. 
+
+![Summit Panorama](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240710_003257053.PANO.jpg?classes=shadow)
+**Summit Panorama**
+
+![An interesting, yet effective register design](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240710_003807455.jpg?classes=shadow)
+**An interesting, yet effective register design**
 
 Snow Valley Peak might have the best view of Tahoe of all the peaks on the Ogul list. The only one I can recall with such an expansive view was Ellis Peak, but I think Snow Valley might edge it out. I could also see the Sweetwater Range to the south, Mt Siegel, and countless other area peaks. I found an interesting register, which was made of an old cinder block, with a flat brick over the top to keep water out. I signed the register, and spent a few minutes checking out the communication tower. As much as I despise communications equipment taking away from the natural beauty of a mountain top, I'm also a nerd at heart, and that stuff is cool to look at.
 
+![The north end of Tahoe glimmering in the setting sun](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240710_005251534.jpg?classes=shadow)
+**The north end of Tahoe glimmering in the setting sun**
+
 I made my wy a tiny bit to the west to a small rock outcropping to eat my sandwich away from all the man made junk. The view here was just as good, and although it wasn't sunset quite yet, the angle of the setting sun made for some really cool lighting on the lake. After spending some time enjoying the view, I cut back down to the trail, and started the hike out. 
+
+![Perfect lighting on the way out](https://s3.us-west-1.wasabisys.com/web-assets/snow-valley-peak-7-9-24/PXL_20240710_023809829.jpg?classes=shadow)
+**Perfect lighting on the way out**
 
 The return trip was easy and far more pleasant than the way up. The heat of the day had passed, and it started feeling comparatively a lot cooler than it had earlier. I made good time and only passed 3 hikers on the way out, one of which was a solo lady hiking the TRT, who was tapping her poles together because she thought I was a bear. I made it back to my truck around 7:50, and set off to camp along Blue Lakes road so I could climb my last Ogul Peak the next day.
 
