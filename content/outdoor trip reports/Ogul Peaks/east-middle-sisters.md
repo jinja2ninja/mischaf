@@ -285,7 +285,7 @@ The rest of the climb from here was easy, just hopping up medium sized granite, 
 **South Sister**
 
 
-![Strange photo from the register](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_181004823s.jpg?classes=shadow)
+![Strange photo from the register](https://s3.us-west-1.wasabisys.com/web-assets/east-middle-sisters-5-27-23/PXL_20230527_181004823.jpg?classes=shadow)
 **Strange photo from the register**
 
  
