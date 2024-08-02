@@ -19,7 +19,6 @@ This was my second tour of the year. I got a bit of a late start, but I had a bu
 
 
 ![Ralston Ridge from Highway 50](https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/PXL_20230122_210948915.jpg?classes=shadow)
-
 **Recon shot of the Ralston Ridge I got the previous weekend**
 
 ---
@@ -70,13 +69,12 @@ Not wanting to waste any more time, I dropped in just south of Cup Lake, and enj
 ![Burned trees](https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/ralston-1-28-23%20(2).jpg?classes=shadow)
   <figcaption><b>Looking down on what ended up being a spectacular tree run</b></figcaption>
   
-
 The ride through the trees was by far the best part of the day. The snow was right at the sweet spot of softness. I was able to make big sweeping turns through the now perfectly spaced trees. Forests that get burned this severely end up making some fantastic tree runs. The branches that would normally be slapping you all over your body are gone. What you're left with is a perfect obstacle course to zig and zag through. The snow got a bit sticky towards the very bottom, but I was able to easily glide all the way back to the highway. I took a quick look back, snapped a few pictures, and disconnected from my bindings directly across the street from my truck. After waiting for what felt like an eternity for the endless line of cars on Highway 50, I crossed the road and was back in my truck before 11:15.
 
   ![Fox Theater Sign](https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/PXL_20230129_070424393%20(1).jpg?classes=shadow)
  <figcaption><b> Outside the Fox Theater</b></figcaption>
  
-I was home by 12:30, ate lunch and hung out for a few hours. That evening, me and my wife drove down to Oakland to see J.I.D. and Smino play at the Fox Theater. They put on a great show, and we were back home probably around 1:30AM. A perfect California day (maybe just a bit tiring), I love where I live.
+I was home by 12:30, ate lunch and hung out for a few hours. That evening, me and my wife drove down to Oakland to see JID and Smino play at the Fox Theater. They put on a great show, and we were back home probably around 1:30AM. A perfect California day (maybe just a bit tiring), I love where I live.
 
-  ![J.I.D.]( https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/PXL_20230129_060616653.jpg?classes=shadow)
- <figcaption><b>J.I.D. Performing at the Fox Theater</b></figcaption>
+  ![JID]( https://s3.us-west-1.wasabisys.com/web-assets/ralston-1-28-23/PXL_20230129_060616653.jpg?classes=shadow)
+ <figcaption><b>JID Performing at the Fox Theater</b></figcaption>
