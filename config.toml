@@ -76,7 +76,11 @@ enableMissingTranslationPlaceholders = false
         startLevel = 2
         endLevel = 6
         ordered = false
-
+    [markup.goldmark.parser.attribute]
+        block = true
+        title = true
+    [markup.goldmark.extensions]
+        taskList = true
 [outputs]
   home = ["HTML", "RSS", "SEARCH"]
 
