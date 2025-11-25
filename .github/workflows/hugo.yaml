@@ -8,14 +8,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: hugomods/hugo
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 2
-      - name: Setup Hugo
-        run: sudo snap install hugo
       - name: Build
         run: hugo
       - name: Upload Static Site Artifact
