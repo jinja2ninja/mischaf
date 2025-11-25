@@ -1,0 +1,26 @@
+name: Build Hugo Site
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 2
+      - name: Setup Hugo
+        run: sudo snap install hugo
+      - name: Build
+        run: hugo
+      - name: Upload Static Site Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hugo-site
+          path: public/
+          retention-days: 1
