@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-07-23T06:37:30
+date: 2024-07-23
 title: "Guide Peak, 7746'"
 description: ""
 slug: ""

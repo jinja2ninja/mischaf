@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-07-12T07:52:36
+date: 2024-07-12
 title: "Ogul #63 - Raymond Peak"
 description: ""
 slug: ""

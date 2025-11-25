@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-04-08T15:52:47-07:00
+date: 2023-04-08
 title: "Ogul #38 - Reynolds Peak"
 description: ""
 slug: ""

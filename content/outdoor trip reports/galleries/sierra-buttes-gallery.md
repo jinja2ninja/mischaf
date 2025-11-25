@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-06-011T12:39:00-07:00
+date: 2023-06-01
 title: "Ogul #40 - Sierra Buttes"
 description: ""
 slug: ""

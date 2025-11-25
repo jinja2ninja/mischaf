@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2023-02-10T15:52:47-07:00
+date = 2023-02-10
 title = "Mt Ralston Ridge"
 description = ""
 slug = ""

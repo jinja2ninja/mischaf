@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-06-026T07:01:00-07:00
+date: 2023-06-26
 title: "Ogul #39 - Lookout Peak"
 description: ""
 slug: ""

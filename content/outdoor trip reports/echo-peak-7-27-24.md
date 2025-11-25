@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-07-28T10:09:49
+date: 2024-07-28
 title: "Echo Peak, 8895'"
 description: ""
 slug: ""

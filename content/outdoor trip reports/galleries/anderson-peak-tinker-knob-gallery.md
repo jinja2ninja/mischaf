@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-07-12T07:50:28
+date: 2024-07-12
 title: "Ogul #59 and #60 - Anderson Peak and Tinker Knob"
 description: ""
 slug: ""

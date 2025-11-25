@@ -1,6 +1,6 @@
 ---
 title: "CGNAT Traversal with Wireguard"
-date: 2021-08-28T11:47:13-07:00
+date: 2021-08-28
 draft: false
 ---
 

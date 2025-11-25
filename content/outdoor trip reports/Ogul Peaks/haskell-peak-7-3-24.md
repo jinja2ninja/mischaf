@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-07-09T10:20:50
+date: 2024-07-09
 title: "Ogul #57 - Haskell Peak"
 description: ""
 slug: ""

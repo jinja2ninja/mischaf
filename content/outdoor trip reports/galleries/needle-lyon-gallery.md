@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-06-25T06:34:35
+date: 2024-06-25
 title: "Ogul #55 and 56 - Needle Peak and Lyon Peak"
 description: ""
 slug: ""

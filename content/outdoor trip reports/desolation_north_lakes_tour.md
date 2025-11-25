@@ -1,6 +1,6 @@
 +++ 
 draft = false
-date = 2020-06-27T15:52:47-07:00
+date = 2020-06-27
 title = "Desolation Wilderness North Lakes Tour"
 description = ""
 slug = ""

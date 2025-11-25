@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-06-21T06:47:10
+date: 2024-06-21
 title: "Ogul #51 - South Sister"
 description: ""
 slug: ""

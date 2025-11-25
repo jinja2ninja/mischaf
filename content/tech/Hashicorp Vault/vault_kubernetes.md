@@ -1,7 +1,7 @@
 ---
 title: "Vault on Kubernetes"
-date: 2023-02-14T07:20:31-08:00
-lastmod: 2023-02-15T06:31:00-00:00
+date: 2023-02-14
+lastmod: 2023-02-15
 draft: false
 ---
 

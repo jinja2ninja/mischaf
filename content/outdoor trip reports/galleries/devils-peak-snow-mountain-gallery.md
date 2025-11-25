@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-06-21T06:49:01
+date: 2024-06-21
 title: "Ogul #52 and 53 - Devil's Peak and Snow Mountain"
 description: ""
 slug: ""

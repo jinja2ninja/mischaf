@@ -1,6 +1,6 @@
 ---
 title: "Backups"
-date: 2023-03-12T20:15:08-07:00
+date: 2023-03-12
 draft: true
 ---
 # My Backup Strategy

@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-05-21T07:30:00-07:00
+date: 2023-05-21
 title: "Ogul #45 - Hawkins Peak"
 description: ""
 slug: ""

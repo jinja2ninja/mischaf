@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-04-08T15:52:47-07:00
+date: 2023-04-08
 title: "Ogul #34 and 35 - Da-Ek-Dow Go-Et and The Nipple"
 description: ""
 slug: ""

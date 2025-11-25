@@ -1,7 +1,7 @@
 ---
 title: "About"
-date: 2021-08-26T18:59:55-07:00
-lastmod: 2023-02-14T07:15:55-07:00
+date: 2021-08-26
+lastmod: 2023-02-14
 draft: false
 ---
 # Welcome!

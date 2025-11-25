@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-07-12T07:51:29
+date: 2024-07-12
 title: "Ogul #61 - English Mountain"
 description: ""
 slug: ""

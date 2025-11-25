@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-05-14T06:52:47-07:00
+date: 2023-05-14
 title: "Ogul #24 - Wade Benchmark"
 description: ""
 slug: ""

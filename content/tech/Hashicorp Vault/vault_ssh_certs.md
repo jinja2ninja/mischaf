@@ -1,6 +1,6 @@
 ---
 title: "Vault SSH Cert Management"
-date: 2023-02-15T21:21:06-08:00
+date: 2023-02-15
 draft: false
 ---
 

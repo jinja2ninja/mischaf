@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-07-09T10:21:31
+date: 2024-07-09
 title: "Ogul #58 - Mt Fillmore"
 description: ""
 slug: ""

@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-07-012T07:45:00-07:00
+date: 2023-07-01
 title: "Ogul #32 and #33 - Mt Patterson and Wheeler Peak"
 description: ""
 slug: ""
