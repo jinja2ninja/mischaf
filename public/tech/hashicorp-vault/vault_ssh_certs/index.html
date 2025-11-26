@@ -1,70 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.110.0">
-    <meta name="generator" content="Relearn 5.16.2">
-    <meta name="description" content="Adventurer. Nerd.">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 8.2.0+f69a085322cc70b3e14577c0823c5bc781ec6bb2">
+    <meta name="description" content="Background There are quite a few ways you can authenticate over SSH, I’ll outline what seem to be the most popular ones:
+Probably the most common is to just use a password, this is neither enjoyable for the user, nor is it the most secure way to do things. If you have password auth enabled on a public facing server, its going to get hammered with attempts from bots all day. You can install Fail2ban, which might stop the most unsophisticated of attacks, but attackers are smart enough to try from multiple IP addresses now. There’s a project called Crowdsec that dubs itself “The spiritual successor to Fail2ban”, which does this a bit more intelligently by using a crowd sourced list of bad IPs. Even with this in place though, don’t use password auth. Just don’t, use the next option at bare minimum.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.mischaf.com/images/og-image.png">
+    <meta name="twitter:title" content="Vault SSH Cert Management :: Mischa Friegang">
+    <meta name="twitter:description" content="Background There are quite a few ways you can authenticate over SSH, I’ll outline what seem to be the most popular ones:
+Probably the most common is to just use a password, this is neither enjoyable for the user, nor is it the most secure way to do things. If you have password auth enabled on a public facing server, its going to get hammered with attempts from bots all day. You can install Fail2ban, which might stop the most unsophisticated of attacks, but attackers are smart enough to try from multiple IP addresses now. There’s a project called Crowdsec that dubs itself “The spiritual successor to Fail2ban”, which does this a bit more intelligently by using a crowd sourced list of bad IPs. Even with this in place though, don’t use password auth. Just don’t, use the next option at bare minimum.">
+    <meta property="og:url" content="https://www.mischaf.com/tech/hashicorp-vault/vault_ssh_certs/index.html">
+    <meta property="og:site_name" content="Mischa Friegang">
+    <meta property="og:title" content="Vault SSH Cert Management :: Mischa Friegang">
+    <meta property="og:description" content="Background There are quite a few ways you can authenticate over SSH, I’ll outline what seem to be the most popular ones:
+Probably the most common is to just use a password, this is neither enjoyable for the user, nor is it the most secure way to do things. If you have password auth enabled on a public facing server, its going to get hammered with attempts from bots all day. You can install Fail2ban, which might stop the most unsophisticated of attacks, but attackers are smart enough to try from multiple IP addresses now. There’s a project called Crowdsec that dubs itself “The spiritual successor to Fail2ban”, which does this a bit more intelligently by using a crowd sourced list of bad IPs. Even with this in place though, don’t use password auth. Just don’t, use the next option at bare minimum.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Tech">
+    <meta property="article:published_time" content="2023-02-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-02-15T00:00:00+00:00">
+    <meta property="og:image" content="https://www.mischaf.com/images/og-image.png">
+    <meta itemprop="name" content="Vault SSH Cert Management :: Mischa Friegang">
+    <meta itemprop="description" content="Background There are quite a few ways you can authenticate over SSH, I’ll outline what seem to be the most popular ones:
+Probably the most common is to just use a password, this is neither enjoyable for the user, nor is it the most secure way to do things. If you have password auth enabled on a public facing server, its going to get hammered with attempts from bots all day. You can install Fail2ban, which might stop the most unsophisticated of attacks, but attackers are smart enough to try from multiple IP addresses now. There’s a project called Crowdsec that dubs itself “The spiritual successor to Fail2ban”, which does this a bit more intelligently by using a crowd sourced list of bad IPs. Even with this in place though, don’t use password auth. Just don’t, use the next option at bare minimum.">
+    <meta itemprop="datePublished" content="2023-02-15T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2023-02-15T00:00:00+00:00">
+    <meta itemprop="wordCount" content="1947">
+    <meta itemprop="image" content="https://www.mischaf.com/images/og-image.png">
     <title>Vault SSH Cert Management :: Mischa Friegang</title>
-    <link href="/images/favicon.png?1687873148" rel="icon" type="image/png">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687873148" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687873148" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687873148" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687873148" rel="stylesheet">
-    <link href="/css/fonts.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687873148" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687873148" rel="stylesheet">
-    <link href="/css/theme-dark-blue.css?1687873148" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687873148" rel="stylesheet">
-    <link href="/css/print.css?1687873148" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1687873148" rel="stylesheet">
-    <script src="/js/url.js?1687873148"></script>
-    <script src="/js/variant.js?1687873148"></script>
+    <link href="/images/favicon.png?1764121507" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1764121507" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1764121507" defer></script>
+    <script src="/js/search-lunr.min.js?1764121507" defer></script>
+    <script src="/js/search.min.js?1764121507" defer></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      window.index_js_url="/index.search.js";
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1764121507";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1764121507" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1764121507" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1764121507" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1764121507" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764121507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764121507" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764121507" rel="stylesheet">
+    <link href="/css/theme.min.css?1764121507" rel="stylesheet">
+    <link href="/css/format-html.min.css?1764121507" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/tech\/hashicorp-vault\/vault_ssh_certs\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.mischaf.com';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = 'Copy to clipboard';
-      window.T_Copied_to_clipboard = 'Copied to clipboard!';
-      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
-      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
-      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
-      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
-      // some further base stuff
-      var baseUriFull='https:\/\/www.mischaf.com/';
-      window.variants && variants.init( [ 'dark-blue' ] );
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'dark-blue' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
     </script>
   </head>
   <body class="mobile-support html" data-url="/tech/hashicorp-vault/vault_ssh_certs/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div class="navigation">
-            <a class="nav nav-next topbar-link" href="/tech/hashicorp-vault/vault_kubernetes/index.html" title="Vault on Kubernetes (&#129106;)"><i class="fas fa-chevron-right fa-fw"></i></a>
-          </div>
-          <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/tech/hashicorp-vault/index.html" title="Hashicorp Vault (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
-          </div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-            </span>
-            <span id="toc-menu" title='Table of Contents (CTRL+ALT+t)'><i class="fas fa-list-alt fa-fw"></i></span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">About</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tech/index.html"><span itemprop="name">Tech</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tech/hashicorp-vault/index.html"><span itemprop="name">Hashicorp Vault</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Vault SSH Cert Management</span><meta itemprop="position" content="4"></li>
-            </ol>
-          </div>
-          <div class="default-animation progress">
-            <div class="toc-wrapper"><nav id="TableOfContents">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
   <ul>
     <li><a href="#background">Background</a>
       <ul>
@@ -80,18 +135,41 @@
     </li>
   </ul>
 </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">About</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/tech/index.html"><span itemprop="name">Tech</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/tech/hashicorp-vault/index.html"><span itemprop="name">Hashicorp Vault</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Vault SSH Cert Management</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tech/hashicorp-vault/index.html" title="Hashicorp Vault (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tech/hashicorp-vault/vault_kubernetes/index.html" title="Vault on Kubernetes (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable tech" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
-            <header class="headline">
-            </header>
+<article class="default">
+  <header class="headline">
+  </header>
+
 <h1 id="vault-ssh-cert-management">Vault SSH Cert Management</h1>
 
-<h2 id="background">Background</h2>
+<h2 id="background">Background<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>There are quite a few ways you can authenticate over SSH, I&rsquo;ll outline what seem to be the most popular ones:</p>
 <ul>
 <li>
@@ -102,7 +180,7 @@
 </li>
 </ul>
 <p>What if there was a way to leverage a trusted server to authenticate the user, rather than just blindly trusting the private key on the users machine? That&rsquo;s where ssh certificates come in. With certificates, rather than having a target machine trust a public key tied to a user&rsquo;s private key, we have that target server trust a public key signed by a CA. That certificate authority gets requests from the user to sign a certificate that leverages the keypair that lives on their machine. This is basically ssh keys on steroids. Ultimately the decision of whether or not somebody can access the target server gets moved to the CA, not the user&rsquo;s machine. This pattern has gained a lot of popularity in the past few years. Its fairly trivial to set up for a proof of concept, you just need a CA, and can sign certificates with some <code>openssl</code> commands. On the target machine, you just need the root CA&rsquo;s public key, and a simple one line modification to the sshd config file. Managing this at scale is where things tend to get tricky however. A few companies have come up with products that make this easier to manage at scale. I&rsquo;ve tried a few of them and will give some brief opinions below.</p>
-<h4 id="commercial-offerings">Commercial Offerings</h4>
+<h4 id="commercial-offerings">Commercial Offerings<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
 <ul>
 <li>
 <p>Smallstep - Fairly simple to set up, reliable and consistent. You can set up an external IDP which will do the authentication piece. Basically just log in with Google, or whatever you use, and its that easy for users. They offer a free tier, so if you wanted to use this at home, you should have no issues. That said, its very basic and really doesn&rsquo;t offer the cleanest end user experience. Configuring target hosts felt a bit clunky compared to other options. This was a really solid option all things said though.</p>
@@ -122,15 +200,15 @@
 </ul>
 <p>With all of this in mind, I chose to use Vault for my home use. I&rsquo;ll be showing how I set up Vault as my ssh cert CA, as well as a script I wrote to make it a bit more user friendly.</p>
 <hr>
-<h3 id="vault-configuration">Vault Configuration</h3>
+<h3 id="vault-configuration">Vault Configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>This all assumes you have a Hashicorp Vault up and running already. There are plenty of guides put there on how to do this (including one on this blog about how to set it up in Kubernetes). It&rsquo;s also assumed that you have the proper permissions to do all of this on your Vault.</p>
 <p>First we need to configure the Vault&rsquo;s SSH signing secret engine. All of these steps are also available in Hashicorp&rsquo;s documentation, so if you get stuck, or something seems unclear, make sure to check there.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vault secrets enable -path<span style="color:#f92672">=</span>ssh-client-signer ssh
-</span></span></code></pre></div><p>Note that the path here is completely up to you, this was what the example in the Vault documentation uses, and I saw no need to change it personally.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vault secrets enable -path<span style="color:#f92672">=</span>ssh-client-signer ssh</span></span></code></pre></div>
+<p>Note that the path here is completely up to you, this was what the example in the Vault documentation uses, and I saw no need to change it personally.</p>
 <p>Next we need to create a CA key, you are able to use an existing one as well, but I prefer to just leave the private key in the Vault and never see it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vault write ssh-client-signer/config/ca generate_signing_key<span style="color:#f92672">=</span>true
-</span></span></code></pre></div><p>The last thing we need for the Vault is a signing role, modify the command below as needed, and run it to create your role. The most important thing to pay attention to is the default user, this user needs to exist on the target server.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> vault write ssh-client-signer/roles/ssh-user -&lt;&lt;<span style="color:#e6db74">&#34;EOH&#34;</span>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>vault write ssh-client-signer/config/ca generate_signing_key<span style="color:#f92672">=</span>true</span></span></code></pre></div>
+<p>The last thing we need for the Vault is a signing role, modify the command below as needed, and run it to create your role. The most important thing to pay attention to is the default user, this user needs to exist on the target server.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> vault write ssh-client-signer/roles/ssh-user -&lt;&lt;<span style="color:#e6db74">&#34;EOH&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;algorithm_signer&#34;</span>: <span style="color:#e6db74">&#34;rsa-sha2-256&#34;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;allow_user_certificates&#34;</span>: true,
@@ -143,16 +221,16 @@
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;default_user&#34;</span>: <span style="color:#e6db74">&#34;yourUser&#34;</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;ttl&#34;</span>: <span style="color:#e6db74">&#34;30m0s&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>EOH
-</span></span></code></pre></div><h3 id="target-server-configuration">Target Server Configuration</h3>
+</span></span><span style="display:flex;"><span>EOH</span></span></code></pre></div>
+<h3 id="target-server-configuration">Target Server Configuration<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Log into one of the machines you want to use as a target, ie one you plan to ssh into with these certificates. Run the command below to write out the public key for the Vault CA we just created into the <code>/etc/ssh</code> directory. Make sure to replace the <code>&lt;your vault address&gt;</code> section with the actual address of your Vault (don&rsquo;t forget the port if not listening on port 443 or 80)</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -o /etc/ssh/trusted-user-ca-keys.pem https://&lt;your vault address&gt;/v1/ssh-client-signer/public_key
-</span></span></code></pre></div><p>Edit the <code>/etc/ssh/sshd_config</code> file, and add the following line to the end of it:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>TrustedUserCAKeys /etc/ssh/trusted-user-ca-keys.pem
-</span></span></code></pre></div><p>Finally, restart sshd to load the new config <code>systemctl restart sshd</code></p>
-<h3 id="script">Script</h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>curl -o /etc/ssh/trusted-user-ca-keys.pem https://&lt;your vault address&gt;/v1/ssh-client-signer/public_key</span></span></code></pre></div>
+<p>Edit the <code>/etc/ssh/sshd_config</code> file, and add the following line to the end of it:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>TrustedUserCAKeys /etc/ssh/trusted-user-ca-keys.pem</span></span></code></pre></div>
+<p>Finally, restart sshd to load the new config <code>systemctl restart sshd</code></p>
+<h3 id="script">Script<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
 <p>Here is where the script comes in, the process of creating a key, and requesting a cert from Vault is a bit convoluted, and immediately struck me as something I wouldn&rsquo;t want to need to do all the time. That&rsquo;s why I spent a bit of time writing this script. It should handle creating the ssh keypair for you if it doesn&rsquo;t exist, as well as requesting the cert from Vault. It then will also save the cert to a file, make sure the permissions are correct on the cert, and add the private key to your ssh agent. The goal here was being able to ssh into the target server without much more fuss than just using a regular ssh key. This results in short lived ssh access that&rsquo;s tied to your Vault authentication rather than a key that sits around on your machine indefinitely.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>TYPE<span style="color:#f92672">=</span>ed25519
 </span></span><span style="display:flex;"><span>KEY<span style="color:#f92672">=</span>id_<span style="color:#e6db74">&#34;</span>$TYPE<span style="color:#e6db74">&#34;</span>_<span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
@@ -169,12 +247,12 @@
 </span></span><span style="display:flex;"><span>    vault write -field signed_key ssh-client-signer/sign/my-role     public_key<span style="color:#f92672">=</span>@<span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">/.ssh/</span>$KEY<span style="color:#e6db74">.pub&#34;</span> &gt; <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">&#34;</span>/.ssh/<span style="color:#e6db74">&#34;</span>$KEY<span style="color:#e6db74">&#34;</span>-cert.pub
 </span></span><span style="display:flex;"><span>    chmod <span style="color:#ae81ff">600</span> <span style="color:#e6db74">&#34;</span>$HOME<span style="color:#e6db74">&#34;</span>/.ssh/<span style="color:#e6db74">&#34;</span>$KEY<span style="color:#e6db74">&#34;</span>-cert.pub
 </span></span><span style="display:flex;"><span>    ssh-add ~/.ssh/<span style="color:#e6db74">&#34;</span>$KEY<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
-</span></span></code></pre></div><p>So in practice, you can just run this script with a single argument, that argument being the name of your desired key. So if I wanted to use a key named &ldquo;test&rdquo;, and had saved the script as <code>cert.sh</code> I would run the script as <code>cert.sh test</code>, which would create a few files for me:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>id_ed25519_test.pub - standard pubkey
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span></span></span></code></pre></div>
+<p>So in practice, you can just run this script with a single argument, that argument being the name of your desired key. So if I wanted to use a key named &ldquo;test&rdquo;, and had saved the script as <code>cert.sh</code> I would run the script as <code>cert.sh test</code>, which would create a few files for me:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>id_ed25519_test.pub - standard pubkey
 </span></span><span style="display:flex;"><span>id_ed25519_test - standard private key 
-</span></span><span style="display:flex;"><span>id_ed25519_test-cert.pub - signed ssh certificate
-</span></span></code></pre></div><p>The script will also add the private key to your ssh agent. With the naming convention it follows, the agent should be able to automatically find the signed cert, and you should be able to ssh into servers without needing to pass any additional arguments. If that doesn&rsquo;t work for some reason, you can simply pass the cert with the <code>-i</code> flag, ie <code>ssh -i ~/.ssh/id_ed25519_test-cert.pub me@myserver.com</code></p>
+</span></span><span style="display:flex;"><span>id_ed25519_test-cert.pub - signed ssh certificate</span></span></code></pre></div>
+<p>The script will also add the private key to your ssh agent. With the naming convention it follows, the agent should be able to automatically find the signed cert, and you should be able to ssh into servers without needing to pass any additional arguments. If that doesn&rsquo;t work for some reason, you can simply pass the cert with the <code>-i</code> flag, ie <code>ssh -i ~/.ssh/id_ed25519_test-cert.pub me@myserver.com</code></p>
 <p>Finally, to make this a bit easier, you can put the script somewhere in your path, such as <code>/usr/local/bin/cert</code>. You can then simply call it with <code>cert &lt;name of desired cert&gt;</code>, so my workflow to ssh into a server looks like this:</p>
 <ol>
 <li>Create the cert <code>cert mycert</code></li>
@@ -183,98 +261,77 @@ That&rsquo;s it, as long as your ssh-agent is running, this should work without 
 </ol>
 <p>I hope someone finds this interesting some day, I really enjoy using this setup for all of my home ssh needs.</p>
 
-            <footer class="footline">
-
-            </footer>
-          </article>
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Feb 15, 2023
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
-      <div id="header-wrapper" class="default-animation">
-        <div id="header" class="default-animation">
-<img src="https://s3.us-west-1.wasabisys.com/web-assets/mischa_ralston.jpg"></img>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<img src="https://s3.us-west-1.wasabisys.com/web-assets/echo-peak-7-27-24/PXL_20240727_145152759.jpg?classes=shadow"></img>
         </div>
-        <div class="searchbox default-animation">
-          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
-          <label class="a11y-only" for="search-by">Search</label>
-          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
-          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
         </div>
-        <script>
-          var contentLangs=['en'];
-        </script>
-        <script src="/js/auto-complete.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.min.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1687873148" defer></script>
-        <script src="/js/search.js?1687873148" defer></script>
-      </div>
-      <div id="homelinks" class="default-animation">
-        <ul>
-          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
-        </ul>
-      </div>
-      <div id="content-wrapper" class="highlightable">
-        <ul class="topics enlarge morespace">
-          <li data-nav-id="/outdoor-trip-reports/index.html" class=""><a class="padding" href="/outdoor-trip-reports/index.html">Outdoor Trip Reports</a><ul id="subsections-e306dad2b5277718a5bb960f0232a982" class="morespace">
-          <li data-nav-id="/outdoor-trip-reports/mt-rose/index.html" class=""><a class="padding" href="/outdoor-trip-reports/mt-rose/index.html">OGUL #30 - Mt Rose</a></li>
-          <li data-nav-id="/outdoor-trip-reports/mt_siegel/index.html" class=""><a class="padding" href="/outdoor-trip-reports/mt_siegel/index.html">OGUL #29 - Mt Siegel</a></li>
-          <li data-nav-id="/outdoor-trip-reports/black-mountain-desert-creek/index.html" class=""><a class="padding" href="/outdoor-trip-reports/black-mountain-desert-creek/index.html">OGUL #28 - Desert Creek Peak</a></li>
-          <li data-nav-id="/outdoor-trip-reports/east-middle-sisters/index.html" class=""><a class="padding" href="/outdoor-trip-reports/east-middle-sisters/index.html">OGUL #26 and #27 - East and Middle Sister</a></li>
-          <li data-nav-id="/outdoor-trip-reports/jobs-peak-5-20-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/jobs-peak-5-20-2023/index.html">OGUL #25 - Job&#39;s Peak</a></li>
-          <li data-nav-id="/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html">OGUL #24 - Wade Benchmark</a></li>
-          <li data-nav-id="/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html">OGUL #23 - Rubicon Peak</a></li>
-          <li data-nav-id="/outdoor-trip-reports/ralston-ridge-1-28-23/index.html" class=""><a class="padding" href="/outdoor-trip-reports/ralston-ridge-1-28-23/index.html">Mt Ralston Ridge</a></li>
-          <li data-nav-id="/outdoor-trip-reports/desolation_north_lakes_tour/index.html" class=""><a class="padding" href="/outdoor-trip-reports/desolation_north_lakes_tour/index.html">Desolation Wilderness North Lakes Tour</a></li></ul></li>
-          <li data-nav-id="/tech/index.html" class="parent "><a class="padding" href="/tech/index.html">Tech</a><ul id="subsections-43fa384ae01ca11365a601e3cd261ecf" class="morespace">
-          <li data-nav-id="/tech/hashicorp-vault/index.html" class="parent alwaysopen"><a class="padding" href="/tech/hashicorp-vault/index.html">Hashicorp Vault</a><ul id="subsections-45c74b42e162ec5fdf5319474cb993fc" class="morespace">
-          <li data-nav-id="/tech/hashicorp-vault/vault_ssh_certs/index.html" class="active"><a class="padding" href="/tech/hashicorp-vault/vault_ssh_certs/index.html">Vault SSH Cert Management</a></li>
-          <li data-nav-id="/tech/hashicorp-vault/vault_kubernetes/index.html" class=""><a class="padding" href="/tech/hashicorp-vault/vault_kubernetes/index.html">Vault on Kubernetes</a></li></ul></li>
-          <li data-nav-id="/tech/networking/index.html" class="alwaysopen"><a class="padding" href="/tech/networking/index.html">Network</a><ul id="subsections-305d407a667d31c34f28b56ef835d2b4" class="morespace">
-          <li data-nav-id="/tech/networking/wireguard_setup/index.html" class=""><a class="padding" href="/tech/networking/wireguard_setup/index.html">CGNAT Traversal with Wireguard</a></li></ul></li></ul></li>
-        </ul>
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
-          <ul>
-            <li id="select-language-container" class="footerLangSwitch">
-              <div class="padding select-container">
-                <i class="fas fa-language fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="select-style">
-                  <label class="a11y-only" for="select-language">Language</label>
-                  <select id="select-language" onchange="location = baseUri + this.value;">
-                  </select>
-                </div>
-                <div class="select-clear"></div>
-              </div>
-            </li>
-            <li id="select-variant-container" class="footerVariantSwitch">
-              <div class="padding select-container">
-                <i class="fas fa-paint-brush fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="select-style">
-                  <label class="a11y-only" for="select-variant">Theme</label>
-                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="dark-blue" value="dark-blue" selected>Dark Blue</option>
-                  </select>
-                </div>
-                <div class="select-clear"></div>
-              </div>
-              <script>window.variants && variants.markSelectedVariant();</script>
-            </li>
-            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
           </ul>
         </div>
-        <div id="footer" class="footerFooter showFooter">
-	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
         </div>
       </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/cooking/index.html"><a class="padding" href="/cooking/index.html">Cooking</a><ul id="R-subsections-ff6cde06c27bbbc8b61eda84874b21d9" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outdoor-trip-reports/index.html"><a class="padding" href="/outdoor-trip-reports/index.html">Outdoor Trip Reports</a><ul id="R-subsections-b09c045f8816239d145af0f772e41f30" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-url="/tech/index.html"><a class="padding" href="/tech/index.html">Tech</a><ul id="R-subsections-ceedbbae74c0ccc18084cc8e5a7d9667" class="collapsible-menu">
+            <li class="parent alwaysopen " data-nav-url="/tech/hashicorp-vault/index.html"><a class="padding" href="/tech/hashicorp-vault/index.html">Hashicorp Vault</a><ul id="R-subsections-faa6b937ccb546eb598c2bbf9cd560e7" class="collapsible-menu">
+            <li class="active " data-nav-url="/tech/hashicorp-vault/vault_ssh_certs/index.html"><a class="padding" href="/tech/hashicorp-vault/vault_ssh_certs/index.html">Vault SSH Cert Management</a></li>
+            <li class="" data-nav-url="/tech/hashicorp-vault/vault_kubernetes/index.html"><a class="padding" href="/tech/hashicorp-vault/vault_kubernetes/index.html">Vault on Kubernetes</a></li></ul></li>
+            <li class="alwaysopen " data-nav-url="/tech/networking/index.html"><a class="padding" href="/tech/networking/index.html">Network</a><ul id="R-subsections-4d2463dfb8fc48518bce86179f129dbf" class="collapsible-menu"></ul></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
     </aside>
-    <script src="/js/clipboard.min.js?1687873148" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687873148" defer></script>
-    <script src="/js/theme.js?1687873148" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764121507" defer></script>
+    <script src="/js/theme.min.js?1764121507" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

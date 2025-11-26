@@ -1,80 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Outdoor Trip Reports on Mischa Friegang</title>
+    <title>Outdoor Trip Reports :: Mischa Friegang</title>
     <link>https://www.mischaf.com/outdoor-trip-reports/index.html</link>
-    <description>Recent content in Outdoor Trip Reports on Mischa Friegang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Jun 2023 12:39:00 -0700</lastBuildDate><atom:link href="https://www.mischaf.com/outdoor-trip-reports/index.xml" rel="self" type="application/rss+xml" />
+    <description>I enjoy a variety of outdoor activities, but primarily spend my time outside running, hiking, peakbagging, splitboarding, and skiing. I’ve also been known to enjoy cycling, both road and mountain, but have been enjoying being on my feet more lately. My primary focus has become climbing as many peaks as possible, big or small. The majority of my trip reports are under the Tahoe Ogul Peaks Section, but I’ve also started adding some other miscellaneous peaks, and will likely start to work on other peak lists in the future.</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 28 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.mischaf.com/outdoor-trip-reports/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OGUL #30 - Mt Rose</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/mt-rose/index.html</link>
-      <pubDate>Sun, 04 Jun 2023 12:39:00 -0700</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/mt-rose/index.html</guid>
-      <description>June 3rd, 2023 Full Image Gallery
-My alarm went off at an ungodly 2AM on this fine Saturday morning. I had 2 parties to go to later that day, the first being at noon. I stubbornly refused to give up on bagging another Ogul this weekend, and Mt Rose seemed to make the most sense given a lot of factors (mostly snow and estimated time to the summit). I rolled out of bed, and made the long sleepy drive up to Mt Rose Summit via highway 80.</description>
+      <title>Tahoe Ogul Peaks</title>
+      <link>https://www.mischaf.com/outdoor-trip-reports/ogul-peaks/index.html</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.mischaf.com/outdoor-trip-reports/ogul-peaks/index.html</guid>
+      <description>The Tahoe Ogul list is a list created by a now disbanded chapter of the Sierra Club, the Peak and Gorge Section. “Ogul” is the Washoe word for bighorn sheep.&#xA;I started climbing this list (inadvertently) in 2015. I continued to slowly chip away until spring of 2023, when I set the goal of finishing the remaining 40 I had left before the end of July 2024. I managed to meet my goal, and had a great time doing so. The list got me out to amazing places I’d never have visited.</description>
     </item>
     <item>
-      <title>OGUL #29 - Mt Siegel</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/mt_siegel/index.html</link>
-      <pubDate>Sun, 04 Jun 2023 12:39:00 -0700</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/mt_siegel/index.html</guid>
-      <description>May 29th, 2023 Full Image Gallery
-I woke up at my campsite near Sonora Pass right around 4:40AM. It was 20 minutes before my alarm, but the desert birds had started their morning routine already. This was my third morning out there, and I knew that this meant the sun was coming up soon. I felt rested so I forced myself out of my down quilt, and started packing my truck up.</description>
+      <title>Echo Peak, 8895&#39;</title>
+      <link>https://www.mischaf.com/outdoor-trip-reports/echo-peak-7-27-24/index.html</link>
+      <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.mischaf.com/outdoor-trip-reports/echo-peak-7-27-24/index.html</guid>
+      <description>July 27, 2024 Full Image Gallery&#xA;I was a few days away from turning 30, and noticed that I had 94 peaks climbed on my peakbagger page. A new mini goal quickly came to mind: get to 100 before I turned 30. I started browsing local peaks, and noticed that there were quite a few concentrated around Echo Lakes that I hadn’t climbed before. Sure, a few had hardly any prominence, but they show up on Peakbagger, so that’s good enough for me. I woke up Saturday morning at 4:15 or so, and was out the door not too long after.</description>
     </item>
     <item>
-      <title>OGUL #28 - Desert Creek Peak</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/black-mountain-desert-creek/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/black-mountain-desert-creek/index.html</guid>
-      <description>May 28th, 2023 Full Image Gallery
-I let myself sleep in until around 6 after doing East and Middle Sisters the day before. I figured Desert Creek Peak would be a relatively easy day in comparison. I packed all of my stuff into my truck, and drove down to where I had seen Desert Creek the day before. There ended up being some people camped here, so I decided I&amp;rsquo;d find some other place to park my truck.</description>
-    </item>
-    <item>
-      <title>OGUL #26 and #27 - East and Middle Sister</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/east-middle-sisters/index.html</link>
-      <pubDate>Sun, 04 Jun 2023 12:39:00 -0700</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/east-middle-sisters/index.html</guid>
-      <description>May 27th, 2023 Full Image Gallery
-I took off work a few hours early at 3PM Friday, and already had mostly loaded my truck up for 3 days of camping. I had a few odds and ends to handle after, but was on the road by 3:30PM or so. I stopped to get gas and a few road snacks in Placerville, and was soon headed up highway 50. Somewhere shortly before Kyburz, it started to rain pretty hard.</description>
-    </item>
-    <item>
-      <title>OGUL #25 - Job&#39;s Peak</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/jobs-peak-5-20-2023/index.html</link>
-      <pubDate>Sun, 21 May 2023 07:30:00 -0700</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/jobs-peak-5-20-2023/index.html</guid>
-      <description>May 20th, 2023 Full Image Gallery
-My alarm woke me up from a weird dream at 2:40AM. I can&amp;rsquo;t recall the specifics of it at this point, but I do recall there being some weird tribal music, kind of similar to the &amp;ldquo;Survivor&amp;rdquo; theme song. I hadn&amp;rsquo;t slept that well, and had a moderately painful lump in my throat the week leading up. Despite my discomfort, I had been dreaming about this peak all week.</description>
-    </item>
-    <item>
-      <title>OGUL #24 - Wade Benchmark</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html</link>
-      <pubDate>Sun, 14 May 2023 06:52:47 -0700</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html</guid>
-      <description>May 13th, 2023 Full Image Gallery
-I woke up early again for this one, we had enjoyed a nice dip in temps, along with some precipitation the previous week. I even got in a rare May pow day the previous Sunday. Looking at the forecast though, it was pretty clear that this Saturday was set to be significantly hotter. I wanted to knock another OGUL peak off, and initially had planned to go climb Mt Rose.</description>
-    </item>
-    <item>
-      <title>OGUL #23 - Rubicon Peak</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html</link>
-      <pubDate>Sat, 08 Apr 2023 15:52:47 -0700</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html</guid>
-      <description>April 8th, 2023 Full Image Gallery
-My goal this winter has simply been to log as many days as possible on my splitboard. It brings me joy regardless of the conditions, a day out splitboarding is a good day. That said, I&amp;rsquo;ve also been (very) slowly chipping away at the Tahoe Ogul Peak List, and Rubicon was one of the closer ones that I hadn&amp;rsquo;t ticked off yet. In addition, the conditions lined up in a way that the snow would probably still be decent there.</description>
+      <title>Guide Peak, 7746&#39;</title>
+      <link>https://www.mischaf.com/outdoor-trip-reports/guide-peak-7-21-24/index.html</link>
+      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://www.mischaf.com/outdoor-trip-reports/guide-peak-7-21-24/index.html</guid>
+      <description>July 21, 2024 Full Image Gallery&#xA;I got up at around 4AM and made coffee and a sandwich to get the day started. By 4:30 I was out the door and on my way to Loon Lake. I’ve driven up Wentworth Springs Road countless times, but I had never done it while the sun was rising. The sunrise definitely adds to the experience, I highly recommend it.</description>
     </item>
     <item>
       <title>Mt Ralston Ridge</title>
       <link>https://www.mischaf.com/outdoor-trip-reports/ralston-ridge-1-28-23/index.html</link>
-      <pubDate>Fri, 10 Feb 2023 15:52:47 -0700</pubDate>
+      <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://www.mischaf.com/outdoor-trip-reports/ralston-ridge-1-28-23/index.html</guid>
-      <description>1/28/2023 This was my second tour of the year. I got a bit of a late start, but I had a busy start of the season dealing with the insane amount of rain I got at home. Thankfully that translates to a huge amount of snow in the mountains. I had enjoyed some awesome, waist deep powder on Waterhouse the weekend before, but I knew that the soft snow was going to be harder and harder to find.</description>
+      <description>1/28/2023 This was my second tour of the year. I got a bit of a late start, but I had a busy start of the season dealing with the insane amount of rain I got at home. Thankfully that translates to a huge amount of snow in the mountains. I had enjoyed some awesome, waist deep powder on Waterhouse the weekend before, but I knew that the soft snow was going to be harder and harder to find. I also had to be in Oakland that night, so I wanted something relatively quick. Therefore I opted for some good old fashioned corn snow on the south face of Ralston.</description>
     </item>
     <item>
       <title>Desolation Wilderness North Lakes Tour</title>
       <link>https://www.mischaf.com/outdoor-trip-reports/desolation_north_lakes_tour/index.html</link>
-      <pubDate>Sat, 27 Jun 2020 15:52:47 -0700</pubDate>
+      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
       <guid>https://www.mischaf.com/outdoor-trip-reports/desolation_north_lakes_tour/index.html</guid>
-      <description>June 27th, 2020 My Dad, Jed and I went on this hike with the intention of doing a shakedown overnight trip to test our legs and gear for our upcoming PCT section hike. We arrived at the trail head at 7:30 that morning and started towards the Forni lake trail with plenty of mosquitoes to keep us company. The first leg of the journey was fairly uneventful, I’ve hiked to Forni lake probably a dozen times or so.</description>
+      <description>June 27th, 2020 My Dad, Jed and I went on this hike with the intention of doing a shakedown overnight trip to test our legs and gear for our upcoming PCT section hike. We arrived at the trail head at 7:30 that morning and started towards the Forni lake trail with plenty of mosquitoes to keep us company. The first leg of the journey was fairly uneventful, I’ve hiked to Forni lake probably a dozen times or so. We made good time to the big Mule’s Ear field, which was just starting to bloom.</description>
     </item>
   </channel>
 </rss>

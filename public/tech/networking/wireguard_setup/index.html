@@ -1,74 +1,156 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.110.0">
-    <meta name="generator" content="Relearn 5.16.2">
-    <meta name="description" content="Adventurer. Nerd.">
+    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Relearn 8.2.0+f69a085322cc70b3e14577c0823c5bc781ec6bb2">
+    <meta name="description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
+Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.mischaf.com/images/og-image.png">
+    <meta name="twitter:title" content="CGNAT Traversal with Wireguard :: Mischa Friegang">
+    <meta name="twitter:description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
+Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.">
+    <meta property="og:url" content="https://www.mischaf.com/tech/networking/wireguard_setup/index.html">
+    <meta property="og:site_name" content="Mischa Friegang">
+    <meta property="og:title" content="CGNAT Traversal with Wireguard :: Mischa Friegang">
+    <meta property="og:description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
+Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Tech">
+    <meta property="article:published_time" content="2021-08-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-08-28T00:00:00+00:00">
+    <meta property="og:image" content="https://www.mischaf.com/images/og-image.png">
+    <meta itemprop="name" content="CGNAT Traversal with Wireguard :: Mischa Friegang">
+    <meta itemprop="description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
+Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.">
+    <meta itemprop="datePublished" content="2021-08-28T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2021-08-28T00:00:00+00:00">
+    <meta itemprop="wordCount" content="1514">
+    <meta itemprop="image" content="https://www.mischaf.com/images/og-image.png">
     <title>CGNAT Traversal with Wireguard :: Mischa Friegang</title>
-    <link href="/images/favicon.png?1687873148" rel="icon" type="image/png">
-    <!-- https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use -->
-    <link href="/css/fontawesome-all.min.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1687873148" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1687873148" rel="stylesheet">
-    <link href="/css/auto-complete.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1687873148" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1687873148" rel="stylesheet">
-    <link href="/css/fonts.css?1687873148" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1687873148" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1687873148" rel="stylesheet">
-    <link href="/css/theme-dark-blue.css?1687873148" rel="stylesheet" id="variant-style">
-    <link href="/css/variant.css?1687873148" rel="stylesheet">
-    <link href="/css/print.css?1687873148" rel="stylesheet" media="print">
-    <link href="/css/ie.css?1687873148" rel="stylesheet">
-    <script src="/js/url.js?1687873148"></script>
-    <script src="/js/variant.js?1687873148"></script>
+    <link href="/images/favicon.png?1764121507" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1764121507" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1764121507" defer></script>
+    <script src="/js/search-lunr.min.js?1764121507" defer></script>
+    <script src="/js/search.min.js?1764121507" defer></script>
     <script>
-      // hack to let hugo tell us how to get to the root when using relativeURLs, it needs to be called *url= for it to do its magic:
-      // https://github.com/gohugoio/hugo/blob/145b3fcce35fbac25c7033c91c1b7ae6d1179da8/transform/urlreplacers/absurlreplacer.go#L72
-      window.index_js_url="/index.search.js";
-      var root_url="/";
-      var baseUri=root_url.replace(/\/$/, '');
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1764121507";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1764121507" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1764121507" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1764121507" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1764121507" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764121507" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764121507" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764121507" rel="stylesheet">
+    <link href="/css/theme.min.css?1764121507" rel="stylesheet">
+    <link href="/css/format-html.min.css?1764121507" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/tech\/networking\/wireguard_setup\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/www.mischaf.com';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       // translations
-      window.T_Copy_to_clipboard = 'Copy to clipboard';
-      window.T_Copied_to_clipboard = 'Copied to clipboard!';
-      window.T_Copy_link_to_clipboard = 'Copy link to clipboard';
-      window.T_Link_copied_to_clipboard = 'Copied link to clipboard!';
-      window.T_No_results_found = 'No results found for \u0022{0}\u0022';
-      window.T_N_results_found = '{1} results found for \u0022{0}\u0022';
-      // some further base stuff
-      var baseUriFull='https:\/\/www.mischaf.com/';
-      window.variants && variants.init( [ 'dark-blue' ] );
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'dark-blue' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
     </script>
   </head>
   <body class="mobile-support html" data-url="/tech/networking/wireguard_setup/index.html">
-    <div id="body" class="default-animation">
-      <div id="sidebar-overlay"></div>
-      <div id="toc-overlay"></div>
-      <nav id="topbar" class="highlightable">
-        <div>
-          <div class="navigation">
-            <span class="nav nav-next topbar-link"><i class="fa fa-chevron-right fa-fw"></i></span>
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper"> 
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="navigation">
-            <a class="nav nav-prev topbar-link" href="/tech/networking/index.html" title="Network (&#129104;)"><i class="fas fa-chevron-left fa-fw"></i></a>
-          </div>
-          <div id="breadcrumbs">
-            <span id="sidebar-toggle-span">
-              <a href="#" id="sidebar-toggle" class="topbar-link" title='Menu (CTRL+ALT+n)'><i class="fas fa-bars fa-fw"></i></a>
-            </span>
-            <ol class="links" itemscope itemtype="http://schema.org/BreadcrumbList">
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">About</span></a><meta itemprop="position" content="1"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tech/index.html"><span itemprop="name">Tech</span></a><meta itemprop="position" content="2"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/tech/networking/index.html"><span itemprop="name">Network</span></a><meta itemprop="position" content="3"> &gt; </li>
-              <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">CGNAT Traversal with Wireguard</span><meta itemprop="position" content="4"></li>
-            </ol>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">About</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/tech/index.html"><span itemprop="name">Tech</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/tech/networking/index.html"><span itemprop="name">Network</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">CGNAT Traversal with Wireguard</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tech/networking/index.html" title="Network (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle"><span><i class="fa-fw fas fa-chevron-right"></i></span></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
-      <main id="body-inner" class="highlightable default" tabindex="-1">
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable tech" tabindex="-1">
         <div class="flex-block-wrapper">
-          <article class="default">
-            <header class="headline">
-            </header>
+<article class="default">
+  <header class="headline">
+  </header>
+
 <h1 id="cgnat-traversal-with-wireguard">CGNAT Traversal with Wireguard</h1>
 
 <p><b> ** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS</b></p>
@@ -76,14 +158,14 @@
 One of said limitations of using a Verizon LTE connection is Verizon&rsquo;s CGNAT. This is Verizon&rsquo;s way of continuing to use it&rsquo;s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn&rsquo;t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy.
 While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn&rsquo;t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who&rsquo;s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget.
 Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I&rsquo;m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.</p>
-<h1 id="things-needed">Things needed:</h1>
+<h1 id="things-needed">Things needed:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ol>
 <li>A device capable of running Wireguard and doing IP forwarding to other devices on the LAN.</li>
 <li>A VPS, or a computer somewhere that has a publically routable IP address.</li>
 <li>Some client to connect from outside the lan, such as a cell phone.</li>
 <li>~30 Minutes of your time</li>
 </ol>
-<h1 id="setup">Setup:</h1>
+<h1 id="setup">Setup:<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
 <ol>
 <li>The first logical step is to get Wireguard installed on the VPS. In my case I&rsquo;m using Ubunto 20.04, which has Wireguard support baked into the kernel. If you&rsquo;re using a different distro, it may be as simple as <code>&lt;package manager&gt; install wireguard</code>. If not, consult the Wireguard docs.
 It&rsquo;s alwaays a good idea to update your repo sources before installing something.
@@ -94,7 +176,7 @@ Now you should be good to install the Wireguard package.
 <code>sudo vim /etc/wireguard/wg0.conf</code> creates a new file under the <code>/etc/wireguard</code> directory, and opens vim to edit the file.</li>
 <li>In my case, the file looks like this:</li>
 </ol>
-<pre tabindex="0"><code>[Interface]
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[Interface]
 PrivateKey = &lt;your private key&gt;
 ListenPort = 51820
 Address = 10.0.50.1/24
@@ -102,8 +184,8 @@ PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -A FORWARD -o %i -j ACCEP
 PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
 [Peer]
 PublicKey = &lt;your public key&gt;
-AllowedIPs = 10.0.50.2/32 ,10.0.0.0/24,  192.168.0.0/24
-</code></pre><p>Let&rsquo;s break this down a bit. Everything under <code>[Interface]</code> is describing the interface on the local(to the config file) machine, in this case wg0.</p>
+AllowedIPs = 10.0.50.2/32 ,10.0.0.0/24,  192.168.0.0/24</code></pre></div>
+<p>Let&rsquo;s break this down a bit. Everything under <code>[Interface]</code> is describing the interface on the local(to the config file) machine, in this case wg0.</p>
 <ul>
 <li>To get a private key, you can run <code>wg genkey | tee privatekey | wg pubkey &gt; publickey</code> to generate 2 files, <code>publickey</code> and <code>privatekey</code>. The private key should never leave this machine, and it&rsquo;s content can be pasted into the config file. We will use the public key for the config of the clients later.</li>
 <li>The listen port is fairly self explanitory, the port that Wireguard is listening on. You can change this for some added security, but that&rsquo;s arguably more obscurity than security.</li>
@@ -119,7 +201,7 @@ AllowedIPs = 10.0.50.2/32 ,10.0.0.0/24,  192.168.0.0/24
 <li>Now that we have the config mostly set up on the VPS, we can configure the device on the LAN to act as a gateway. Follow steps 1 and 2 again on the LAN device, and generate another keypair on this device. <code>wg genkey | tee privatekey | wg pubkey &gt; publickey</code></li>
 <li>Edit <code>/etc/wireguard/wg0.conf</code> on this device now, the config should look something like this:</li>
 </ol>
-<pre tabindex="0"><code>[Interface]
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[Interface]
 PrivateKey=&lt;your private key&gt;
 Address=10.0.50.2
 ListenPort=51820
@@ -133,8 +215,8 @@ PostDown = sysctl net.ipv4.ip_forward=0
 PublicKey=&lt;your public key&gt;
 AllowedIPs=0.0.0.0/0
 PersistentKeepalive=25
-Endpoint=&lt;vps public IP address&gt;:51820
-</code></pre><ul>
+Endpoint=&lt;vps public IP address&gt;:51820</code></pre></div>
+<ul>
 <li>The public key will be the public key we generated on the VPS</li>
 <li><code>AllowedIPs</code> is for which IP address ranges you want to allow to communicate with the interface wg0. You can use a /32 if you only want a single IP, a /24 for a standard network, or really anything including 0.0.0.0/0 if you want to allow all traffic.</li>
 <li><code>PersistentKeepAlive</code> keeps the tunnel alive by sending packets as often as you tell it to. 25 seconds seems to be what most people use, and it&rsquo;s worked well for me</li>
@@ -145,111 +227,84 @@ Endpoint=&lt;vps public IP address&gt;:51820
 <li>Now we should be able to fire up the interfaces. To do this, run <code>wg-quick up wg0</code> on both devices. Try sending a ping from one interface to the other, and vice versa. If everything was set up correctly, you should be seeing replies. Ping a device on the LAN from the VPS, that should also work and indicates that the ip forwarding rules worked. If it&rsquo;s not, check if ip forwarding is enabled on the LAN side with the command <code>sysctl net.ipv4.ip_forward</code>. 0 indicates it being disabled, 1 indicates it being enabled.</li>
 <li>Now you can configure a mobile device. I have an Android phone, and was able to install the Wireguard app from the Play Store. The configuration is pretty straight forward and similar to the other devices. You can even generate a keypair with a button on the mobile app. If you&rsquo;d like to tunnel all traffic through the VPN, use <code>0.0.0.0/0</code> for the allowed IPs. If not, use the subnet for the wireguard itnerface, 10.0.50.0/24, and whichever LAN subnets you want access to. Copy the public key for the <code>[Peer]</code> entry on the VPS which should look like this:</li>
 </ol>
-<pre tabindex="0"><code>[Peer]
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[Peer]
 PublicKey = &lt;your public key&gt;
-AllowedIPs = 10.0.50.3/32
-</code></pre><p>
-<a href="#image-cabf6245c7f08ed2cd0972cd3b5f7d68" class="lightbox-link">
-<img src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png" alt="Wireguard Mobile Config" style="height: auto; width: auto;" loading="lazy">
-</a>
-<a href="javascript:history.back();" class="lightbox" id="image-cabf6245c7f08ed2cd0972cd3b5f7d68">
-<img src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png" alt="Wireguard Mobile Config" class="lightbox-image" loading="lazy">
-</a>
+AllowedIPs = 10.0.50.3/32</code></pre></div>
+<p><a href="#R-image-0187493fe28a4f3ee40ba903beeb43b0" class="lightbox-link"><img alt="Wireguard Mobile Config" class="lazy lightbox figure-image" loading="lazy" src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-0187493fe28a4f3ee40ba903beeb43b0"><img alt="Wireguard Mobile Config" class="lazy lightbox lightbox-image" loading="lazy" src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png"></a>
 9. At this point everything should be working. If you&rsquo;re having issues, a good place to start is using the tcpdump command, and logically going through the steps of what needs to happen. I had some difficulties the first few times I set this up, but have no issues repeating it now.
 10. For bonus points, run PiHole either on the VPS, or somehwere on your LAN, and point to it for DNS on the smartphone config. This will give you always on ad blocking if you use the full tunnel option. I run my phone with the full tunnel on almost 100% of the time, save for the few services that act weird when you use a VPS public IP address(looking at you, Netflix).</p>
 
-            <footer class="footline">
-
-            </footer>
-          </article>
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Aug 28, 2021
+  </footer>
+</article>
         </div>
       </main>
     </div>
-    <aside id="sidebar" class="default-animation">
-      <div id="header-wrapper" class="default-animation">
-        <div id="header" class="default-animation">
-<img src="https://s3.us-west-1.wasabisys.com/web-assets/mischa_ralston.jpg"></img>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<img src="https://s3.us-west-1.wasabisys.com/web-assets/echo-peak-7-27-24/PXL_20240727_145152759.jpg?classes=shadow"></img>
         </div>
-        <div class="searchbox default-animation">
-          <i class="fas fa-search" title="Search (CTRL+ALT+f)"></i>
-          <label class="a11y-only" for="search-by">Search</label>
-          <input data-search-input id="search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
-          <span data-search-clear=""><i class="fas fa-times"></i></span>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
         </div>
-        <script>
-          var contentLangs=['en'];
-        </script>
-        <script src="/js/auto-complete.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.min.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1687873148" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1687873148" defer></script>
-        <script src="/js/search.js?1687873148" defer></script>
-      </div>
-      <div id="homelinks" class="default-animation">
-        <ul>
-          <li><a class="padding" href="/index.html"><i class="fas fa-home"></i> Home</a></li>
-        </ul>
-      </div>
-      <div id="content-wrapper" class="highlightable">
-        <ul class="topics enlarge morespace">
-          <li data-nav-id="/outdoor-trip-reports/index.html" class=""><a class="padding" href="/outdoor-trip-reports/index.html">Outdoor Trip Reports</a><ul id="subsections-e306dad2b5277718a5bb960f0232a982" class="morespace">
-          <li data-nav-id="/outdoor-trip-reports/mt-rose/index.html" class=""><a class="padding" href="/outdoor-trip-reports/mt-rose/index.html">OGUL #30 - Mt Rose</a></li>
-          <li data-nav-id="/outdoor-trip-reports/mt_siegel/index.html" class=""><a class="padding" href="/outdoor-trip-reports/mt_siegel/index.html">OGUL #29 - Mt Siegel</a></li>
-          <li data-nav-id="/outdoor-trip-reports/black-mountain-desert-creek/index.html" class=""><a class="padding" href="/outdoor-trip-reports/black-mountain-desert-creek/index.html">OGUL #28 - Desert Creek Peak</a></li>
-          <li data-nav-id="/outdoor-trip-reports/east-middle-sisters/index.html" class=""><a class="padding" href="/outdoor-trip-reports/east-middle-sisters/index.html">OGUL #26 and #27 - East and Middle Sister</a></li>
-          <li data-nav-id="/outdoor-trip-reports/jobs-peak-5-20-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/jobs-peak-5-20-2023/index.html">OGUL #25 - Job&#39;s Peak</a></li>
-          <li data-nav-id="/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/wade-benchmark-5-13-2023/index.html">OGUL #24 - Wade Benchmark</a></li>
-          <li data-nav-id="/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html" class=""><a class="padding" href="/outdoor-trip-reports/rubicon-peak-4-8-2023/index.html">OGUL #23 - Rubicon Peak</a></li>
-          <li data-nav-id="/outdoor-trip-reports/ralston-ridge-1-28-23/index.html" class=""><a class="padding" href="/outdoor-trip-reports/ralston-ridge-1-28-23/index.html">Mt Ralston Ridge</a></li>
-          <li data-nav-id="/outdoor-trip-reports/desolation_north_lakes_tour/index.html" class=""><a class="padding" href="/outdoor-trip-reports/desolation_north_lakes_tour/index.html">Desolation Wilderness North Lakes Tour</a></li></ul></li>
-          <li data-nav-id="/tech/index.html" class="parent "><a class="padding" href="/tech/index.html">Tech</a><ul id="subsections-43fa384ae01ca11365a601e3cd261ecf" class="morespace">
-          <li data-nav-id="/tech/hashicorp-vault/index.html" class="alwaysopen"><a class="padding" href="/tech/hashicorp-vault/index.html">Hashicorp Vault</a><ul id="subsections-45c74b42e162ec5fdf5319474cb993fc" class="morespace">
-          <li data-nav-id="/tech/hashicorp-vault/vault_ssh_certs/index.html" class=""><a class="padding" href="/tech/hashicorp-vault/vault_ssh_certs/index.html">Vault SSH Cert Management</a></li>
-          <li data-nav-id="/tech/hashicorp-vault/vault_kubernetes/index.html" class=""><a class="padding" href="/tech/hashicorp-vault/vault_kubernetes/index.html">Vault on Kubernetes</a></li></ul></li>
-          <li data-nav-id="/tech/networking/index.html" class="parent alwaysopen"><a class="padding" href="/tech/networking/index.html">Network</a><ul id="subsections-305d407a667d31c34f28b56ef835d2b4" class="morespace">
-          <li data-nav-id="/tech/networking/wireguard_setup/index.html" class="active"><a class="padding" href="/tech/networking/wireguard_setup/index.html">CGNAT Traversal with Wireguard</a></li></ul></li></ul></li>
-        </ul>
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
-        <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter">
-        <div id="prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks">
-          <ul>
-            <li id="select-language-container" class="footerLangSwitch">
-              <div class="padding select-container">
-                <i class="fas fa-language fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="select-style">
-                  <label class="a11y-only" for="select-language">Language</label>
-                  <select id="select-language" onchange="location = baseUri + this.value;">
-                  </select>
-                </div>
-                <div class="select-clear"></div>
-              </div>
-            </li>
-            <li id="select-variant-container" class="footerVariantSwitch">
-              <div class="padding select-container">
-                <i class="fas fa-paint-brush fa-fw"></i>
-                <span>&nbsp;</span>
-                <div class="select-style">
-                  <label class="a11y-only" for="select-variant">Theme</label>
-                  <select id="select-variant" onchange="window.variants && variants.changeVariant( this.value );">
-                    <option id="dark-blue" value="dark-blue" selected>Dark Blue</option>
-                  </select>
-                </div>
-                <div class="select-clear"></div>
-              </div>
-              <script>window.variants && variants.markSelectedVariant();</script>
-            </li>
-            <li class="footerVisitedLinks"><button class="padding" onclick="clearHistory();"><i class="fas fa-history fa-fw"></i><span>&nbsp;</span>Clear History</button></li>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
           </ul>
         </div>
-        <div id="footer" class="footerFooter showFooter">
-	    <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
         </div>
       </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/cooking/index.html"><a class="padding" href="/cooking/index.html">Cooking</a><ul id="R-subsections-ff6cde06c27bbbc8b61eda84874b21d9" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outdoor-trip-reports/index.html"><a class="padding" href="/outdoor-trip-reports/index.html">Outdoor Trip Reports</a><ul id="R-subsections-b09c045f8816239d145af0f772e41f30" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-url="/tech/index.html"><a class="padding" href="/tech/index.html">Tech</a><ul id="R-subsections-ceedbbae74c0ccc18084cc8e5a7d9667" class="collapsible-menu">
+            <li class="alwaysopen " data-nav-url="/tech/hashicorp-vault/index.html"><a class="padding" href="/tech/hashicorp-vault/index.html">Hashicorp Vault</a><ul id="R-subsections-faa6b937ccb546eb598c2bbf9cd560e7" class="collapsible-menu"></ul></li>
+            <li class="parent alwaysopen " data-nav-url="/tech/networking/index.html"><a class="padding" href="/tech/networking/index.html">Network</a><ul id="R-subsections-4d2463dfb8fc48518bce86179f129dbf" class="collapsible-menu">
+            <li class="active " data-nav-url="/tech/networking/wireguard_setup/index.html"><a class="padding" href="/tech/networking/wireguard_setup/index.html">CGNAT Traversal with Wireguard</a></li></ul></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
     </aside>
-    <script src="/js/clipboard.min.js?1687873148" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1687873148" defer></script>
-    <script src="/js/theme.js?1687873148" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764121507" defer></script>
+    <script src="/js/theme.min.js?1764121507" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
