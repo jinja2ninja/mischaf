@@ -18,9 +18,7 @@ jobs:
           fetch-depth: 2
       - name: Build
         run: hugo
-      - name: Upload Static Site Artifact
-        uses: actions/upload-artifact@v4
+      - name: Commit & Push changes
+        uses: actions-js/push@master
         with:
-          name: hugo-site
-          path: public/
-          retention-days: 1
+          github_token: ${{ secrets.GH_TOKEN }}
