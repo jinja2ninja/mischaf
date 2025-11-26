@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.147.3">
+    <meta name="generator" content="Relearn 8.2.0+f69a085322cc70b3e14577c0823c5bc781ec6bb2">
+    <meta name="description" content="Vault Kubernetes Auth Troubleshooting I recently went down the rabbit hole of setting up the External Secrets Operator to sync secrets from my Openbao instance. For those who aren’t aware, Openbao is an open source fork of Hashicorp Vault. It’s close to, if not completely API compatible, so for the purposes of this post, we can just refer to Vault or Openbao interchangably.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
+    <meta name="twitter:title" content="Kubernetes Auth Troubleshooting :: Mischa Friegang">
+    <meta name="twitter:description" content="Vault Kubernetes Auth Troubleshooting I recently went down the rabbit hole of setting up the External Secrets Operator to sync secrets from my Openbao instance. For those who aren’t aware, Openbao is an open source fork of Hashicorp Vault. It’s close to, if not completely API compatible, so for the purposes of this post, we can just refer to Vault or Openbao interchangably.">
+    <meta property="og:url" content="http://localhost:1313/tech/hashicorp-vault/kubernetes_auth_troubleshooting/index.html">
+    <meta property="og:site_name" content="Mischa Friegang">
+    <meta property="og:title" content="Kubernetes Auth Troubleshooting :: Mischa Friegang">
+    <meta property="og:description" content="Vault Kubernetes Auth Troubleshooting I recently went down the rabbit hole of setting up the External Secrets Operator to sync secrets from my Openbao instance. For those who aren’t aware, Openbao is an open source fork of Hashicorp Vault. It’s close to, if not completely API compatible, so for the purposes of this post, we can just refer to Vault or Openbao interchangably.">
+    <meta property="og:locale" content="en">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Tech">
+    <meta property="article:published_time" content="2025-11-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-23T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
+    <meta itemprop="name" content="Kubernetes Auth Troubleshooting :: Mischa Friegang">
+    <meta itemprop="description" content="Vault Kubernetes Auth Troubleshooting I recently went down the rabbit hole of setting up the External Secrets Operator to sync secrets from my Openbao instance. For those who aren’t aware, Openbao is an open source fork of Hashicorp Vault. It’s close to, if not completely API compatible, so for the purposes of this post, we can just refer to Vault or Openbao interchangably.">
+    <meta itemprop="datePublished" content="2025-11-23T00:00:00+00:00">
+    <meta itemprop="dateModified" content="2025-11-23T00:00:00+00:00">
+    <meta itemprop="wordCount" content="1465">
+    <meta itemprop="image" content="http://localhost:1313/images/og-image.png">
+    <title>Kubernetes Auth Troubleshooting :: Mischa Friegang</title>
+    <link href="/images/favicon.png?1764126522" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1764126522" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1764126522" defer></script>
+    <script src="/js/search-lunr.js?1764126522" defer></script>
+    <script src="/js/search.js?1764126522" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1764126522";
+    </script>
+    <script src="/js/lunr/lunr.min.js?1764126522" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1764126522" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1764126522" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1764126522" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764126522" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764126522" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764126522" rel="stylesheet">
+    <link href="/css/theme.css?1764126522" rel="stylesheet">
+    <link href="/css/format-html.css?1764126522" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/tech\/hashicorp-vault\/kubernetes_auth_troubleshooting\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'dark-blue' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-url="/tech/hashicorp-vault/kubernetes_auth_troubleshooting/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar">
+        <div class="topbar-wrapper">
+          <div class="topbar-sidebar-divider"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#vault-documentation">Vault Documentation</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#vault-client-logs">Vault Client Logs</a></li>
+            <li><a href="#vault-audit-logs">Vault Audit Logs</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#working-config">Working Config</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#vault-outside-of-kubernetes">Vault Outside of Kubernetes</a></li>
+            <li><a href="#vault-in-kubernetes">Vault In Kubernetes</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">About</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/tech/index.html"><span itemprop="name">Tech</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/tech/hashicorp-vault/index.html"><span itemprop="name">Hashicorp Vault</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Kubernetes Auth Troubleshooting</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tech/hashicorp-vault/index.html" title="Hashicorp Vault (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/tech/hashicorp-vault/vault_ssh_certs/index.html" title="Vault SSH Cert Management (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable tech" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+
+<h1 id="vault-kubernetes-auth-troubleshooting">Vault Kubernetes Auth Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h1>
+<p>I recently went down the rabbit hole of setting up the External Secrets Operator to sync secrets from my Openbao instance. For those who aren&rsquo;t aware, Openbao is an open source fork of Hashicorp Vault. It&rsquo;s close to, if not completely API compatible, so for the purposes of this post, we can just refer to Vault or Openbao interchangably.</p>
+<p>The External Secrets Operator supports a handful of authentication methods to Vault, some of which are a lot easier to get up and running than others. The one that&rsquo;s probably the most difficult to set up is Kubernetes authentication, but that&rsquo;s also the most secure method, and what you should probably be using in 99.99% of production environments.</p>
+<p>I spent a few days getting my ass kicked by errors trying to set this up initially, so I wrote this post up as a place to track some of my thoughts on the process, as well as to store and share how I got it working.</p>
+<p>If you&rsquo;re just looking for the working config, skip down to the bottom of the page.</p>
+<h2 id="vault-documentation">Vault Documentation<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>The first place I looked was the <a href="https://developer.hashicorp.com/vault/docs/auth/kubernetes" rel="external">documentation</a> from Hashicorp. As per usual, the documentation is pretty good, but lacks some concrete end-to-end examples for the uninitiated.
+They list a few ways to set this up, and the location of your Vault (in the same kubernetes cluster as the ESO, or external to it), makes that list of options even more complex.
+With that said, my requirement was to not use a long lived JWT, which leaves us with either using</p>
+<ul>
+<li>A <a href="https://developer.hashicorp.com/vault/docs/auth/kubernetes" rel="external">local service account token</a> (within the same k8s cluster as the Vault)</li>
+<li>The <a href="https://developer.hashicorp.com/vault/docs/auth/kubernetes" rel="external">Vault Client&rsquo;s token</a> (outside of the cluster)
+The documentation tells you most of what you need to know, but without knowing the exact parameters for the Vault backend role, I went through a lot of trial and error to find a working setup.
+So I set everything up to the best of my understanding of the docs, and started hitting 403 errors when I created an external secret.</li>
+</ul>
+<h2 id="troubleshooting">Troubleshooting<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h4 id="vault-client-logs">Vault Client Logs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>The first and easiest place to look is in the Vault Client logs (External Secrets Operator in this case).
+With the External Secrets Operator, we can find these with</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>kubectl -n external-secrets logs -l app.kubernetes.io/instance=external-secrets</code></pre></div>
+<p>This will contain logs from some other pods in the deployment, but its easy enough to find the authentication errors. In my case, they looked like this at one point while I was getting auth issues</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>{&#34;level&#34;:&#34;error&#34;,&#34;ts&#34;:1763910667.5410411,&#34;msg&#34;:&#34;Reconciler error&#34;,&#34;controller&#34;:&#34;externalsecret&#34;,&#34;controllerGroup&#34;:&#34;external-secrets.io&#34;,&#34;controllerKind&#34;:&#34;ExternalSecret&#34;,&#34;ExternalSecret&#34;:{&#34;name&#34;:&#34;test-secret&#34;,&#34;namespace&#34;:&#34;external-secrets&#34;},&#34;namespace&#34;:&#34;external-secrets&#34;,&#34;name&#34;:&#34;test-secret&#34;,&#34;reconcileID&#34;:&#34;b48b0c8d-4ad1-4b20-8fe2-ecbca8506149&#34;,&#34;error&#34;:&#34;error processing spec.dataFrom[0].extract, err: unable to log in to auth method: unable to log in with Kubernetes auth: Error making API request.\n\nURL: PUT http://10.0.0.17:8200/v1/auth/kubernetes/login\nCode: 403. Errors:\n\n* permission denied&#34;,&#34;stacktrace&#34;:&#34;sigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller[...]).reconcileHandler\n\t/home/runner/go/pkg/mod/sigs.k8s.io/controller-runtime@v0.22.3/pkg/internal/controller/controller.go:474\nsigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller[...]).processNextWorkItem\n\t/home/runner/go/pkg/mod/sigs.k8s.io/controller-runtime@v0.22.3/pkg/internal/controller/controller.go:421\nsigs.k8s.io/controller-runtime/pkg/internal/controller.(*Controller[...]).Start.func1.1\n\t/home/runner/go/pkg/mod/sigs.k8s.io/controller-runtime@v0.22.3/pkg/internal/controller/controller.go:296&#34;}</code></pre></div>
+<p>This is a decent lead, it at least lets me know that the reason for failure is a 403 (unauthorized). Depending on your use case for Kubernetes auth, your client may or may not produce helpful logs. Additionally, we don&rsquo;t know why we got a 403. So let&rsquo;s dive a little deeper.</p>
+<h4 id="vault-audit-logs">Vault Audit Logs<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p><strong>Note</strong> I provide some raw JWT tokens in this section. This was from a test environment that has since been spun down. Under normal circumstances, these JWT tokens should be treated as extremely sensitive secrets.
+Vault provides several mechanisms for audit logging such as stdout and file. I set up file based audit logging in the Vault config, which puts files at <code>/vault/log/audit.log</code> in my test Vault container. Looking at these logs provides about the same information, we can see that we got a 403, but we don&rsquo;t know <em>why</em>. These logs do show the JWT token used, but they&rsquo;re hashed by the Vault by default (normally this is a good thing). For debugging, we can set the audit device to show raw logs with the <code>log_raw</code> option.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>vault audit enable file file_path=/vault/logs/audit.log log_raw=true</code></pre></div>
+<p>With that turned on, we can see the JWT in the audit log line.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>{&#34;auth&#34;:{&#34;policy_results&#34;:{&#34;allowed&#34;:true},&#34;token_type&#34;:&#34;default&#34;},&#34;error&#34;:&#34;permission denied&#34;,&#34;request&#34;:{&#34;data&#34;:{&#34;jwt&#34;:&#34;eyJhbGciOiJSUzI1NiIsImtpZCI6ImhNMUVOejVPeFlKWmNqZEgzY0tqZl9UQjhmeUttZVd3TmFoWkdrckRGTlEifQ.eyJhdWQiOlsidmF1bHQiXSwiZXhwIjoxNzYzOTE0NTA5LCJpYXQiOjE3NjM5MTM5MDksImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiZmViYTliYjktYjI0OC00OWIyLWIwNGEtMDdhMjRkZjBhNTk1Iiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJleHRlcm5hbC1zZWNyZXRzIiwic2VydmljZWFjY291bnQiOnsibmFtZSI6InZhdWx0LWF1dGgtZXNvLXRlc3QiLCJ1aWQiOiI3NGYwYjE3OS1kZDk1LTRmM2MtYTEyNS1iOGY2MDI1YjllMzgifX0sIm5iZiI6MTc2MzkxMzkwOSwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50OmV4dGVybmFsLXNlY3JldHM6dmF1bHQtYXV0aC1lc28tdGVzdCJ9.VTGQ9XbfCCCzIokQeF69z4BZLhqBIdKeQeykRGjwDjduExqO3wfpMWeemod2a8muMlt2lG31Z0hvE2d4GMd4N4fVJoTROEL9Rb7QtUzyD49rxE0ja_UKsCN7WMEWuvcXgLL0FPo0V8R81RiJd9hUieJCWVXgOgjM4lx3fztn6k-SQCHf4u0pMq9ulbQTQzlW4QYhREKzPaRwaCYkyPYKG50rcB7ePsVjEEkfSuqAMaskG4ak_wo6lrWw-1kncGVoeB-KB6PaisT6yYn3yhrzkGyNT4IRkTkzX_S-CfcXLKX5ah_VzKgpUdQ5ftCtaV_geWqArsdqGMfZQfOVVQc4vA&#34;,&#34;role&#34;:&#34;external-secrets&#34;},&#34;headers&#34;:{&#34;user-agent&#34;:[&#34;Go-http-client/1.1&#34;]},&#34;id&#34;:&#34;87267c3e-3133-2356-a9dc-52bff0a4ff50&#34;,&#34;mount_accessor&#34;:&#34;auth_kubernetes_ea6faaa8&#34;,&#34;mount_class&#34;:&#34;auth&#34;,&#34;mount_point&#34;:&#34;auth/kubernetes/&#34;,&#34;mount_running_version&#34;:&#34;v0.23.1+builtin&#34;,&#34;mount_type&#34;:&#34;kubernetes&#34;,&#34;namespace&#34;:{&#34;id&#34;:&#34;root&#34;},&#34;operation&#34;:&#34;update&#34;,&#34;path&#34;:&#34;auth/kubernetes/login&#34;,&#34;remote_address&#34;:&#34;10.0.0.80&#34;,&#34;remote_port&#34;:52580},&#34;time&#34;:&#34;2025-11-23</code></pre></div>
+<p>We can then take that jwt over to something like <a href="https://jwt.io" rel="external">https://jwt.io</a>, and see what its parameters look like. This one produces the following:</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>{
+  &#34;aud&#34;: [
+    &#34;vault&#34;
+  ],
+  &#34;exp&#34;: 1763914509,
+  &#34;iat&#34;: 1763913909,
+  &#34;iss&#34;: &#34;https://kubernetes.default.svc.cluster.local&#34;,
+  &#34;jti&#34;: &#34;feba9bb9-b248-49b2-b04a-07a24df0a595&#34;,
+  &#34;kubernetes.io&#34;: {
+    &#34;namespace&#34;: &#34;external-secrets&#34;,
+    &#34;serviceaccount&#34;: {
+      &#34;name&#34;: &#34;vault-auth-eso-test&#34;,
+      &#34;uid&#34;: &#34;74f0b179-dd95-4f3c-a125-b8f6025b9e38&#34;
+    }
+  },
+  &#34;nbf&#34;: 1763913909,
+  &#34;sub&#34;: &#34;system:serviceaccount:external-secrets:vault-auth-eso-test&#34;
+}</code></pre></div>
+<p>This can be extremely useful to compare against the Vault config. Several things need to match up:</p>
+<ul>
+<li>The bound service account in the Vault role needs to match the service account listed in the JWT</li>
+<li>The namespace of the service account needs to be in the Vault Role&rsquo;s bound namespaces</li>
+<li>The service account needs the correct cluster role binding</li>
+<li>The audience needs to match up with the Vault role (or you may need to completely omit this).
+<ul>
+<li>In my specific case, I had the audience claim set to <code>vault</code> on both sides. This still didn&rsquo;t seem to work, but after some research, I realized that for Kubernetes to allow the token review, I also needed a second audience of <code>https://kubernetes.default.svc.cluster.local</code> on the Vault Client config (External Secrets Operator)
+Additional things to look for and consider:</li>
+</ul>
+</li>
+<li>Can the Vault reach the kubernetes API address you used in the backend config? - <code>10.0.0.75:6443</code> in my case. Test this by connecting to the Vault via kubectl exec, or a regular shell depending on how to have it set up. <code>nc -vz 10.0.0.75 6443</code> outside of kubernetes in my example, or <code>nc -vz kubernetes.default.svc.cluster.local 443</code> in kubernetes. If this command hangs, you need to get TCP connectivity to the Kubernetes API from the Vault working.</li>
+<li>Did you typo any role names, namespaces, audience claim etc? This sounds obvious, but I&rsquo;ve had single letter typos take me hours to discover with other issues in the past. This is a simple check that can save you from massive unnecessary headaches.</li>
+<li>If you&rsquo;re debugging this in a production environment, spin up a lab and gain a better understanding of how this works there. You can very easily spin up Vault in docker or via its helm chart, and get a working test cluster with <a href="https://kind.sigs.k8s.io/" rel="external">Kind</a>. Having a safe place to test is not only more secure, but also a lot less stressful, and it typically allows you to fail faster (which ultimately lets you succeed faster).</li>
+</ul>
+<h2 id="working-config">Working Config<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>After spending a few days spelunking in Vault Kubernetes auth debugging, I figured out how to get authentication without a long-lived token working in a few different setups. This test setup should work with minimal changes, just make sure the Kubernetes Host matches if running the Vault outside of Kubernetes.</p>
+<h4 id="vault-outside-of-kubernetes">Vault Outside of Kubernetes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Vault Terraform</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>resource &#34;vault_auth_backend&#34; &#34;kubernetes&#34; {
+  type = &#34;kubernetes&#34;
+}
+
+
+resource &#34;vault_kubernetes_auth_backend_config&#34; &#34;this&#34; {
+  backend                = vault_auth_backend.kubernetes.path
+  kubernetes_host        = &#34;https://10.0.0.75:6443&#34;
+  kubernetes_ca_cert     = &#34;-----BEGIN CERTIFICATE-----\nMIIBdjCCAR2gAwIBAgIBADAKBggqhkjOPQQDAjAjMSEwHwYDVQQDDBhrM3Mtc2Vy\ndmVyLWNhQDE3NjI1NDc0OTYwHhcNMjUxMTA3MjAzMTM2WhcNMzUxMTA1MjAzMTM2\nWjAjMSEwHwYDVQQDDBhrM3Mtc2VydmVyLWNhQDE3NjI1NDc0OTYwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAATIGlmRaMPim5Rj0LxMalA+O4WXMhf8y5lfeWDe+5NR\nGzQGbgM1xz6aPGOTnEVowohFgQJ8GneCH00T9sFePlw1o0IwQDAOBgNVHQ8BAf8E\nBAMCAqQwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUSt8C6YtfD4J5PkeDdf6P\nsKFtAL4wCgYIKoZIzj0EAwIDRwAwRAIgcuN55paQ0/kVJfDALGhd+GtRO4TU7QCx\n4l8NJFOMFvACIB5p7wwSz+WC+/amBT9EeCRN6TVnZ2oue5rw4p1OvCTY\n-----END CERTIFICATE-----&#34;
+  disable_local_ca_jwt   = true
+}
+
+resource &#34;vault_kubernetes_auth_backend_role&#34; &#34;external-secrets&#34; {
+  backend                          = vault_auth_backend.kubernetes.path
+  role_name                        = &#34;external-secrets&#34;
+  bound_service_account_names      = [&#34;vault-auth-eso-test&#34;]
+  bound_service_account_namespaces = [&#34;external-secrets&#34;]
+  token_ttl                        = 3600
+  token_policies                   = [&#34;default&#34;, &#34;external-secrets&#34;]
+  audience                         = &#34;vault&#34;
+}
+
+
+resource &#34;vault_policy&#34; &#34;external-secrets&#34; {
+  name = &#34;external-secrets&#34;
+
+  policy = &lt;&lt;EOT
+path &#34;secret/data/*&#34; {
+  capabilities = [&#34;create&#34;, &#34;read&#34;, &#34;update&#34;, &#34;delete&#34;, &#34;list&#34;]
+}
+
+path &#34;secret/metadata/*&#34; {
+  capabilities = [&#34;read&#34;, &#34;list&#34;, &#34;delete&#34;]
+}
+EOT
+}</code></pre></div>
+<p>ESO Yaml</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: role-tokenreview-binding
+  namespace: external-secrets
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:auth-delegator
+subjects:
+  - kind: ServiceAccount
+    name: vault-auth-eso-test
+    namespace: external-secrets
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: vault-auth-eso-test
+  namespace: external-secrets
+---
+apiVersion: external-secrets.io/v1
+kind: ClusterSecretStore
+metadata:
+  name: vault-backend-test
+spec:
+  provider:
+    vault:
+      server: &#34;http://10.0.0.17:8200&#34;
+      path: &#34;secret&#34;
+      version: &#34;v2&#34;
+      auth:
+        kubernetes:
+          mountPath: &#34;kubernetes&#34;
+          role: &#34;external-secrets&#34;
+          serviceAccountRef:
+            name: vault-auth-eso-test
+            audiences:
+              - &#34;vault&#34;
+              - &#34;https://kubernetes.default.svc.cluster.local&#34;
+---
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
+metadata:
+  name: test-secret
+  namespace: external-secrets
+spec:
+  refreshInterval: &#34;1s&#34;
+  secretStoreRef:
+    name: vault-backend
+    kind: ClusterSecretStore
+  target:
+    name: test-secret
+  dataFrom:
+  - extract:
+      key: test/foo</code></pre></div>
+<h4 id="vault-in-kubernetes">Vault In Kubernetes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h4>
+<p>Vault Terraform</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>resource &#34;vault_auth_backend&#34; &#34;kubernetes&#34; {
+  type = &#34;kubernetes&#34;
+}
+
+data &#34;kubernetes_secret&#34; &#34;vault_tokenreview&#34; {
+  metadata {
+    name      = &#34;vault-tokenreview-token&#34;
+    namespace = &#34;external-secrets&#34;
+  }
+}
+
+resource &#34;vault_kubernetes_auth_backend_config&#34; &#34;this&#34; {
+  backend                = vault_auth_backend.kubernetes.path
+  kubernetes_host        = &#34;https://kubernetes.default.svc.cluster.local&#34;
+}
+
+resource &#34;vault_kubernetes_auth_backend_role&#34; &#34;external-secrets&#34; {
+  backend                          = vault_auth_backend.kubernetes.path
+  role_name                        = &#34;external-secrets&#34;
+  bound_service_account_names      = [&#34;vault-auth-eso&#34;]
+  bound_service_account_namespaces = [&#34;external-secrets&#34;]
+  token_ttl                        = 3600
+  token_policies                   = [&#34;default&#34;, &#34;external-secrets&#34;]
+  audience                         = &#34;vault&#34;
+}
+
+resource &#34;vault_policy&#34; &#34;external-secrets&#34; {
+  name = &#34;external-secrets&#34;
+
+  policy = &lt;&lt;EOT
+path &#34;secret/data/*&#34; {
+  capabilities = [&#34;create&#34;, &#34;read&#34;, &#34;update&#34;, &#34;delete&#34;, &#34;list&#34;]
+}
+
+path &#34;secret/metadata/*&#34; {
+  capabilities = [&#34;read&#34;, &#34;list&#34;, &#34;delete&#34;]
+}
+EOT
+}</code></pre></div>
+<p>ESO Yaml</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: role-tokenreview-binding
+  namespace: external-secrets
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: system:auth-delegator
+subjects:
+  - kind: ServiceAccount
+    name: vault-auth-eso
+    namespace: external-secrets
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: vault-auth-eso
+  namespace: external-secrets
+---
+apiVersion: external-secrets.io/v1
+kind: ClusterSecretStore
+metadata:
+  name: vault-backend
+spec:
+  provider:
+    vault:
+      server: &#34;https://vault.mischaf.us&#34;
+      path: &#34;secret&#34;
+      version: &#34;v2&#34;
+      auth:
+        kubernetes:
+          mountPath: &#34;kubernetes&#34;
+          role: &#34;external-secrets&#34;
+          serviceAccountRef:
+            name: vault-auth-eso
+            audiences:
+              - vault
+---
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
+metadata:
+  name: test-secret
+  namespace: external-secrets
+spec:
+  refreshInterval: &#34;1s&#34;
+  secretStoreRef:
+    name: vault-backend
+    kind: ClusterSecretStore
+  target:
+    name: test-secret
+  dataFrom:
+  - extract:
+      key: test/foo</code></pre></div>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Nov 23, 2025
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <div id="R-header" class="default-animation">
+<img src="https://s3.us-west-1.wasabisys.com/web-assets/blog_infra/mischa.jpeg"></img>
+        </div>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-url="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-url="/cooking/index.html"><a class="padding" href="/cooking/index.html">Cooking</a><ul id="R-subsections-ff6cde06c27bbbc8b61eda84874b21d9" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/outdoor-trip-reports/index.html"><a class="padding" href="/outdoor-trip-reports/index.html">Outdoor Trip Reports</a><ul id="R-subsections-b09c045f8816239d145af0f772e41f30" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-url="/tech/index.html"><a class="padding" href="/tech/index.html">Tech</a><ul id="R-subsections-ceedbbae74c0ccc18084cc8e5a7d9667" class="collapsible-menu">
+            <li class="parent alwaysopen " data-nav-url="/tech/hashicorp-vault/index.html"><a class="padding" href="/tech/hashicorp-vault/index.html">Hashicorp Vault</a><ul id="R-subsections-faa6b937ccb546eb598c2bbf9cd560e7" class="collapsible-menu">
+            <li class="active " data-nav-url="/tech/hashicorp-vault/kubernetes_auth_troubleshooting/index.html"><a class="padding" href="/tech/hashicorp-vault/kubernetes_auth_troubleshooting/index.html">Kubernetes Auth Troubleshooting</a></li>
+            <li class="" data-nav-url="/tech/hashicorp-vault/vault_ssh_certs/index.html"><a class="padding" href="/tech/hashicorp-vault/vault_ssh_certs/index.html">Vault SSH Cert Management</a></li>
+            <li class="" data-nav-url="/tech/hashicorp-vault/vault_kubernetes/index.html"><a class="padding" href="/tech/hashicorp-vault/vault_kubernetes/index.html">Vault on Kubernetes</a></li></ul></li>
+            <li class="" data-nav-url="/tech/backups/index.html"><a class="padding" href="/tech/backups/index.html">Backups</a></li>
+            <li class="alwaysopen " data-nav-url="/tech/networking/index.html"><a class="padding" href="/tech/networking/index.html">Network</a><ul id="R-subsections-4d2463dfb8fc48518bce86179f129dbf" class="collapsible-menu"></ul></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764126522" defer></script>
+    <script src="/js/theme.js?1764126522" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

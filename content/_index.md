@@ -3,6 +3,7 @@ title: "About"
 date: 2021-08-26
 lastmod: 2023-02-14
 draft: false
+hide_h1_title: true
 ---
 # Welcome!
 This website is a place for me to blog(occasionally) about things that interest me, and hopefully share them with people who are interested in them. Things like doing stuff outside or on computers, maybe something else if I can think of it. 
