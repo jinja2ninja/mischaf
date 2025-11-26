@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About :: Mischa Friegang</title>
-    <link>http://localhost:1313/index.html</link>
+    <link>https://www.mischaf.com/index.html</link>
     <description>Welcome! This website is a place for me to blog(occasionally) about things that interest me, and hopefully share them with people who are interested in them. Things like doing stuff outside or on computers, maybe something else if I can think of it.&#xA;The vast majority of the content on here is in the form of peakbagging trip reports, feel free to check them out here</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mischaf.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cooking</title>
-      <link>http://localhost:1313/cooking/index.html</link>
+      <link>https://www.mischaf.com/cooking/index.html</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cooking/index.html</guid>
+      <guid>https://www.mischaf.com/cooking/index.html</guid>
       <description>Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.&#xA;Black Bean Soup</description>
     </item>
     <item>
       <title>Outdoor Trip Reports</title>
-      <link>http://localhost:1313/outdoor-trip-reports/index.html</link>
+      <link>https://www.mischaf.com/outdoor-trip-reports/index.html</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/outdoor-trip-reports/index.html</guid>
+      <guid>https://www.mischaf.com/outdoor-trip-reports/index.html</guid>
       <description>I enjoy a variety of outdoor activities, but primarily spend my time outside running, hiking, peakbagging, splitboarding, and skiing. I’ve also been known to enjoy cycling, both road and mountain, but have been enjoying being on my feet more lately. My primary focus has become climbing as many peaks as possible, big or small. The majority of my trip reports are under the Tahoe Ogul Peaks Section, but I’ve also started adding some other miscellaneous peaks, and will likely start to work on other peak lists in the future.</description>
     </item>
     <item>
       <title>Tech</title>
-      <link>http://localhost:1313/tech/index.html</link>
+      <link>https://www.mischaf.com/tech/index.html</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/index.html</guid>
-      <description>I love technology, its really the primary driver behind this website (I enjoy the infrastructure more than writing posts). You can find some stuff I’ve felt the need to document here, some day I hope to add more content to this section.&#xA;Hashicorp Vault Backups Network</description>
+      <guid>https://www.mischaf.com/tech/index.html</guid>
+      <description>I love technology, its really the primary driver behind this website (I enjoy the infrastructure more than writing posts). You can find some stuff I’ve felt the need to document here, some day I hope to add more content to this section.&#xA;Hashicorp Vault Network</description>
     </item>
   </channel>
 </rss>

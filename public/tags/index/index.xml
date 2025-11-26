@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index :: Tag :: Mischa Friegang</title>
-    <link>http://localhost:1313/tags/index/index.html</link>
+    <link>https://www.mischaf.com/tags/index/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mischaf.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cooking</title>
-      <link>http://localhost:1313/cooking/index.html</link>
+      <link>https://www.mischaf.com/cooking/index.html</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cooking/index.html</guid>
+      <guid>https://www.mischaf.com/cooking/index.html</guid>
       <description>Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.&#xA;Black Bean Soup</description>
     </item>
     <item>
       <title>Outdoor Trip Reports</title>
-      <link>http://localhost:1313/outdoor-trip-reports/index.html</link>
+      <link>https://www.mischaf.com/outdoor-trip-reports/index.html</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/outdoor-trip-reports/index.html</guid>
+      <guid>https://www.mischaf.com/outdoor-trip-reports/index.html</guid>
       <description>I enjoy a variety of outdoor activities, but primarily spend my time outside running, hiking, peakbagging, splitboarding, and skiing. I’ve also been known to enjoy cycling, both road and mountain, but have been enjoying being on my feet more lately. My primary focus has become climbing as many peaks as possible, big or small. The majority of my trip reports are under the Tahoe Ogul Peaks Section, but I’ve also started adding some other miscellaneous peaks, and will likely start to work on other peak lists in the future.</description>
     </item>
     <item>
       <title>Tahoe Ogul Peaks</title>
-      <link>http://localhost:1313/outdoor-trip-reports/ogul-peaks/index.html</link>
+      <link>https://www.mischaf.com/outdoor-trip-reports/ogul-peaks/index.html</link>
       <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/outdoor-trip-reports/ogul-peaks/index.html</guid>
+      <guid>https://www.mischaf.com/outdoor-trip-reports/ogul-peaks/index.html</guid>
       <description>The Tahoe Ogul list is a list created by a now disbanded chapter of the Sierra Club, the Peak and Gorge Section. “Ogul” is the Washoe word for bighorn sheep.&#xA;I started climbing this list (inadvertently) in 2015. I continued to slowly chip away until spring of 2023, when I set the goal of finishing the remaining 40 I had left before the end of July 2024. I managed to meet my goal, and had a great time doing so. The list got me out to amazing places I’d never have visited.</description>
     </item>
     <item>
       <title>Hashicorp Vault</title>
-      <link>http://localhost:1313/tech/hashicorp-vault/index.html</link>
+      <link>https://www.mischaf.com/tech/hashicorp-vault/index.html</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/hashicorp-vault/index.html</guid>
-      <description>Kubernetes Auth Troubleshooting Vault SSH Cert Management Vault on Kubernetes</description>
+      <guid>https://www.mischaf.com/tech/hashicorp-vault/index.html</guid>
+      <description>Vault SSH Cert Management Vault on Kubernetes</description>
     </item>
     <item>
       <title>Tech</title>
-      <link>http://localhost:1313/tech/index.html</link>
+      <link>https://www.mischaf.com/tech/index.html</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/index.html</guid>
-      <description>I love technology, its really the primary driver behind this website (I enjoy the infrastructure more than writing posts). You can find some stuff I’ve felt the need to document here, some day I hope to add more content to this section.&#xA;Hashicorp Vault Backups Network</description>
+      <guid>https://www.mischaf.com/tech/index.html</guid>
+      <description>I love technology, its really the primary driver behind this website (I enjoy the infrastructure more than writing posts). You can find some stuff I’ve felt the need to document here, some day I hope to add more content to this section.&#xA;Hashicorp Vault Network</description>
     </item>
     <item>
       <title>Network</title>
-      <link>http://localhost:1313/tech/networking/index.html</link>
+      <link>https://www.mischaf.com/tech/networking/index.html</link>
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tech/networking/index.html</guid>
+      <guid>https://www.mischaf.com/tech/networking/index.html</guid>
       <description>CGNAT Traversal with Wireguard</description>
     </item>
   </channel>

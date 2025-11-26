@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags :: Mischa Friegang</title>
-    <link>http://localhost:1313/tags/index.html</link>
+    <link>https://www.mischaf.com/tags/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mischaf.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tag :: Index</title>
-      <link>http://localhost:1313/tags/index/index.html</link>
+      <link>https://www.mischaf.com/tags/index/index.html</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/index/index.html</guid>
+      <guid>https://www.mischaf.com/tags/index/index.html</guid>
       <description></description>
     </item>
   </channel>

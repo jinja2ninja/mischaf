@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cooking :: Mischa Friegang</title>
-    <link>http://localhost:1313/cooking/index.html</link>
+    <link>https://www.mischaf.com/cooking/index.html</link>
     <description>Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.&#xA;Black Bean Soup</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/cooking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mischaf.com/cooking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Black Bean Soup</title>
-      <link>http://localhost:1313/cooking/black-bean-soup/index.html</link>
+      <link>https://www.mischaf.com/cooking/black-bean-soup/index.html</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cooking/black-bean-soup/index.html</guid>
+      <guid>https://www.mischaf.com/cooking/black-bean-soup/index.html</guid>
       <description>Ingredients 1 Yellow Onion diced 2 teaspoons neutral cooking oil 6 cloves garlic peeled and minced 1 jalapeño trimmed and diced 28 ounce can black beans (or 2 standard size cans) 14.5 ounce can diced tomatoes, fire-roasted 1 can whole kernel corn 4 cups vegetable stock 1 tablespoon chili powder 1 tablespoon paprika 1 teaspoon cayenne powder more or less to taste 1 teaspoon cumin Salt and pepper to taste Instructions Heat oil in large stock pot, add onion and cook 5-7 minutes. Add salt and pepper Add in jalapenos and garlic, cook additional 2-3 minutes Add half of the beans, all of the tomatoes, all of the stock and all of the seasonings. Add more salt and pepper as needed Transfer to a blender and blend until smooth Transfer back to stock pot, add corn and remaining black beans Bring to a boil, reduce heat and simmer 20-30 minutes. Check occasionally and add salt/pepper as needed</description>
     </item>
   </channel>
