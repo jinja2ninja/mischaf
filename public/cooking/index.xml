@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cooking :: Mischa Friegang</title>
-    <link>http://localhost:1313/cooking/index.html</link>
+    <link>https://www.mischaf.com/cooking/index.html</link>
     <description>Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.&#xA;Black Bean Soup Potato Leek Soup Zuppa Toscana</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/cooking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.mischaf.com/cooking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Black Bean Soup</title>
-      <link>http://localhost:1313/cooking/black-bean-soup/index.html</link>
+      <link>https://www.mischaf.com/cooking/black-bean-soup/index.html</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cooking/black-bean-soup/index.html</guid>
+      <guid>https://www.mischaf.com/cooking/black-bean-soup/index.html</guid>
       <description>Ingredients 1 Yellow Onion diced 2 teaspoons neutral cooking oil 6 cloves garlic peeled and minced 1 jalapeño trimmed and diced 28 ounce can black beans (or 2 standard size cans) 14.5 ounce can diced tomatoes, fire-roasted 1 can whole kernel corn 4 cups vegetable stock 1 tablespoon chili powder 1 tablespoon paprika 1 teaspoon cayenne powder more or less to taste 1 teaspoon cumin Salt and pepper to taste Instructions Heat oil in large stock pot, add onion and cook 5-7 minutes. Add salt and pepper Add in jalapenos and garlic, cook additional 2-3 minutes Add half of the beans, all of the tomatoes, all of the stock and all of the seasonings. Add more salt and pepper as needed Transfer to a blender and blend until smooth Transfer back to stock pot, add corn and remaining black beans Bring to a boil, reduce heat and simmer 20-30 minutes. Check occasionally and add salt/pepper as needed</description>
     </item>
     <item>
       <title>Potato Leek Soup</title>
-      <link>http://localhost:1313/cooking/potato-leek-soup/index.html</link>
+      <link>https://www.mischaf.com/cooking/potato-leek-soup/index.html</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cooking/potato-leek-soup/index.html</guid>
+      <guid>https://www.mischaf.com/cooking/potato-leek-soup/index.html</guid>
       <description>Ingredients 3 tablespoons unsalted butter 4 large leeks, white and light green parts only, roughly chopped (about 5 cups) 3 cloves garlic, peeled and smashed 2 pounds Yukon Gold potatoes, peeled and roughly chopped into ½-inch pieces 7 cups chicken or vegetable broth 2 bay leaves 3 sprigs fresh thyme 1 teaspoon salt ¼ teaspoon ground black pepper 1 cup heavy cream Chives, finely chopped, for serving Steps Cut leeks up, clean thoroughly Add butter to pot, let it melt a bit Add Leeks and garlic Cook for ~10 minutes over medium low heat, don’t brown them, just soften Add broth, potatoes and spices Bring to boil, cover and let simmer ~30 minutes or until potatoes are soft Remove thyme and bay leaves Remove a few scoops of potatoes, immersion blend, add potatoes back Add cream Simmer for a few minutes, season to taste with salt and pepper</description>
     </item>
     <item>
       <title>Zuppa Toscana</title>
-      <link>http://localhost:1313/cooking/zuppa_toscana/index.html</link>
+      <link>https://www.mischaf.com/cooking/zuppa_toscana/index.html</link>
       <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cooking/zuppa_toscana/index.html</guid>
+      <guid>https://www.mischaf.com/cooking/zuppa_toscana/index.html</guid>
       <description>Ingredients 1 lb Italian Sausage. Ground preferred, if not, remove the casing. Use spicy sausage if desired. 4 tablespoons butter ½ diced yellow onion 1 tablespoon minced garlic 6 cups chicken broth 2 cups water ~2lbs Potatoes, I like Yukon Gold but Russet works fine as well. Diced into 1/2&#34; pieces or larger if desired Salt to taste Pepper to taste 2 cups heavy cream 4 cups chopped kale Garnish with Parmesan, chives, bacon bits, hot sauce, you name it. Steps In a large stock pot, cook the sausage until browned. Remove it from the pot, but let some of the grease stay behind. Saute the onions until they start to turn translucent, add the garlic for another minute or 2. You can add the potatoes for a few minutes at this point as well to speed up the cooking. Add everything else but the kale and heavy cream, save those for later. Stir until combined and bring to a boil, then cook on medium low until the potatoes are tennder. Add in the kale and heavy cream, and cook for a few more minutes to thicken the soup up.</description>
     </item>
   </channel>
