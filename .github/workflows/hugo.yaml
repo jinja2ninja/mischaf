@@ -24,3 +24,9 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Dispatch Event to Target Repository
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }} 
+          repository: jinja2ninja/argocd
+          event-type: update-website-ref

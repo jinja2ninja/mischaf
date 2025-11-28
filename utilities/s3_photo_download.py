@@ -8,7 +8,6 @@ from botocore.client import Config
 import sys
 import os
 import re
-
 s3_compatible_endpoint_url = sys.argv[1]
 access_key = os.environ['ACCESS_KEY']
 secret_access_key = os.environ['SECRET_KEY']
@@ -18,8 +17,6 @@ date_string = sys.argv[4]
 search_string = f"{subdirectory_name}/PXL_{date_string}"
 target_directory = sys.argv[5]
 session = boto3.session.Session()
-
-
 
 s3_client = session.client(
     service_name='s3',

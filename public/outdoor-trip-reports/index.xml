@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Outdoor Trip Reports :: Mischa Friegang</title>
-    <link>https://www.mischaf.com/outdoor-trip-reports/index.html</link>
+    <link>http://localhost:1313/outdoor-trip-reports/index.html</link>
     <description>I enjoy a variety of outdoor activities, but primarily spend my time outside running, hiking, peakbagging, splitboarding, and skiing. I’ve also been known to enjoy cycling, both road and mountain, but have been enjoying being on my feet more lately. My primary focus has become climbing as many peaks as possible, big or small. The majority of my trip reports are under the Tahoe Ogul Peaks Section, but I’ve also started adding some other miscellaneous peaks, and will likely start to work on other peak lists in the future.</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 28 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mischaf.com/outdoor-trip-reports/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/outdoor-trip-reports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tahoe Ogul Peaks</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/ogul-peaks/index.html</link>
+      <link>http://localhost:1313/outdoor-trip-reports/ogul-peaks/index.html</link>
       <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/ogul-peaks/index.html</guid>
+      <guid>http://localhost:1313/outdoor-trip-reports/ogul-peaks/index.html</guid>
       <description>The Tahoe Ogul list is a list created by a now disbanded chapter of the Sierra Club, the Peak and Gorge Section. “Ogul” is the Washoe word for bighorn sheep.&#xA;I started climbing this list (inadvertently) in 2015. I continued to slowly chip away until spring of 2023, when I set the goal of finishing the remaining 40 I had left before the end of July 2024. I managed to meet my goal, and had a great time doing so. The list got me out to amazing places I’d never have visited.</description>
     </item>
     <item>
       <title>Echo Peak, 8895&#39;</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/echo-peak-7-27-24/index.html</link>
+      <link>http://localhost:1313/outdoor-trip-reports/echo-peak-7-27-24/index.html</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/echo-peak-7-27-24/index.html</guid>
+      <guid>http://localhost:1313/outdoor-trip-reports/echo-peak-7-27-24/index.html</guid>
       <description>July 27, 2024 Full Image Gallery&#xA;I was a few days away from turning 30, and noticed that I had 94 peaks climbed on my peakbagger page. A new mini goal quickly came to mind: get to 100 before I turned 30. I started browsing local peaks, and noticed that there were quite a few concentrated around Echo Lakes that I hadn’t climbed before. Sure, a few had hardly any prominence, but they show up on Peakbagger, so that’s good enough for me. I woke up Saturday morning at 4:15 or so, and was out the door not too long after.</description>
     </item>
     <item>
       <title>Guide Peak, 7746&#39;</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/guide-peak-7-21-24/index.html</link>
+      <link>http://localhost:1313/outdoor-trip-reports/guide-peak-7-21-24/index.html</link>
       <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/guide-peak-7-21-24/index.html</guid>
+      <guid>http://localhost:1313/outdoor-trip-reports/guide-peak-7-21-24/index.html</guid>
       <description>July 21, 2024 Full Image Gallery&#xA;I got up at around 4AM and made coffee and a sandwich to get the day started. By 4:30 I was out the door and on my way to Loon Lake. I’ve driven up Wentworth Springs Road countless times, but I had never done it while the sun was rising. The sunrise definitely adds to the experience, I highly recommend it.</description>
     </item>
     <item>
       <title>Mt Ralston Ridge</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/ralston-ridge-1-28-23/index.html</link>
+      <link>http://localhost:1313/outdoor-trip-reports/ralston-ridge-1-28-23/index.html</link>
       <pubDate>Fri, 10 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/ralston-ridge-1-28-23/index.html</guid>
+      <guid>http://localhost:1313/outdoor-trip-reports/ralston-ridge-1-28-23/index.html</guid>
       <description>1/28/2023 This was my second tour of the year. I got a bit of a late start, but I had a busy start of the season dealing with the insane amount of rain I got at home. Thankfully that translates to a huge amount of snow in the mountains. I had enjoyed some awesome, waist deep powder on Waterhouse the weekend before, but I knew that the soft snow was going to be harder and harder to find. I also had to be in Oakland that night, so I wanted something relatively quick. Therefore I opted for some good old fashioned corn snow on the south face of Ralston.</description>
     </item>
     <item>
       <title>Desolation Wilderness North Lakes Tour</title>
-      <link>https://www.mischaf.com/outdoor-trip-reports/desolation_north_lakes_tour/index.html</link>
+      <link>http://localhost:1313/outdoor-trip-reports/desolation_north_lakes_tour/index.html</link>
       <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/outdoor-trip-reports/desolation_north_lakes_tour/index.html</guid>
+      <guid>http://localhost:1313/outdoor-trip-reports/desolation_north_lakes_tour/index.html</guid>
       <description>June 27th, 2020 My Dad, Jed and I went on this hike with the intention of doing a shakedown overnight trip to test our legs and gear for our upcoming PCT section hike. We arrived at the trail head at 7:30 that morning and started towards the Forni lake trail with plenty of mosquitoes to keep us company. The first leg of the journey was fairly uneventful, I’ve hiked to Forni lake probably a dozen times or so. We made good time to the big Mule’s Ear field, which was just starting to bloom.</description>
     </item>
   </channel>

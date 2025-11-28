@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.147.3">
-    <meta name="generator" content="Relearn 8.2.0+f69a085322cc70b3e14577c0823c5bc781ec6bb2">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="Vault Kubernetes Auth Troubleshooting I recently went down the rabbit hole of setting up the External Secrets Operator to sync secrets from my Openbao instance. For those who aren’t aware, Openbao is an open source fork of Hashicorp Vault. It’s close to, if not completely API compatible, so for the purposes of this post, we can just refer to Vault or Openbao interchangably.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary_large_image">
@@ -28,27 +28,27 @@
     <meta itemprop="wordCount" content="1465">
     <meta itemprop="image" content="http://localhost:1313/images/og-image.png">
     <title>Kubernetes Auth Troubleshooting :: Mischa Friegang</title>
-    <link href="/images/favicon.png?1764126522" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1764126522" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1764126522" defer></script>
-    <script src="/js/search-lunr.js?1764126522" defer></script>
-    <script src="/js/search.js?1764126522" defer></script>
+    <link href="/images/favicon.png?1764305159" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1764305159" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1764305159" defer></script>
+    <script src="/js/search-lunr.js?1764305159" defer></script>
+    <script src="/js/search.js?1764305159" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1764126522";
+      window.relearn.index_js_url="/searchindex.en.js?1764305159";
     </script>
-    <script src="/js/lunr/lunr.min.js?1764126522" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1764126522" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1764126522" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1764126522" defer></script>
+    <script src="/js/lunr/lunr.min.js?1764305159" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1764305159" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1764305159" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1764305159" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764126522" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764126522" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764126522" rel="stylesheet">
-    <link href="/css/theme.css?1764126522" rel="stylesheet">
-    <link href="/css/format-html.css?1764126522" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764305159" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764305159" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764305159" rel="stylesheet">
+    <link href="/css/theme.css?1764305159" rel="stylesheet">
+    <link href="/css/format-html.css?1764305159" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -500,8 +500,8 @@ spec:
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764126522" defer></script>
-    <script src="/js/theme.js?1764126522" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764305159" defer></script>
+    <script src="/js/theme.js?1764305159" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

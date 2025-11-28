@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hashicorp Vault :: Mischa Friegang</title>
-    <link>https://www.mischaf.com/tech/hashicorp-vault/index.html</link>
-    <description>Vault SSH Cert Management Vault on Kubernetes</description>
+    <link>http://localhost:1313/tech/hashicorp-vault/index.html</link>
+    <description>Kubernetes Auth Troubleshooting Vault SSH Cert Management Vault on Kubernetes</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mischaf.com/tech/hashicorp-vault/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tech/hashicorp-vault/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Auth Troubleshooting</title>
+      <link>http://localhost:1313/tech/hashicorp-vault/kubernetes_auth_troubleshooting/index.html</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/hashicorp-vault/kubernetes_auth_troubleshooting/index.html</guid>
+      <description>Vault Kubernetes Auth Troubleshooting I recently went down the rabbit hole of setting up the External Secrets Operator to sync secrets from my Openbao instance. For those who aren’t aware, Openbao is an open source fork of Hashicorp Vault. It’s close to, if not completely API compatible, so for the purposes of this post, we can just refer to Vault or Openbao interchangably.</description>
+    </item>
     <item>
       <title>Vault SSH Cert Management</title>
-      <link>https://www.mischaf.com/tech/hashicorp-vault/vault_ssh_certs/index.html</link>
+      <link>http://localhost:1313/tech/hashicorp-vault/vault_ssh_certs/index.html</link>
       <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/tech/hashicorp-vault/vault_ssh_certs/index.html</guid>
+      <guid>http://localhost:1313/tech/hashicorp-vault/vault_ssh_certs/index.html</guid>
       <description>Background There are quite a few ways you can authenticate over SSH, I’ll outline what seem to be the most popular ones:&#xA;Probably the most common is to just use a password, this is neither enjoyable for the user, nor is it the most secure way to do things. If you have password auth enabled on a public facing server, its going to get hammered with attempts from bots all day. You can install Fail2ban, which might stop the most unsophisticated of attacks, but attackers are smart enough to try from multiple IP addresses now. There’s a project called Crowdsec that dubs itself “The spiritual successor to Fail2ban”, which does this a bit more intelligently by using a crowd sourced list of bad IPs. Even with this in place though, don’t use password auth. Just don’t, use the next option at bare minimum.</description>
     </item>
     <item>
       <title>Vault on Kubernetes</title>
-      <link>https://www.mischaf.com/tech/hashicorp-vault/vault_kubernetes/index.html</link>
+      <link>http://localhost:1313/tech/hashicorp-vault/vault_kubernetes/index.html</link>
       <pubDate>Tue, 14 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/tech/hashicorp-vault/vault_kubernetes/index.html</guid>
+      <guid>http://localhost:1313/tech/hashicorp-vault/vault_kubernetes/index.html</guid>
       <description>Hashicorp Vault I have spent quite a bit of time over the past 6 months setting up Hashicorp Vault at work. Its been a fun experience, and I have learned a lot. I’m always a fan of running whatever I run at work in my homelab, and Vault has really proven to be a useful tool. Recently, I’ve been playing around with Kubernetes again, and figured Vault would be a great place to store my Kubernetes secrets. In this post, I’ll try to outline how I set up Vault on my cluster, and how I use it with other apps on the cluster.</description>
     </item>
   </channel>
