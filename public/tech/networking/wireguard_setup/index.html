@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.152.2">
-    <meta name="generator" content="Relearn 8.2.0+f69a085322cc70b3e14577c0823c5bc781ec6bb2">
+    <meta name="generator" content="Hugo 0.147.3">
+    <meta name="generator" content="Relearn 8.3.0">
     <meta name="description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
 Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://www.mischaf.com/images/og-image.png">
+    <meta name="twitter:image" content="http://localhost:1313/images/og-image.png">
     <meta name="twitter:title" content="CGNAT Traversal with Wireguard :: Mischa Friegang">
     <meta name="twitter:description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
 Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.">
-    <meta property="og:url" content="https://www.mischaf.com/tech/networking/wireguard_setup/index.html">
+    <meta property="og:url" content="http://localhost:1313/tech/networking/wireguard_setup/index.html">
     <meta property="og:site_name" content="Mischa Friegang">
     <meta property="og:title" content="CGNAT Traversal with Wireguard :: Mischa Friegang">
     <meta property="og:description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
@@ -23,44 +23,44 @@ Where I live there are essentially 2 options for(usable in this day and age) int
     <meta property="article:section" content="Tech">
     <meta property="article:published_time" content="2021-08-28T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-08-28T00:00:00+00:00">
-    <meta property="og:image" content="https://www.mischaf.com/images/og-image.png">
+    <meta property="og:image" content="http://localhost:1313/images/og-image.png">
     <meta itemprop="name" content="CGNAT Traversal with Wireguard :: Mischa Friegang">
     <meta itemprop="description" content="** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS
 Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.">
     <meta itemprop="datePublished" content="2021-08-28T00:00:00+00:00">
     <meta itemprop="dateModified" content="2021-08-28T00:00:00+00:00">
     <meta itemprop="wordCount" content="1514">
-    <meta itemprop="image" content="https://www.mischaf.com/images/og-image.png">
+    <meta itemprop="image" content="http://localhost:1313/images/og-image.png">
     <title>CGNAT Traversal with Wireguard :: Mischa Friegang</title>
-    <link href="/images/favicon.png?1764303056" rel="icon" type="image/png">
-    <link href="/css/auto-complete/auto-complete.min.css?1764303056" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1764303056" defer></script>
-    <script src="/js/search-lunr.min.js?1764303056" defer></script>
-    <script src="/js/search.min.js?1764303056" defer></script>
+    <link href="/images/favicon.png?1764305159" rel="icon" type="image/png">
+    <link href="/css/auto-complete/auto-complete.min.css?1764305159" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1764305159" defer></script>
+    <script src="/js/search-lunr.js?1764305159" defer></script>
+    <script src="/js/search.js?1764305159" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1764303056";
+      window.relearn.index_js_url="/searchindex.en.js?1764305159";
     </script>
-    <script src="/js/lunr/lunr.min.js?1764303056" defer></script>
-    <script src="/js/lunr/lunr.stemmer.support.min.js?1764303056" defer></script>
-    <script src="/js/lunr/lunr.multi.min.js?1764303056" defer></script>
-    <script src="/js/lunr/lunr.en.min.js?1764303056" defer></script>
+    <script src="/js/lunr/lunr.min.js?1764305159" defer></script>
+    <script src="/js/lunr/lunr.stemmer.support.min.js?1764305159" defer></script>
+    <script src="/js/lunr/lunr.multi.min.js?1764305159" defer></script>
+    <script src="/js/lunr/lunr.en.min.js?1764305159" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764303056" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764303056" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764303056" rel="stylesheet">
-    <link href="/css/theme.min.css?1764303056" rel="stylesheet">
-    <link href="/css/format-html.min.css?1764303056" rel="stylesheet" id="R-format-style">
+    <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764305159" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1764305159" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1764305159" rel="stylesheet">
+    <link href="/css/theme.css?1764305159" rel="stylesheet">
+    <link href="/css/format-html.css?1764305159" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
-      window.relearn.min = `.min`;
+      window.relearn.min = ``;
       window.relearn.path='\/tech\/networking\/wireguard_setup\/index.html';
       window.relearn.relBasePath='..\/..\/..';
       window.relearn.relBaseUri='..\/..\/..';
-      window.relearn.absBaseUri='https:\/\/www.mischaf.com';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.disableInlineCopyToClipboard=false;
       window.relearn.enableBlockCodeWrap=true;
       // legal
@@ -229,8 +229,8 @@ Endpoint=&lt;vps public IP address&gt;:51820</code></pre></div>
 <div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0"><code>[Peer]
 PublicKey = &lt;your public key&gt;
 AllowedIPs = 10.0.50.3/32</code></pre></div>
-<p><a href="#R-image-56446742e5ea18374b45275391bdf452" class="lightbox-link"><img alt="Wireguard Mobile Config" class="lazy lightbox figure-image" loading="lazy" src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png" style="height: auto;width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-56446742e5ea18374b45275391bdf452"><img alt="Wireguard Mobile Config" class="lazy lightbox lightbox-image" loading="lazy" src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png"></a>
+<p><a href="#R-image-015946fb469f7c87a4d7fd8c3f5467a2" class="lightbox-link"><img alt="Wireguard Mobile Config" class="lazy lightbox figure-image" loading="lazy" src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png" style="height: auto;width: auto;"></a>
+<a href="javascript:history.back();" class="lightbox-back" id="R-image-015946fb469f7c87a4d7fd8c3f5467a2"><img alt="Wireguard Mobile Config" class="lazy lightbox lightbox-image" loading="lazy" src="https://s3.us-west-1.wasabisys.com/web-assets/wg_mobile_config.png"></a>
 9. At this point everything should be working. If you&rsquo;re having issues, a good place to start is using the tcpdump command, and logically going through the steps of what needs to happen. I had some difficulties the first few times I set this up, but have no issues repeating it now.
 10. For bonus points, run PiHole either on the VPS, or somehwere on your LAN, and point to it for DNS on the smartphone config. This will give you always on ad blocking if you use the full tunnel option. I run my phone with the full tunnel on almost 100% of the time, save for the few services that act weird when you use a VPS public IP address(looking at you, Netflix).</p>
 
@@ -283,6 +283,7 @@ AllowedIPs = 10.0.50.3/32</code></pre></div>
             <li class="" data-nav-url="/outdoor-trip-reports/index.html"><a class="padding" href="/outdoor-trip-reports/index.html">Outdoor Trip Reports</a><ul id="R-subsections-b09c045f8816239d145af0f772e41f30" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-url="/tech/index.html"><a class="padding" href="/tech/index.html">Tech</a><ul id="R-subsections-ceedbbae74c0ccc18084cc8e5a7d9667" class="collapsible-menu">
             <li class="alwaysopen " data-nav-url="/tech/hashicorp-vault/index.html"><a class="padding" href="/tech/hashicorp-vault/index.html">Hashicorp Vault</a><ul id="R-subsections-faa6b937ccb546eb598c2bbf9cd560e7" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-url="/tech/backups/index.html"><a class="padding" href="/tech/backups/index.html">Backups</a></li>
             <li class="parent alwaysopen " data-nav-url="/tech/networking/index.html"><a class="padding" href="/tech/networking/index.html">Network</a><ul id="R-subsections-4d2463dfb8fc48518bce86179f129dbf" class="collapsible-menu">
             <li class="active " data-nav-url="/tech/networking/wireguard_setup/index.html"><a class="padding" href="/tech/networking/wireguard_setup/index.html">CGNAT Traversal with Wireguard</a></li></ul></li></ul></li>
           </ul>
@@ -302,8 +303,8 @@ AllowedIPs = 10.0.50.3/32</code></pre></div>
 <div id="R-footer"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
       </div>
     </aside>
-    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764303056" defer></script>
-    <script src="/js/theme.min.js?1764303056" defer></script>
+    <script src="/js/perfect-scrollbar/perfect-scrollbar.min.js?1764305159" defer></script>
+    <script src="/js/theme.js?1764305159" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network :: Mischa Friegang</title>
-    <link>https://www.mischaf.com/tech/networking/index.html</link>
+    <link>http://localhost:1313/tech/networking/index.html</link>
     <description>CGNAT Traversal with Wireguard</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 28 Aug 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mischaf.com/tech/networking/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tech/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CGNAT Traversal with Wireguard</title>
-      <link>https://www.mischaf.com/tech/networking/wireguard_setup/index.html</link>
+      <link>http://localhost:1313/tech/networking/wireguard_setup/index.html</link>
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/tech/networking/wireguard_setup/index.html</guid>
+      <guid>http://localhost:1313/tech/networking/wireguard_setup/index.html</guid>
       <description>** Note, as of ~mid 2022, I moved over to Tailscale, and eventually Twingate. This was a fun project, but Twingate does the job without the cost of the VPS&#xA;Where I live there are essentially 2 options for(usable in this day and age) internet, you go with one of the local WISPs, or you use LTE in some form. The latter of the 2 is what I have ended up with after a few years of spotty and slow sevice with 2 different WISPs. It has some limitations, but I’m able to get 40-50Mbps down and 10-15Mbps up consistently. Someday Elon Musk and Starlink will save me, but for now it works. One of said limitations of using a Verizon LTE connection is Verizon’s CGNAT. This is Verizon’s way of continuing to use it’s finite supply of V4 addresses for a large pool of customers. This can be a big pain when trying to port forward services from you LAN to the internet(which probably isn’t the smartest thing to do anyways). That said, I do have some services on the LAN that are really handy to have access to while away from the house. The most important one for me is Home Assistant, but other things like Blue Iris, or even just being able to ssh into a box can come in really handy. While researching this issue, I initially avoided using VPNs as I had used Open VPN in the past, but wasn’t impressed by the performance or ease of setup. I successfully used a few things such as ssh tunnels, NGROK, and another project who’s name escapes me. All of them did the job, but had their quirks. It never really reached the level of reliability to just set and forget. Eventually, I stumbled upon Wireguard, and by stumble, I mean I read so many comments in forums and reddit posts suggesting it that I caved and decided to try it. Initially the setup seemed a bit complicated, but after getting it working I realized that it performed really well. Probably the fastest connection that I was able to get out of any of the solutions that I had tried. I now run a full tunnel on my phone that directs tunnels everything to either my LAN, or through the VPS. This makes sketchy free WiFi a lot safer, and I hardly notice any speed penalty. Now I’m going to go into some of the details of how I got this set up as both a resource for anyone that finds my humble little blog looking for answers, and as documentation for my future self.</description>
     </item>
   </channel>

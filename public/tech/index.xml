@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech :: Mischa Friegang</title>
-    <link>https://www.mischaf.com/tech/index.html</link>
-    <description>I love technology, its really the primary driver behind this website (I enjoy the infrastructure more than writing posts). You can find some stuff I’ve felt the need to document here, some day I hope to add more content to this section.&#xA;Hashicorp Vault Network</description>
+    <link>http://localhost:1313/tech/index.html</link>
+    <description>I love technology, its really the primary driver behind this website (I enjoy the infrastructure more than writing posts). You can find some stuff I’ve felt the need to document here, some day I hope to add more content to this section.&#xA;Hashicorp Vault Backups Network</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.mischaf.com/tech/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hashicorp Vault</title>
-      <link>https://www.mischaf.com/tech/hashicorp-vault/index.html</link>
+      <link>http://localhost:1313/tech/hashicorp-vault/index.html</link>
       <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/tech/hashicorp-vault/index.html</guid>
-      <description>Vault SSH Cert Management Vault on Kubernetes</description>
+      <guid>http://localhost:1313/tech/hashicorp-vault/index.html</guid>
+      <description>Kubernetes Auth Troubleshooting Vault SSH Cert Management Vault on Kubernetes</description>
+    </item>
+    <item>
+      <title>Backups</title>
+      <link>http://localhost:1313/tech/backups/index.html</link>
+      <pubDate>Sun, 12 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tech/backups/index.html</guid>
+      <description>My Backup Strategy Over the years I’ve learned how important a personal data backup strategy can be. Photos are probably the most cherished piece of data to me, but there are plenty of other things that are important to keep around for many years. The conventional wisdom says that you should keep 3 copies of your data, 2 on site, and 1 somewhere else. I agree with this philosohpy, it seems like a solid way to keep things long term. As a regular home user though, this can seem a bit daunting. However these days with the advent of cloud storage, its really not that hard to achieve. In this article I’m going to explain the strategy I devloped for keeping photo backups, and how to apply it to just about anything.</description>
     </item>
     <item>
       <title>Network</title>
-      <link>https://www.mischaf.com/tech/networking/index.html</link>
+      <link>http://localhost:1313/tech/networking/index.html</link>
       <pubDate>Sat, 28 Aug 2021 00:00:00 +0000</pubDate>
-      <guid>https://www.mischaf.com/tech/networking/index.html</guid>
+      <guid>http://localhost:1313/tech/networking/index.html</guid>
       <description>CGNAT Traversal with Wireguard</description>
     </item>
   </channel>
