@@ -26,3 +26,10 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: "test"
+
+      - name: Dispatch Event to Target Repository
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }} 
+          repository: jinja2ninja/argocd
+          event-type: update-website-ref
