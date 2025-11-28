@@ -1,21 +1,21 @@
 var relearn_searchindex = [
   {
+    "breadcrumb": "About",
+    "content": "Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.\nBlack Bean Soup Potato Leek Soup",
+    "description": "Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.\nBlack Bean Soup Potato Leek Soup",
+    "tags": [
+      "Index"
+    ],
+    "title": "Cooking",
+    "uri": "/cooking/index.html"
+  },
+  {
     "breadcrumb": "About \u003e Cooking",
     "content": "Ingredients 1 Yellow Onion diced 2 teaspoons neutral cooking oil 6 cloves garlic peeled and minced 1 jalapeño trimmed and diced 28 ounce can black beans (or 2 standard size cans) 14.5 ounce can diced tomatoes, fire-roasted 1 can whole kernel corn 4 cups vegetable stock 1 tablespoon chili powder 1 tablespoon paprika 1 teaspoon cayenne powder more or less to taste 1 teaspoon cumin Salt and pepper to taste Instructions Heat oil in large stock pot, add onion and cook 5-7 minutes. Add salt and pepper Add in jalapenos and garlic, cook additional 2-3 minutes Add half of the beans, all of the tomatoes, all of the stock and all of the seasonings. Add more salt and pepper as needed Transfer to a blender and blend until smooth Transfer back to stock pot, add corn and remaining black beans Bring to a boil, reduce heat and simmer 20-30 minutes. Check occasionally and add salt/pepper as needed",
     "description": "Ingredients 1 Yellow Onion diced 2 teaspoons neutral cooking oil 6 cloves garlic peeled and minced 1 jalapeño trimmed and diced 28 ounce can black beans (or 2 standard size cans) 14.5 ounce can diced tomatoes, fire-roasted 1 can whole kernel corn 4 cups vegetable stock 1 tablespoon chili powder 1 tablespoon paprika 1 teaspoon cayenne powder more or less to taste 1 teaspoon cumin Salt and pepper to taste Instructions Heat oil in large stock pot, add onion and cook 5-7 minutes. Add salt and pepper Add in jalapenos and garlic, cook additional 2-3 minutes Add half of the beans, all of the tomatoes, all of the stock and all of the seasonings. Add more salt and pepper as needed Transfer to a blender and blend until smooth Transfer back to stock pot, add corn and remaining black beans Bring to a boil, reduce heat and simmer 20-30 minutes. Check occasionally and add salt/pepper as needed",
     "tags": [],
     "title": "Black Bean Soup",
     "uri": "/cooking/black-bean-soup/index.html"
-  },
-  {
-    "breadcrumb": "About",
-    "content": "Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.\nBlack Bean Soup",
-    "description": "Just a place to store recipes I like to cook. Mostly inspired by how horrific online recipe sites have become. Some of these I’ve just lifted from recipe sites and omitted the endless pages of nonsense babbling about the recipes, some are my own creation. The idea is that these are all straight to the point.\nBlack Bean Soup",
-    "tags": [
-      "Index"
-    ],
-    "title": "Cooking",
-    "uri": "/cooking/index.html"
   },
   {
     "breadcrumb": "About",
@@ -36,6 +36,14 @@ var relearn_searchindex = [
     ],
     "title": "Tahoe Ogul Peaks",
     "uri": "/outdoor-trip-reports/ogul-peaks/index.html"
+  },
+  {
+    "breadcrumb": "About \u003e Cooking",
+    "content": "Ingredients 3 tablespoons unsalted butter 4 large leeks, white and light green parts only, roughly chopped (about 5 cups) 3 cloves garlic, peeled and smashed 2 pounds Yukon Gold potatoes, peeled and roughly chopped into ½-inch pieces 7 cups chicken or vegetable broth 2 bay leaves 3 sprigs fresh thyme 1 teaspoon salt ¼ teaspoon ground black pepper 1 cup heavy cream Chives, finely chopped, for serving Steps Cut leeks up, clean thoroughly Add butter to pot, let it melt a bit Add Leeks and garlic Cook for ~10 minutes over medium low heat, don’t brown them, just soften Add broth, potatoes and spices Bring to boil, cover and let simmer ~30 minutes or until potatoes are soft Remove thyme and bay leaves Remove a few scoops of potatoes, immersion blend, add potatoes back Add cream Simmer for a few minutes, season to taste with salt and pepper",
+    "description": "Ingredients 3 tablespoons unsalted butter 4 large leeks, white and light green parts only, roughly chopped (about 5 cups) 3 cloves garlic, peeled and smashed 2 pounds Yukon Gold potatoes, peeled and roughly chopped into ½-inch pieces 7 cups chicken or vegetable broth 2 bay leaves 3 sprigs fresh thyme 1 teaspoon salt ¼ teaspoon ground black pepper 1 cup heavy cream Chives, finely chopped, for serving Steps Cut leeks up, clean thoroughly Add butter to pot, let it melt a bit Add Leeks and garlic Cook for ~10 minutes over medium low heat, don’t brown them, just soften Add broth, potatoes and spices Bring to boil, cover and let simmer ~30 minutes or until potatoes are soft Remove thyme and bay leaves Remove a few scoops of potatoes, immersion blend, add potatoes back Add cream Simmer for a few minutes, season to taste with salt and pepper",
+    "tags": [],
+    "title": "Potato Leek Soup",
+    "uri": "/cooking/potato-leek-soup/index.html"
   },
   {
     "breadcrumb": "About \u003e Outdoor Trip Reports \u003e Tahoe Ogul Peaks",
@@ -310,16 +318,6 @@ var relearn_searchindex = [
     "uri": "/outdoor-trip-reports/ogul-peaks/rubicon-peak-4-8-2023/index.html"
   },
   {
-    "breadcrumb": "About \u003e Tech",
-    "content": "Vault SSH Cert Management Vault on Kubernetes",
-    "description": "Vault SSH Cert Management Vault on Kubernetes",
-    "tags": [
-      "Index"
-    ],
-    "title": "Hashicorp Vault",
-    "uri": "/tech/hashicorp-vault/index.html"
-  },
-  {
     "breadcrumb": "About \u003e Tags",
     "content": "",
     "description": "",
@@ -334,6 +332,16 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Tags",
     "uri": "/tags/index.html"
+  },
+  {
+    "breadcrumb": "About \u003e Tech",
+    "content": "Vault SSH Cert Management Vault on Kubernetes",
+    "description": "Vault SSH Cert Management Vault on Kubernetes",
+    "tags": [
+      "Index"
+    ],
+    "title": "Hashicorp Vault",
+    "uri": "/tech/hashicorp-vault/index.html"
   },
   {
     "breadcrumb": "About",

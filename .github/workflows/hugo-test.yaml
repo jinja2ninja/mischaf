@@ -1,0 +1,35 @@
+name: Build
+on:
+  push:
+    branches: [ "test" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          submodules: recursive
+          fetch-depth: 2
+          ref: "test"
+      - name: Build Hugo Site
+        run: |
+          docker run --rm \
+          -v ${{ github.workspace }}:/src \
+          hugomods/hugo \
+          hugo --source /src --destination /src/public
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "test"
+
+      - name: Dispatch Event to Target Repository
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PAT }} 
+          repository: jinja2ninja/argocd
+          event-type: update-website-ref
