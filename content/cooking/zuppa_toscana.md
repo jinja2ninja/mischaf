@@ -29,5 +29,5 @@ weight: 2
 ## Steps
 - [ ] In a large stock pot, cook the sausage until browned. Remove it from the pot, but let some of the grease stay behind.
 - [ ] Saute the onions until they start to turn translucent, add the garlic for another minute or 2. You can add the potatoes for a few minutes at this point as well to speed up the cooking.
-- [ ] Add everything else but the kale and heavy cream, save those for later. Stir until combined and bring to a boil, then cook on medium low until the potatoes are tennder.
+- [ ] Add everything else but the kale and heavy cream, save those for later. Stir until combined and bring to a boil, then cook on medium low until the potatoes are tender.
 - [ ] Add in the kale and heavy cream, and cook for a few more minutes to thicken the soup up.
