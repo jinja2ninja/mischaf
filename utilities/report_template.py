@@ -5,8 +5,6 @@ from bs4 import BeautifulSoup
 import re
 from geopy.geocoders import Nominatim
 
-
-
 timestamp = datetime.now().strftime('%Y-%m-%dT%H:%M:%S%z')
 file_loader = FileSystemLoader('templates')
 env = Environment(loader=file_loader)
@@ -110,4 +108,5 @@ gallery_output = template.render(gallery_context)
 
 with open(f"../content/outdoor trip reports/galleries/{ peak_name_shortened }-gallery.md", 'w') as f:
     f.write(gallery_output)
+
 
